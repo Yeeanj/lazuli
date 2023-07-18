@@ -5,12 +5,12 @@
 // 공통요소 : 헤더, 풋터, 버튼, 아이콘, 박스
 
 // 공통 
+.container {
+  padding: 0 4%;
+}
 .wrap {
   padding: 0 0 60px;
   margin-top: 60px;
-}
-.container {
-  
 }
 //header
 header {
@@ -62,18 +62,29 @@ header {
   .images1 img {
     width: 100%;
   }
+
   b {
-    font-family: Noto Serif KR;
     font-size: 50px;
+    line-height: 60px;
+    display: block;
+    margin-bottom: 20px;
   }
 }
 
 .text-g {
-  margin: 35px 0 35px;
+  margin: 10px 0 50px;
 }
 
 p {
-  padding-top: 35px;
+  display: block;
+  margin-bottom: 30px; 
 }
 
+.jsh {
+  width: 119px;
+  height: 39px;
+  border-radius: 19.5px;
+  background-color: #070322;
+  color: #fff;
+}
 

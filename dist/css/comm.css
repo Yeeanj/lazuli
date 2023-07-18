@@ -292,31 +292,78 @@ legend {
   padding: 0 4%;
 }
 
-#header {
-  border-bottom: 1px solid #000;
+.wrap {
+  padding: 0 0 60px;
+  margin-top: 60px;
 }
-#header .inner {
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #000;
+  background-color: #fff;
+}
+header .logo1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header .inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 70px;
+  height: 60px;
 }
-#header .lst-util {
+header .lst-util {
   display: flex;
 }
-#header .lst-util .btn-g {
+header .lst-util .btn-g {
   width: 40px;
-  height: 70px;
+  height: 60px;
 }
-#header .lst-util .btn-g::before {
-  font-size: 20px;
+header .lst-util .btn-g::before {
   font-family: "Font Awesome 6 Free";
+  font-size: 18px;
 }
-#header .lst-util .btn-search::before {
+header .lst-util .btn-search::before {
   content: "\f002";
   font-weight: 900;
 }
-#header .lst-util .btn-burger::before {
+header .lst-util .btn-shopp::before {
   content: "\f007";
   font-weight: 400;
+}
+header .lst-util .btn-burger::before {
+  content: "\f0c9";
+  font-weight: 900;
+}
+
+.section-g .images1 img {
+  width: 100%;
+}
+.section-g b {
+  font-size: 50px;
+  line-height: 60px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.text-g {
+  margin: 10px 0 50px;
+}
+
+p {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.jsh {
+  width: 119px;
+  height: 39px;
+  border-radius: 19.5px;
+  background-color: #070322;
+  color: #fff;
 }/*# sourceMappingURL=comm.css.map */
