@@ -1,40 +1,123 @@
-@charset "UFT-8";
-@import "mixin", "variables", "fonts", "reset", "main", "contents";
+@charset "UTF-8";
+@import "fonts", "reset", "main", "contents";
 
-// comm.scss -
+// comm.css -
 // 공통요소 : 헤더, 풋터, 버튼, 아이콘, 박스
 
 // 공통
 .container {
   padding: 0 4%;
 }
+.wrap {
+  padding: 0 0 60px;
+  margin-top: 60px;
+}
+//header
+// body {
+//   background: url(/images/clone/서브2\ 2.jpg) 0 0 no-repeat;
+// }
 
-// header
-#header {
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   border-bottom: 1px solid #000;
+  background-color: #fff;
+  .logo1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 70px;
+    height: 60px;
   }
   .lst-util {
     display: flex;
     .btn-g {
       width: 40px;
-      height: 70px;
+      height: 60px;
       &::before {
-        font-size: 20px;
         font-family: "Font Awesome 6 Free";
+        font-size: 18px;
       }
     }
     .btn-search::before {
       content: "\f002";
       font-weight: 900;
     }
-    .btn-burger::before {
+    .btn-shopp::before {
       content: "\f007";
       font-weight: 400;
     }
+    .btn-burger::before {
+      content: "\f0c9";
+      font-weight: 900;
+    }
+  }
+}
+.top {
+  font-size: 20px;
+  line-height: 20px;
+  display: block;
+  padding: 20px;
+}
+.section-g {
+  .images1 img {
+    width: 100%;
+  }
+  .images2 img {
+    width: 100%;
+  }
+  .images3 img {
+    width: 30%;
+    height: 30%;
+  }
+}
+
+.text-g {
+  margin: 10px 0 50px;
+  .subimg b {
+    font-size: 10px;
+  }
+  b {
+    font-size: 50px;
+    line-height: 60px;
+    display: block;
+    margin-bottom: 20px;
+  }
+  p {
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+
+.jsh {
+  width: 119px;
+  height: 39px;
+  border-radius: 19.5px;
+  background-color: #070322;
+  color: #fff;
+}
+
+.product__wrapper {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 180px;
+  }
+  li {
+    width: 50%;
+    width: 50%;
+  }
+  p {
+    font-size: 15px;
   }
 }
