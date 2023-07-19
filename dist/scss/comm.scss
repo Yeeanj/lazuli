@@ -4,7 +4,7 @@
 // comm.css - 
 // 공통요소 : 헤더, 풋터, 버튼, 아이콘, 박스
 
-// 공통 
+// 공통클래스/section-g, b, p, jsh(자세히버튼)
 .container {
   padding: 0 4%;
 }
@@ -12,52 +12,11 @@
   padding: 0 0 60px;
   margin-top: 60px;
 }
-//header
-#header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  border-bottom: 1px solid #000;
-  background-color: #fff;
-  .inner {
-  display: flex;
-  justify-content: space-between;
-  }
-  .logo1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .lst-util {
-    display: flex;
-  }
-
-  .nav-g,
-  .gnb-wrap a {
-    width: 40px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &::before{
-      font-family: "Font Awesome 6 Free";
-      font-size: 18px;
-    }
-  }
-}
-
-//main
-#main {
-
 .section-g {
   .images1 img {
     width: 100%;
   }
 }
-
 .text-g {
   margin: 10px 0 50px;
   b {
@@ -78,7 +37,68 @@
     color: #fff;
   }
  }
+//header
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #000;
+  background-color: #fff;
+  .inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .lst-util {
+    display: flex;
+  }
+
+  .nav-g,
+  .gnb-wrap a {
+    width: 40px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::before{
+      font-family: "Font Awesome 6 Free";
+      font-size: 18px;
+    }
+  }
 }
+
+
+//slide
+.slide-wrap {
+  background-color: #999;
+}
+    .swiper {
+      width: 90%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
 
 

@@ -147,11 +147,35 @@
         </div>
       </div>
 
-      <div class="image-slide">
-       
+      <!-- Swiper -->
+<div class="slide-wrap">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#" class="slide1">
+            <img src="./images/main/slide1.jpg" alt="slide1">
+           </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" >
+            <img src="./images/main/slide2.jpg" alt="slide2">
+           </a>
+        </div>
       </div>
-        
-      </main>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+</div>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
       <footer id="footer" class="container">풋터</footer>
     </div>
   </body>
