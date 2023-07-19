@@ -321,6 +321,10 @@ legend {
   background-color: #070322;
   color: #fff;
 }
+.text-g .tit {
+  font-size: 32px;
+  margin-top: 10px;
+}
 
 #header {
   position: fixed;
@@ -356,6 +360,9 @@ legend {
   font-family: "Font Awesome 6 Free";
   font-size: 18px;
 }
+#header .link1 b {
+  font-size: 22px;
+}
 
 .slide-wrap {
   background-color: #999;
@@ -381,4 +388,25 @@ legend {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.section4 {
+  margin-top: 40px;
+}
+.section4 a {
+  position: relative;
+}
+.section4 .text2 {
+  font-size: 22px;
+  border-bottom: 3px solid #000;
+  padding-bottom: 10px;
+}
+.section4 p {
+  font-size: 16px;
+  padding-top: 20px;
+}
+.section4 .material-icons-outlined {
+  position: absolute;
+  top: 30px;
+  right: 4%;
 }/*# sourceMappingURL=comm.css.map */

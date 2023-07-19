@@ -36,6 +36,10 @@
     background-color: #070322;
     color: #fff;
   }
+  .tit {
+    font-size: 32px;
+    margin-top: 10px;
+  }
  }
 //header
 #header {
@@ -72,6 +76,11 @@
       font-size: 18px;
     }
   }
+  .link1 {
+    b {
+      font-size: 22px;
+    }
+  }
 }
 
 
@@ -100,6 +109,29 @@
       object-fit: cover;
     }
 
+    //link 
+
+    .section4 {
+     a{
+      position: relative;
+     }
+      margin-top: 40px;
+      .text2 {
+        font-size: 22px;
+        border-bottom: 3px solid #000;
+        padding-bottom: 10px;
+      }
+      p {
+        font-size: 16px;
+        padding-top: 20px;
+      }
+      .material-icons-outlined {
+        position: absolute;
+        top: 30px;
+        right: 4%;
+        
+      }
+    }
 
 
 
