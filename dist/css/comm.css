@@ -139,7 +139,6 @@ body {
   font-size: 14px;
   line-height: 1.5;
   font-family: "Noto Sans KR", "Noto Serif KR", "Malgun Gothic", "맑은 고딕", serif, sans-serif;
-  font-family: "Noto Serif KR", serif;
   color: #111;
 }
 
@@ -298,7 +297,7 @@ legend {
   margin-top: 60px;
 }
 
-header {
+#header {
   position: fixed;
   top: 0;
   left: 0;
@@ -306,62 +305,50 @@ header {
   border-bottom: 1px solid #000;
   background-color: #fff;
 }
-header .logo1 {
+#header .inner {
+  display: flex;
+  justify-content: space-between;
+}
+#header .logo1 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-header .inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 60px;
-}
-header .lst-util {
+#header .lst-util {
   display: flex;
 }
-header .lst-util .btn-g {
+#header .nav-g,
+#header .gnb-wrap a {
   width: 40px;
   height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-header .lst-util .btn-g::before {
+#header .nav-g::before,
+#header .gnb-wrap a::before {
   font-family: "Font Awesome 6 Free";
   font-size: 18px;
 }
-header .lst-util .btn-search::before {
-  content: "\f002";
-  font-weight: 900;
-}
-header .lst-util .btn-shopp::before {
-  content: "\f007";
-  font-weight: 400;
-}
-header .lst-util .btn-burger::before {
-  content: "\f0c9";
-  font-weight: 900;
-}
 
-.section-g .images1 img {
+#main .section-g .images1 img {
   width: 100%;
 }
-.section-g b {
+#main .text-g {
+  margin: 10px 0 50px;
+}
+#main .text-g b {
   font-size: 50px;
   line-height: 60px;
   display: block;
   margin-bottom: 20px;
 }
-
-.text-g {
-  margin: 10px 0 50px;
-}
-
-p {
+#main .text-g p {
   display: block;
   margin-bottom: 30px;
 }
-
-.jsh {
+#main .text-g .jsh {
   width: 119px;
   height: 39px;
   border-radius: 19.5px;

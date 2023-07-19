@@ -13,13 +13,17 @@
   margin-top: 60px;
 }
 //header
-header {
+#header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   border-bottom: 1px solid #000;
   background-color: #fff;
+  .inner {
+  display: flex;
+  justify-content: space-between;
+  }
   .logo1 {
     position: absolute;
     top: 50%;
@@ -27,64 +31,58 @@ header {
     transform: translate(-50%, -50%);
   }
 
-  .inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 60px;
-  }
   .lst-util {
     display: flex;
-    .btn-g {
-      width: 40px;
-      height: 60px;
-      &::before{
-        font-family: "Font Awesome 6 Free";
-        font-size: 18px;
-      }
+  }
+
+  .nav-g,
+  .gnb-wrap a {
+    width: 40px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::before{
+      font-family: "Font Awesome 6 Free";
+      font-size: 18px;
     }
-    .btn-search::before {    
-      content: "\f002";
-      font-weight: 900;
-    }
-    .btn-shopp::before {
-      content: "\f007";
-      font-weight: 400;
-    }
-    .btn-burger::before {
-      content: "\f0c9";
-      font-weight: 900;
-   }   
   }
 }
+
+//main
+#main {
 
 .section-g {
   .images1 img {
     width: 100%;
   }
+}
 
+.text-g {
+  margin: 10px 0 50px;
   b {
     font-size: 50px;
     line-height: 60px;
     display: block;
     margin-bottom: 20px;
   }
+  p {
+    display: block;
+    margin-bottom: 30px; 
+  }
+  .jsh {
+    width: 119px;
+    height: 39px;
+    border-radius: 19.5px;
+    background-color: #070322;
+    color: #fff;
+  }
+ }
 }
 
-.text-g {
-  margin: 10px 0 50px;
-}
 
-p {
-  display: block;
-  margin-bottom: 30px; 
-}
 
-.jsh {
-  width: 119px;
-  height: 39px;
-  border-radius: 19.5px;
-  background-color: #070322;
-  color: #fff;
-}
+
+
+
 
