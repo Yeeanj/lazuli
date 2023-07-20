@@ -75,14 +75,12 @@ q {
   quotes: none;
 }
 
-blockquote:before,
-blockquote:after {
+blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-q:before,
-q:after {
+q:before, q:after {
   content: "";
   content: none;
 }
@@ -112,14 +110,11 @@ body {
 }
 
 /* 뷰표트 변환시 폰트크기 자동확대 방지 */
-input[type="text"],
-input[type="password"],
-input[type="submit"],
-input[type="search"] {
+input[type=text], input[type=password], input[type=submit], input[type=search] {
   -webkit-appearance: none;
   border-radius: 0;
 }
-input:checked[type="checkbox"] {
+input:checked[type=checkbox] {
   background-color: #666;
   -webkit-appearance: checkbox;
 }
@@ -129,14 +124,11 @@ button {
   border-radius: 0;
 }
 
-input[type="button"],
-input[type="submit"],
-input[type="reset"],
-input[type="file"] {
+input[type=button], input[type=submit], input[type=reset], input[type=file] {
   -webkit-appearance: button;
   border-radius: 0;
 }
-input[type="search"]::-webkit-search-cancel-button {
+input[type=search]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 
@@ -146,7 +138,7 @@ body {
   background: #fff;
   font-size: 14px;
   line-height: 1.5;
-  font-family: "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
+  font-family: "Noto Sans KR", "Noto Serif KR", "Malgun Gothic", "맑은 고딕", sans-serif, serif;
   color: #111;
 }
 
@@ -161,8 +153,7 @@ a {
   color: #333;
   text-decoration: none;
 }
-a:active,
-a:hover {
+a:active, a:hover {
   text-decoration: none;
 }
 
@@ -181,7 +172,7 @@ hr {
   display: none;
 }
 
-input[type="password"] {
+input[type=password] {
   font-family: "Malgun Gothic";
 }
 
@@ -289,14 +280,6 @@ legend {
   content: "";
 }
 
-body {
-  background: url(../../images/m.main.jpg) no-repeat 0 0;
-  background-size: 100% auto;
-}
-body .wrap {
-  opacity: 0.7;
-}
-
 .main {
   height: 100px;
 }
@@ -309,32 +292,203 @@ body .wrap {
   padding: 0 4%;
 }
 
+.wrap {
+  padding: 0 0 60px;
+  margin-top: 60px;
+}
+
 #header {
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   border-bottom: 1px solid #000;
   background-color: #fff;
+}
+#header .logo1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Noto Serif KR";
+  font-weight: 900;
+  color: #070322;
 }
 #header .inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 70px;
+  height: 60px;
+  color: #111;
 }
 #header .lst-util {
   display: flex;
 }
+#header .lst-util .btn-shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #111;
+}
 #header .lst-util .btn-g {
   width: 40px;
-  height: 70px;
+  height: 60px;
 }
 #header .lst-util .btn-g::before {
-  font-size: 20px;
-  font-family: "Font Awesome 6 Free";
+  font-size: 30px;
+  font-family: "Material Icons Outlined";
+  font-weight: 400;
 }
 #header .lst-util .btn-search::before {
-  content: "\f002";
-  font-weight: 900;
+  content: "\e8b6";
 }
-#header .lst-util .btn-burger::before {
-  content: "\f007";
+#header .lst-util .btn-shop::before {
+  content: "\f1cc";
+}
+
+.section-g img {
+  width: 100%;
+}
+.section-g a {
+  display: block;
+}
+
+.text-g strong {
+  display: block;
+  font-size: 20px;
+  font-family: "Noto Serif KR";
+  font-weight: 900;
+  color: #070322;
+}
+
+.text-g .tit-mini {
+  display: block;
+  margin: 109px 0 50px;
+}
+.text-g .tit-g {
+  display: block;
+  margin: 30px 0 20px;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 1.5;
+}
+.text-g p {
+  display: block;
+  font-size: 18px;
   font-weight: 400;
-} /*# sourceMappingURL=comm.css.map */
+  margin-bottom: 40px;
+}
+
+.section1 a,
+.section3 a {
+  height: 450px;
+}
+
+.section2 a {
+  height: 375px;
+}
+
+.jsh {
+  width: 119px;
+  margin-bottom: 43px;
+}
+.jsh a {
+  position: relative;
+  display: block;
+  width: 119px;
+  height: 39px;
+  line-height: 39px;
+  border-radius: 100px;
+  background-color: #070322;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.sec-btn {
+  margin-bottom: 20px;
+}
+.sec-btn a {
+  position: relative;
+  display: block;
+  width: 320px;
+  height: 52px;
+  border: 1px solid #000;
+  margin: 0 auto;
+  line-height: 48px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+}
+.sec-btn a::after {
+  position: absolute;
+  top: 1px;
+  right: 20%;
+  content: "\e5e1";
+  font-family: "Material Icons Outlined";
+}
+
+#footer {
+  z-index: 10000;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #000;
+  background: #fff;
+}
+#footer .footer-util {
+  height: 60px;
+}
+#footer .lst-util {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#footer .lst-util li {
+  width: 72px;
+  height: 60px;
+  text-align: center;
+}
+#footer .lst-util .btn-g {
+  padding-top: 36px;
+  position: relative;
+  font-size: 12px;
+  font-family: "Noto Sans KR";
+  font-weight: 400;
+}
+#footer .lst-util .btn-g::before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-family: "Material Icons Outlined";
+  font-size: 28px;
+  text-align: center;
+}
+#footer .lst-util .btn-home::before {
+  top: 3px;
+  left: -8px;
+  content: "\e88a";
+  font-family: "Material Symbols Outlined";
+  font-weight: 600;
+}
+#footer .lst-util .btn-wish::before {
+  top: 5px;
+  content: "\e87e";
+}
+#footer .lst-util .btn-bell::before {
+  top: 4px;
+  left: -3px;
+  content: "\e7f4";
+  font-weight: 200;
+  font-size: 28px;
+}
+#footer .lst-util .btn-my::before {
+  top: 7px;
+  content: "\f007";
+  font-family: "Font Awesome 6 Free";
+  font-weight: normal;
+  font-size: 22px;
+}/*# sourceMappingURL=comm.css.map */

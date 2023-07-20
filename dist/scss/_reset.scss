@@ -133,10 +133,10 @@ body {
   background: #fff;
   font-size: 14px;
   line-height: 1.5;
-  font-family: "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
+  font-family: "Noto Sans KR", "Noto Serif KR", "Malgun Gothic", "맑은 고딕",
+    sans-serif, serif;
   color: #111;
 }
-
 /* desktop */
 @media screen and (min-width: 1280px) {
   body {
@@ -288,10 +288,7 @@ legend {
     content: "";
   }
 }
-body {
-  background: url(../../images/m.main.jpg) no-repeat 0 0;
-  background-size: 100% auto;
-  .wrap {
-    opacity: 0.7;
-  }
-}
+// body {
+//   background: url(../../images/m.sub1.png) no-repeat 0 0;
+//   background-size: 100% auto;
+// }
