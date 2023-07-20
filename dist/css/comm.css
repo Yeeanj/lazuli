@@ -297,8 +297,21 @@ legend {
   margin-top: 60px;
 }
 
+.images1 img {
+  width: 100%;
+}
+
+.images g {
+  width: 100%;
+}
+
+.images2 img {
+  width: 100%;
+}
+
 header {
   position: fixed;
+  z-index: 10000;
   top: 0;
   left: 0;
   right: 0;
@@ -348,15 +361,22 @@ header .lst-util .btn-burger::before {
   padding: 20px;
 }
 
-.section-g .images1 img {
-  width: 100%;
+#main .section-contents .lst-shopping {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.section-g .images2 img {
-  width: 100%;
+#main .section-contents .lst-shopping li {
+  position: relative;
+  overflow: hidden;
 }
-.section-g .images3 img {
-  width: 30%;
-  height: 30%;
+#main .section-contents .lst-shopping .thumb-shopping {
+  width: 50%;
+  height: 50%;
+}
+#main .section-contents .lst-shopping img {
+  width: 100%;
+  height: 100%;
 }
 
 .text-g {
@@ -384,17 +404,44 @@ header .lst-util .btn-burger::before {
   color: #fff;
 }
 
-.product__wrapper ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
-  height: 180px;
+/*YOUTUBE VIDEO*/
+.youtube {
+  position: relative;
+  height: 700px;
+  background-color: #333;
+  overflow: hidden;
 }
-.product__wrapper li {
-  width: 50%;
-  width: 50%;
+.youtube .youtube__area {
+  width: 1920px;
+  position: absolute;
+  /* 16비율 */
+  left: 50%;
+  margin-left: -960px;
+  /* 9비율 */
+  top: 50%;
+  margin-top: -540px;
 }
-.product__wrapper p {
-  font-size: 15px;
+.youtube .youtube__area::before {
+  content: "";
+  display: block;
+  /* 16:9 영상 비율로 요소 크기 만들기! */
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+}
+.youtube .youtube__cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#player {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }/*# sourceMappingURL=comm.css.map */
