@@ -8,22 +8,26 @@
 .container {
   padding: 0 4%;
 }
+h2 {
+  display: none;
+}
 .wrap {
   padding: 0 0 60px;
   margin-top: 60px;
 }
 .section-g {
-  .images1 img {
+  .images-g img {
     width: 100%;
   }
 }
 .text-g {
+  padding: 0 4%;
   margin: 10px 0 50px;
-  b {
+   .txt-tit {
     font-size: 50px;
     line-height: 60px;
     display: block;
-    margin-bottom: 20px;
+    margin-top: 20px;
   }
   p {
     display: block;
@@ -36,13 +40,16 @@
     background-color: #070322;
     color: #fff;
   }
-  .tit {
-    font-size: 32px;
-    margin-top: 10px;
-  }
  }
+ .tit {
+  display: block;
+  font-size: 32px;
+  margin-top: 20px;
+}
+
 //header
 #header {
+  z-index: 10000;
   position: fixed;
   top: 0;
   left: 0;
@@ -86,6 +93,8 @@
 
 //slide
 .slide-wrap {
+.sec-slide {
+  margin-top: 20px;
   background-color: #999;
 }
     .swiper {
@@ -111,8 +120,12 @@
 
     //link 
 
-    .section4 {
-     a{
+    .sec-link {
+      .cont-link {
+        margin-top: 20px;
+      }
+     a {
+      display: block;
       position: relative;
      }
       margin-top: 40px;
@@ -125,14 +138,140 @@
         font-size: 16px;
         padding-top: 20px;
       }
-      .material-icons-outlined {
+      .icon-a {
         position: absolute;
-        top: 30px;
+        top: 10px;
         right: 4%;
-        
       }
     }
+  }
+    
+   //item
 
+.section3 {
+  .cont-item-tit {
+    a {
+      position: relative;
+    }
+  .icon-b {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+  }
+  }
+  .cont-item {
+    margin-top: 10px;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+    }
+    li {
+      width: calc(50% - 3px);
+      margin-bottom: 6px;
+      
+    }
+  }
+  .cont-item-img1 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: inherit;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      background-color: rgba(0, 0, 0, 0.03);
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+//푸터
+#footer {
+  position: fixed;
+  z-index: 10000;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  // border-top: 1px solid #000;
+  background: #fff;
+  .footer-util {
+    height: 60px;
+  }
+  .lst-util {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    li {
+      width: 72px;
+      height: 60px;
+      text-align: center;
+      // border: 1px solid #000;
+    }
+    .btn-g {
+      padding-top: 36px;
+      position: relative;
+      font-size: 12px;
+      font-family: "Noto Sans KR";
+      font-weight: 400;
+      &::before {
+        position: absolute;
+        left: 0;
+        right: 0;
+        font-family: "Material Icons Outlined";
+        // font-weight: 500;
+        font-size: 32px;
+        text-align: center;
+      }
+    }
+    .btn-home {
+      &::before {
+        top: -1px;
+        left: -9px;
+        content: "\e88a";
+        font-family: "Material Symbols Outlined";
+        font-weight: 600;
+      }
+    }
+    .btn-wish {
+      &::before {
+        top: 2px;
+        content: "\e87e";
+      }
+    }
+    .btn-bell {
+      &::before {
+        top: 1px;
+        left: -5px;
+        content: "\e7f4";
+        font-weight: 200;
+        font-size: 34px;
+      }
+    }
+    .btn-my {
+      &::before {
+        top: 3px;
+        content: "\f007";
+        font-family: "Font Awesome 6 Free";
+        font-weight: normal;
+        font-size: 27px;
+      }
+    }
+  }
+}
+
+  
 
 
 
