@@ -297,18 +297,6 @@ legend {
   margin-top: 60px;
 }
 
-.images1 img {
-  width: 100%;
-}
-
-.images g {
-  width: 100%;
-}
-
-.images2 img {
-  width: 100%;
-}
-
 header {
   position: fixed;
   z-index: 10000;
@@ -361,65 +349,27 @@ header .lst-util .btn-burger::before {
   padding: 20px;
 }
 
-#main .section-contents .lst-shopping {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-#main .section-contents .lst-shopping li {
-  position: relative;
-  overflow: hidden;
-}
-#main .section-contents .lst-shopping .thumb-shopping {
-  width: 50%;
-  height: 50%;
-}
-#main .section-contents .lst-shopping img {
+.image1 img {
   width: 100%;
-  height: 100%;
-}
-
-.text-g {
-  margin: 10px 0 50px;
-}
-.text-g .subimg b {
-  font-size: 10px;
-}
-.text-g b {
-  font-size: 50px;
-  line-height: 60px;
-  display: block;
-  margin-bottom: 20px;
-}
-.text-g p {
-  display: block;
-  margin-bottom: 30px;
-}
-
-.jsh {
-  width: 119px;
-  height: 39px;
-  border-radius: 19.5px;
-  background-color: #070322;
-  color: #fff;
 }
 
 /*YOUTUBE VIDEO*/
 .youtube {
   position: relative;
-  height: 700px;
+  width: 100%;
+  height: 210px;
   background-color: #333;
   overflow: hidden;
 }
 .youtube .youtube__area {
-  width: 1920px;
+  width: 100%;
   position: absolute;
   /* 16비율 */
   left: 50%;
-  margin-left: -960px;
+  margin-left: -50%;
   /* 9비율 */
   top: 50%;
-  margin-top: -540px;
+  margin-top: -28.125%;
 }
 .youtube .youtube__area::before {
   content: "";
@@ -444,4 +394,148 @@ header .lst-util .btn-burger::before {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.image2 img {
+  width: 100%;
+}
+
+.text-g {
+  margin: 10px 0 50px;
+}
+.text-g b {
+  font-size: 35px;
+  line-height: 60px;
+  display: block;
+  margin-bottom: 20px;
+}
+.text-g p {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.jsh {
+  width: 119px;
+  height: 39px;
+  border-radius: 19.5px;
+  background-color: #070322;
+  color: #fff;
+}
+
+.btmb {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px 30px;
+}
+.btmb .jsh2 {
+  position: relative;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #000;
+  width: 100%;
+  height: 52px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.btmb .jsh2::after {
+  position: absolute;
+  top: 17px;
+  right: 60px;
+  content: "\f054";
+  font-family: "Font Awesome 6 Free";
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.section-contents .lst-shopping {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.section-contents .lst-shopping li {
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.section-contents .lst-shopping .thumb-shopping {
+  width: 100%;
+  height: 200px;
+}
+.section-contents .lst-shopping img {
+  width: 100%;
+  height: 100%;
+}
+.section-contents .txt-shopping {
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.bottom {
+  font-size: 30px;
+  line-height: 50px;
+  display: block;
+  padding: 0 20px;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+}
+#footer .footer-util {
+  height: 60px;
+}
+#footer .lst-util {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#footer .lst-util li {
+  width: 72px;
+  height: 60px;
+  text-align: center;
+}
+#footer .lst-util .btn-g {
+  padding-top: 36px;
+  position: relative;
+  font-size: 12px;
+  font-family: "Noto Sans KR";
+  font-weight: 400;
+}
+#footer .lst-util .btn-g::before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-family: "Material Icons Outlined";
+  font-size: 32px;
+  text-align: center;
+}
+#footer .lst-util .btn-home::before {
+  top: -1px;
+  left: -9px;
+  content: "\e88a";
+  font-family: "Material Symbols Outlined";
+  font-weight: 600;
+}
+#footer .lst-util .btn-wish::before {
+  top: 2px;
+  content: "\e87e";
+}
+#footer .lst-util .btn-bell::before {
+  top: 1px;
+  left: -5px;
+  content: "\e7f4";
+  font-weight: 200;
+  font-size: 34px;
+}
+#footer .lst-util .btn-my::before {
+  top: 3px;
+  content: "\f007";
+  font-family: "Font Awesome 6 Free";
+  font-weight: normal;
+  font-size: 27px;
 }/*# sourceMappingURL=comm.css.map */
