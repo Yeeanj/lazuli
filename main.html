@@ -71,16 +71,47 @@
           </h1>
 
           <nav class="gnb-wrap">
-            <!-- 링크연결없이 자바스크립트 연결하는법 -->
-            <a href="javascript:void(0)">
-              <span class="material-icons-outlined"> menu </span>
-            </a> 
-            </nav>
+            <input
+              type="checkbox"
+              name="gnbNav"
+              id="gnbNav"
+              class="input-burger"
+              checked
+            />
+            <label for="gnbNav" class="label-burger">
+              <span class="blind">전체 메뉴 보기</span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </label>
+            <div id="gnb">
+              <div class="gnb-main">
+                <div class="sec-link">
+                  <h2>네이게이션</h2>
+                 <div class="lst-gnb1">
+                  <a href="#">
+                      <strong class="gnb-maintxt">The House</strong>
+                  <span class="material-icons-outlined icon-c">
+                    arrow_forward_ios
+                    </span>
+                  </a>
+                 </div> 
+  
+                 <div class="lst-gnb1">
+                  <a href="#">
+                      <strong class="gnb-maintxt">High Jewelry</strong>
+                  <span class="material-icons-outlined icon-c">
+                    arrow_forward_ios
+                    </span>
+                  </a>
+                 </div> 
+                </div>
+              </div>
+          </nav>
 
           <div class="util">
             <ul class="lst-util">
               <li>
-                <!-- a:링크연결 button:동작처리 -->
                 <button class="nav-g btn-search">
                   <span class="material-icons-outlined">
                     search
@@ -110,7 +141,7 @@
         <img src="./images/main/main1.jpg" alt="메인배너1">
         </a>
         <div class="text-g">
-          <strong class="txt-tit">Royal <br>
+          <strong class="tit-bnr">Royal <br>
             Adornments</strong>
           <p>왕실 유산에서 영감을 얻은
               독특한 하이 주얼리 스위트. <br>
@@ -124,7 +155,7 @@
         <img src="./images/main/main2.jpg" alt="메인배너2">
         </a>
         <div class="text-g">
-          <strong class="txt-tit">Ocean:
+          <strong class="tit-bnr">Ocean:
             25Years of Daring Glam</strong>
             <p> 오션 컬렉션의 25주년을 기념하여, <br>
               대담하고 눈부신 타임피스로
@@ -139,7 +170,7 @@
         <img src="./images/main/main3.jpg" alt="메인배너3">
         </a>
         <div class="text-g">
-          <strong class="txt-tit">Tea in the Lazuli
+          <strong class="tit-bnr">Tea in the Lazuli
             Maze</strong>
             <p>보석으로 장식된 꽃과
               찬란한 놀라움으로 가득 찬 <br>
@@ -154,7 +185,7 @@
 
       <!-- Swiper -->
 <div class="slide-wrap">
-  <strong class="container tit">Lazuli Bridal</strong>
+  <strong class="container tit-serif-strong">Lazuli Bridal</strong>
 <div class="sec-slide">
   <h2>슬라이드</h2>
     <div class="swiper mySwiper">
@@ -210,7 +241,7 @@
   <h2>상세이미지</h2>
   <div class="cont-item-tit">
   <a href="#">
-    <strong class="tit">High Jewelry</strong>
+    <strong class="tit-serif-strong">High Jewelry</strong>
     <span class="material-icons-outlined icon-b">
       arrow_forward_ios
     </span>
@@ -219,7 +250,7 @@
   
   <div class="cont-item">
     
-      <p class="serif">
+      <p class="tit-serif-p">
         Royal Collection
       </p>
 
@@ -257,15 +288,15 @@
        </li>
      </ul>
 
-    <p class="serif">
-      Royal Collection
+    <p class="tit-serif-p">
+      New York Collection
     </p>
 
     <ul>
       <li>
         <div class="cont-item-img1">
           <a href="#">
-            <img src="./images/main/item1.webp" alt="item1">
+            <img src="./images/main/nc4.png" alt="item1">
           </a>
         </div>
       </li>
@@ -273,13 +304,13 @@
        <li>
         <div class="cont-item-img1">
           <a href="#">
-            <img src="./images/main/item2.png" alt="item2">
+            <img src="./images/main/nc3.png" alt="item2">
           </a>
         </div>
        </li>
       </ul>
 
-      <p class="serif">
+      <p class="tit-serif-p">
         Majestic Escapes Collection
       </p>
   
@@ -287,7 +318,7 @@
         <li>
           <div class="cont-item-img1">
             <a href="#">
-              <img src="./images/main/item1.webp" alt="item1">
+              <img src="./images/main/nc2.png" alt="item1">
             </a>
           </div>
         </li>
@@ -295,7 +326,7 @@
          <li>
           <div class="cont-item-img1">
             <a href="#">
-              <img src="./images/main/item2.png" alt="item2">
+              <img src="./images/main/nc1.png" alt="item2">
             </a>
           </div>
          </li>
@@ -303,22 +334,22 @@
 
         <div class="cont-item-tit">
           <a href="#">
-            <strong class="tit">Fine Jewelry</strong>
+            <strong class="tit-serif-strong">Fine Jewelry</strong>
             <span class="material-icons-outlined icon-b">
               arrow_forward_ios
             </span>
           </a>
           </div>
 
-          <p class="serif">
-            Majestic Escapes Collection
+          <p class="tit-serif-p">
+            Lazuli Gates Collection
           </p>
 
           <ul>
             <li>
               <div class="cont-item-img1">
                 <a href="#">
-                  <img src="./images/main/item1.webp" alt="item1">
+                  <img src="./images/main/db2-2.png" alt="item1">
                 </a>
               </div>
             </li>
@@ -326,21 +357,21 @@
              <li>
               <div class="cont-item-img1">
                 <a href="#">
-                  <img src="./images/main/item2.png" alt="item2">
+                  <img src="./images/main/db2.png" alt="item2">
                 </a>
               </div>
              </li>
             </ul>
 
-            <p class="serif">
-              Majestic Escapes Collection
+            <p class="tit-serif-p">
+              Diamond Links Collection
             </p>
 
             <ul>
               <li>
                 <div class="cont-item-img1">
                   <a href="#">
-                    <img src="./images/main/item1.webp" alt="item1">
+                    <img src="./images/main/db1-1.png" alt="item1">
                   </a>
                 </div>
               </li>
@@ -348,7 +379,7 @@
                <li>
                 <div class="cont-item-img1">
                   <a href="#">
-                    <img src="./images/main/item2.png" alt="item2">
+                    <img src="./images/main/db1.png" alt="item2">
                   </a>
                 </div>
                </li>
@@ -356,22 +387,22 @@
 
               <div class="cont-item-tit">
                 <a href="#">
-                  <strong class="tit">Watches</strong>
+                  <strong class="tit-serif-strong">Watches</strong>
                   <span class="material-icons-outlined icon-b">
                     arrow_forward_ios
                   </span>
                 </a>
                 </div>
       
-                <p class="serif">
-                  Majestic Escapes Collection
+                <p class="tit-serif-p">
+                  Summer Style by Lazuli
                 </p>
       
                 <ul>
                   <li>
                     <div class="cont-item-img1">
                       <a href="#">
-                        <img src="./images/main/item1.webp" alt="item1">
+                        <img src="./images/main/wc1.png" alt="item1">
                       </a>
                     </div>
                   </li>
@@ -379,21 +410,21 @@
                    <li>
                     <div class="cont-item-img1">
                       <a href="#">
-                        <img src="./images/main/item2.png" alt="item2">
+                        <img src="./images/main/wc6.png" alt="item2">
                       </a>
                     </div>
                    </li>
                   </ul>
       
-                  <p class="serif">
-                    Majestic Escapes Collection
+                  <p class="tit-serif-p">
+                    High Jewelry Timepieces
                   </p>
       
                   <ul>
                     <li>
                       <div class="cont-item-img1">
                         <a href="#">
-                          <img src="./images/main/item1.webp" alt="item1">
+                          <img src="./images/main/wc2.png" alt="item1">
                         </a>
                       </div>
                     </li>
@@ -401,21 +432,21 @@
                      <li>
                       <div class="cont-item-img1">
                         <a href="#">
-                          <img src="./images/main/item2.png" alt="item2">
+                          <img src="./images/main/wc5.png" alt="item2">
                         </a>
                       </div>
                      </li>
                     </ul>
 
-                    <p class="serif">
-                      Majestic Escapes Collection
+                    <p class="tit-serif-p">
+                      Midnight Collection
                     </p>
         
                     <ul>
                       <li>
                         <div class="cont-item-img1">
                           <a href="#">
-                            <img src="./images/main/item1.webp" alt="item1">
+                            <img src="./images/main/wc3.png" alt="item1">
                           </a>
                         </div>
                       </li>
@@ -423,7 +454,7 @@
                        <li>
                         <div class="cont-item-img1">
                           <a href="#">
-                            <img src="./images/main/item2.png" alt="item2">
+                            <img src="./images/main/wc4.png" alt="item2">
                           </a>
                         </div>
                        </li>

@@ -280,36 +280,11 @@ legend {
   content: "";
 }
 
-.main {
-  height: 100px;
-}
-
-.contents {
-  height: 300px;
-}
-
-.container {
-  padding: 0 4%;
-}
-
-h2 {
-  display: none;
-}
-
-.wrap {
-  padding: 0 0 60px;
-  margin-top: 60px;
-}
-
-.section-g .images-g img {
-  width: 100%;
-}
-
 .text-g {
   padding: 0 4%;
   margin: 10px 0 50px;
 }
-.text-g .txt-tit {
+.text-g .tit-bnr {
   font-size: 50px;
   line-height: 60px;
   display: block;
@@ -319,57 +294,15 @@ h2 {
   display: block;
   margin-bottom: 30px;
 }
-.text-g .jsh {
-  width: 119px;
-  height: 39px;
-  border-radius: 19.5px;
-  background-color: #070322;
-  color: #fff;
-}
 
-.tit {
+.tit-serif-strong {
   display: block;
   font-size: 32px;
   margin-top: 20px;
 }
 
-#header {
-  z-index: 10000;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  border-bottom: 1px solid #000;
-  background-color: #fff;
-}
-#header .inner {
-  display: flex;
-  justify-content: space-between;
-}
-#header .logo1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-#header .lst-util {
-  display: flex;
-}
-#header .nav-g,
-#header .gnb-wrap a {
-  width: 40px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#header .nav-g::before,
-#header .gnb-wrap a::before {
-  font-family: "Font Awesome 6 Free";
-  font-size: 18px;
-}
-#header .link1 b {
-  font-size: 22px;
+.tit-serif-p {
+  font-size: 16px;
 }
 
 .slide-wrap .sec-slide {
@@ -462,6 +395,125 @@ h2 {
   height: 100%;
 }
 
+.contents {
+  height: 300px;
+}
+
+#header {
+  z-index: 10005;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #000;
+  background-color: #fff;
+}
+#header .inner {
+  display: flex;
+  justify-content: space-between;
+}
+#header .logo1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#header .lst-util {
+  display: flex;
+}
+#header .gnb-wrap .input-burger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+#header .gnb-wrap .input-burger:checked {
+  color: #fff;
+}
+#header .gnb-wrap .input-burger:checked + label .bar:nth-child(2) {
+  transform: rotate(45deg) translate(5px, 5px);
+  background-color: #fff;
+}
+#header .gnb-wrap .input-burger:checked + label .bar:nth-child(3) {
+  opacity: 0;
+}
+#header .gnb-wrap .input-burger:checked + label .bar:nth-child(4) {
+  transform: rotate(-45deg) translate(5px, -5px);
+  background-color: #fff;
+}
+#header .gnb-wrap .input-burger:checked ~ #gnb {
+  left: 0;
+}
+#header .label-burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40px;
+  height: 60px;
+}
+#header .label-burger .bar {
+  z-index: 10000;
+  display: flex;
+  width: 26px;
+  height: 2px;
+  background: rgb(0, 0, 0);
+  transition: all 1s;
+}
+#header .label-burger span:nth-child(3) {
+  margin: 5px 0;
+}
+#header #gnb {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  bottom: 0;
+  width: 375px;
+  padding: 0 20px;
+  background: #070322;
+  display: flex;
+  transition: all 0.4s;
+}
+#header #gnb .gnb-main {
+  position: absolute;
+  top: 60px;
+}
+#header .lst-gnb1 {
+  position: relative;
+}
+#header .lst-gnb1 .gnb-maintxt {
+  padding: 10px;
+  display: block;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+#header .lst-gnb1 .icon-c {
+  position: absolute;
+  top: 50%;
+  right: -100%;
+  transform: translate(0, -50%);
+  color: #fff;
+}
+#header .lst-gnb1 strong {
+  color: white;
+}
+#header .nav-g {
+  width: 40px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header .nav-g::before {
+  font-family: "Font Awesome 6 Free";
+  font-size: 18px;
+}
+#header .link1 b {
+  font-size: 22px;
+}
+
 #footer {
   position: fixed;
   z-index: 10000;
@@ -522,4 +574,29 @@ h2 {
   font-family: "Font Awesome 6 Free";
   font-weight: normal;
   font-size: 27px;
+}
+
+.wrap {
+  padding: 0 0 60px;
+  margin-top: 60px;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+h2 {
+  display: none;
+}
+
+.section-g .images-g img {
+  width: 100%;
+}
+
+.jsh {
+  width: 119px;
+  height: 39px;
+  border-radius: 19.5px;
+  background-color: #070322;
+  color: #fff;
 }/*# sourceMappingURL=comm.css.map */
