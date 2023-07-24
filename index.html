@@ -54,6 +54,7 @@
     <link rel="stylesheet" href="./dist/css/comm.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
     <script defer src="./dist/js/comm.js"></script>
   </head>
   <body>
@@ -64,77 +65,12 @@
     </div> -->
 
     <div class="wrap">
-      <header id="header" class="container">
-        <div class="inner">
-          <h1 id="logo" class="logo1">
-            <a href="#">Lazuli</a>
-          </h1>
-
-          <nav class="gnb-wrap">
-            <input
-              type="checkbox"
-              name="gnbNav"
-              id="gnbNav"
-              class="input-burger"
-              checked
-            />
-            <label for="gnbNav" class="label-burger">
-              <span class="blind">전체 메뉴 보기</span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </label>
-            <div id="gnb">
-              <div class="gnb-main">
-                <div class="sec-link">
-                  <h2>네이게이션</h2>
-                 <div class="lst-gnb1">
-                  <a href="#">
-                      <strong class="gnb-maintxt">The House</strong>
-                  <span class="material-icons-outlined icon-c">
-                    arrow_forward_ios
-                    </span>
-                  </a>
-                 </div> 
-  
-                 <div class="lst-gnb1">
-                  <a href="#">
-                      <strong class="gnb-maintxt">High Jewelry</strong>
-                  <span class="material-icons-outlined icon-c">
-                    arrow_forward_ios
-                    </span>
-                  </a>
-                 </div> 
-                </div>
-              </div>
-          </nav>
-
-          <div class="util">
-            <ul class="lst-util">
-              <li>
-                <button class="nav-g btn-search">
-                  <span class="material-icons-outlined">
-                    search
-                    </span>
-                  <span class="blind">검색</span>
-                </button>
-              </li>
-              <li>
-                <a href="#" class="nav-g btn-shopp">
-                  <span class="material-icons-outlined">
-                    shopping_bag
-                    </span>
-                  <span class="blind">장바구니</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-       </div>
+      <header data-include-path="./outline/header.html">
       </header>
   
       <main id="main">
        <section class="section-g sec-bnr">
-        <h2>메인배너</h2>
+        <h2 class="blind">메인배너</h2>
 
       <div class="cont-bnr">
         <a href="#" class="images-g">
@@ -187,7 +123,7 @@
 <div class="slide-wrap">
   <strong class="container tit-serif-strong">Lazuli Bridal</strong>
 <div class="sec-slide">
-  <h2>슬라이드</h2>
+  <h2 class="blind">슬라이드</h2>
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -209,7 +145,7 @@
 
 
 <div class="section2 sec-link">
-  <h2>바로가기</h2>
+  <h2 class="blind">바로가기</h2>
  <div class="cont-slide">
   <a href="#">
     <div class="container cont-link">
@@ -238,7 +174,7 @@
 </div>
 
  <div class="container section3">
-  <h2>상세이미지</h2>
+  <h2 class="blind">상세이미지</h2>
   <div class="cont-item-tit">
   <a href="#">
     <strong class="tit-serif-strong">High Jewelry</strong>
@@ -462,34 +398,14 @@
       
   </div>
  </div>
-
-
 </main>
+<footer data-include-path="./outline/footer.html"></footer>
 
-<footer id="footer" class="container">
-  <div class="footer-util">
-    <ul class="lst-util">
-      <li>
-        <button class="btn-g btn-home">홈</button>
-      </li>
-      <li><button class="btn-g btn-wish">위시리스트</button></li>
-      <li><button class="btn-g btn-bell">알림</button></li>
-      <li><button class="btn-g btn-my">마이페이지</button></li>
-    </ul>
-  </div>
-</footer>
+
+
 </div>
 
 
-
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
 
     
   </body>
