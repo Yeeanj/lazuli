@@ -14,10 +14,54 @@
   }
 }
 
-.herofilter {
-  icon {
+.icon-g {
+  padding: 10% 10%;
+  ul {
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
+  }
+  li {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(235, 235, 235, 0.5);
+    border-radius: 100px;
+    .icon1 {
+      position: absolute;
+      top: 24px;
+      left: 29px;
+    }
+    .icon2 {
+      position: absolute;
+      top: 25px;
+      left: 28px;
+    }
+    .icon3 {
+      position: absolute;
+      top: 27px;
+      left: 25px;
+    }
+    .icon4 {
+      position: absolute;
+      top: 20px;
+      left: 32px;
+    }
+
+    p {
+      margin-top: 100px;
+    }
+    &:hover ::before {
+      content: "";
+      position: absolute;
+      top: -20%;
+      left: -15%;
+      width: 130px;
+      height: 130px;
+      border-radius: 100px;
+      border: 1px solid rgba(141, 141, 141, 0.5);
+    }
   }
 }
