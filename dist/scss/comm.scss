@@ -1,8 +1,24 @@
 @charset "UTF-8";
 @import "fonts", "reset", "main", "contents";
 
-// comm.css - 
+// comm.css -
 // 공통요소 : 헤더, 풋터, 버튼, 아이콘, 박스
+
+//wrap 간격
+.wrap {
+  padding: 0 0 60px;
+  padding-top: 60px;
+}
+// 글넣는곳 좌우간격
+.container {
+  padding: 0 20px;
+}
+// 이미지 가로사이즈
+.section-g {
+  .widths-g img {
+    width: 100%;
+  }
+}
 
 //header
 #header {
@@ -23,7 +39,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  
+
   .lst-util {
     display: flex;
   }
@@ -39,69 +55,66 @@
       &:checked {
         color: #fff;
         // input이 선택 됐을때
-       & + label {
-        
-        .bar {
-         
-       &:nth-child(2) {
-        transform: rotate(45deg) translate(5px, 5px);
-        background-color: #fff;
+        & + label {
+          .bar {
+            &:nth-child(2) {
+              transform: rotate(45deg) translate(5px, 5px);
+              background-color: #fff;
+            }
+            &:nth-child(3) {
+              opacity: 0;
+            }
+            &:nth-child(4) {
+              transform: rotate(-45deg) translate(5px, -5px);
+              background-color: #fff;
+            }
+          }
         }
-       &:nth-child(3) {
-          opacity: 0;
+        & ~ #gnb {
+          left: 0;
         }
-       &:nth-child(4) {
-          transform: rotate(-45deg) translate(5px, -5px);
-          background-color: #fff;
-        }
-       }
       }
-      & ~ #gnb {
-        left: 0;
-        
-
-      }
-     }
-    } 
-   }
-    .label-burger {
+    }
+  }
+  .label-burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40px;
+    height: 60px;
+    .bar {
+      z-index: 10000;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      width: 40px;
-      height: 60px;
-      .bar {
-        z-index: 10000;
-        display: flex;
-        width: 26px;
-        height: 2px;
-        background: rgb(0, 0, 0);
-        transition: all 1s;
-      }
-      span {
-        &:nth-child(3){
+      width: 26px;
+      height: 2px;
+      background: rgb(0, 0, 0);
+      transition: all 1s;
+    }
+    span {
+      &:nth-child(3) {
         margin: 5px 0;
-        }
-      }  
-    }
-    
-    #gnb {
-      position: fixed;
-      top: 0;
-      left: -100%;
-      bottom: 0;
-      width: 375px;
-      padding: 0 20px;
-      background: #070322;
-      display: flex;
-      transition: all 0.4s;
-      .gnb-main {
-        position: absolute;
-        top: 60px;
       }
     }
-   .lst-gnb1 {
+  }
+
+  #gnb {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    width: 100%;
+    max-width: 375px;
+    padding: 0 20px;
+    background: #070322;
+    display: flex;
+    transition: all 0.4s;
+    .gnb-main {
+      position: absolute;
+      top: 60px;
+    }
+  }
+  .lst-gnb1 {
     position: relative;
     .gnb-maintxt {
       padding: 10px;
@@ -119,7 +132,7 @@
     strong {
       color: #ffff;
     }
-   }
+  }
 
   .nav-g {
     width: 40px;
@@ -127,7 +140,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    &::before{
+    &::before {
       font-family: "Font Awesome 6 Free";
       font-size: 18px;
     }
@@ -213,21 +226,6 @@
   }
 }
 
-//wrap 간격
-.wrap {
-  padding: 0 0 60px;
-  margin-top: 60px;
-}
-// 글넣는곳 좌우간격
-.container {
-  padding: 0 20px;
-}
-// 이미지 가로사이즈
-.section-g {
-  .images-g img {
-    width: 100%;
-  }
-}
 // 버튼
 .jsh {
   width: 119px;
