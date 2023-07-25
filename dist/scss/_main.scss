@@ -95,7 +95,8 @@
 .haro,
 .diamond,
 .winston,
-.find {
+.find,
+.eg-ring-sub {
   text-align: center;
   img {
     margin: 100px 0;
@@ -111,6 +112,7 @@
     font-size: 16px;
   }
 }
+
 .button-wrap {
   display: flex;
   justify-content: center;
@@ -134,5 +136,18 @@
   }
   .space-btm {
     margin-bottom: 50px;
+  }
+}
+
+.video2-sub {
+  width: 100%;
+  img {
+    margin: 50px 0px;
+    width: 100%;
+  }
+  .txt-p {
+    text-align: center;
+    margin: 50px 0px 50px;
+    font-size: 16px;
   }
 }

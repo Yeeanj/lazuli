@@ -377,27 +377,31 @@ legend {
 .haro,
 .diamond,
 .winston,
-.find {
+.find,
+.eg-ring-sub {
   text-align: center;
 }
 .haro img,
 .diamond img,
 .winston img,
-.find img {
+.find img,
+.eg-ring-sub img {
   margin: 100px 0;
   width: 100%;
 }
 .haro .txt-strong,
 .diamond .txt-strong,
 .winston .txt-strong,
-.find .txt-strong {
+.find .txt-strong,
+.eg-ring-sub .txt-strong {
   font-size: 30px;
   margin: 300px 0px;
 }
 .haro .txt-p,
 .diamond .txt-p,
 .winston .txt-p,
-.find .txt-p {
+.find .txt-p,
+.eg-ring-sub .txt-p {
   text-align: center;
   margin: 50px 0px 50px;
   font-size: 16px;
@@ -429,8 +433,17 @@ legend {
   margin-bottom: 50px;
 }
 
-.contents {
-  height: 300px;
+.video2-sub {
+  width: 100%;
+}
+.video2-sub img {
+  margin: 50px 0px;
+  width: 100%;
+}
+.video2-sub .txt-p {
+  text-align: center;
+  margin: 50px 0px 50px;
+  font-size: 16px;
 }
 
 .container {
