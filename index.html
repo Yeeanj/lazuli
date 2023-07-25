@@ -75,22 +75,23 @@
             <a href="#">Lazuli</a>
           </h1>
           <nav class="gnb-wrap">
-            <input
-              type="checkbox"
-              name="gnbNav"
-              id="gnbNav"
-              class="input-burger"
-            />
+            <!-- 링크연결없이 자바스크립트 연결하는법 -->
+            <a href="javascript:void(0)">
+              <span class="material-icons-outlined"> menu </span>
+            </a>
           </nav>
           <div class="util">
             <ul class="lst-util">
               <li>
-                <button class="btn-g btn-search">
+                <!-- a:링크연결 button:동작처리 -->
+                <button class="nav-g btn-search">
+                  <span class="material-icons-outlined"> search </span>
                   <span class="blind">검색</span>
                 </button>
               </li>
               <li>
-                <a href="#" class="btn-g btn-shop">
+                <a href="#" class="nav-g btn-shopp">
+                  <span class="material-icons-outlined"> shopping_bag </span>
                   <span class="blind">장바구니</span>
                 </a>
               </li>
@@ -99,41 +100,56 @@
         </div>
       </header>
       <main id="main">
-        <div class="section-g section1">
+        <div class="section-g royal">
           <div class="container text-g">
             <strong class="tit-mini">Royal <br />Adornment</strong>
           </div>
-          <a href="#" class="img-sub1">
-            <img src="./images/s.sub1.jpg" alt="서브이미지1" />
-          </a>
-          <div class="container text-g">
-            <strong class="tit-g">
-              Royal <br />
-              Adornment</strong
-            >
-            <p>
-              라줄리는 왕실만의 고귀한 디자인을<br />
-              최고의 디자이너들이<br />
-              현대의 방식으로 재해석하여,<br />
-              새로운 유행을 선도하는 브랜드입니다.
-            </p>
-            <div class="jsh">
-              <a href="#">자세히 보기</a>
-            </div>
-          </div>
+          <ul>
+            <li>
+              <a href="#" class="img-sub1">
+                <img src="./images/s.sub1.jpg" alt="서브이미지1" />
+              </a>
+            </li>
+            <li>
+              <div class="container text-g">
+                <h2 class="blind">Royal Adornment</h2>
+                <strong class="tit-g">
+                  Royal <br />
+                  Adornment</strong
+                >
+                <p>
+                  라줄리는 왕실만의 고귀한 디자인을<br />
+                  최고의 디자이너들이<br />
+                  현대의 방식으로 재해석하여,<br />
+                  새로운 유행을 선도하는 브랜드입니다.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="jsh">
+                <a href="#">자세히 보기</a>
+              </div>
+            </li>
+          </ul>
         </div>
         <div class="section-g section2">
-          <a href="#" class="img-sub2">
-            <img src="./images/s.sub2.jpg" alt="서브이미지2" />
-          </a>
-          <div class="container text-g">
-            <strong class="tit-g"> Regal<br />Refinement</strong>
-            <p>
-              고귀하며 역사적인,<br />
-              세계 최고의 반열의 디자인을 두 눈으로<br />
-              체험하세요.
-            </p>
-          </div>
+          <ul>
+            <li>
+              <a href="#" class="img-sub2">
+                <img src="./images/s.sub2.jpg" alt="서브이미지2" />
+              </a>
+            </li>
+            <li>
+              <div class="container text-g">
+                <strong class="tit-g"> Regal<br />Refinement</strong>
+                <p>
+                  고귀하며 역사적인,<br />
+                  세계 최고의 반열의 디자인을 두 눈으로<br />
+                  체험하세요.
+                </p>
+              </div>
+            </li>
+          </ul>
           <a href="#" class="img-sub3">
             <img src="./images/s.sub3.jpg" alt="서브이미지3" />
           </a>
@@ -156,9 +172,9 @@
               정교함을 구현합니다.
             </p>
           </div>
-          <div class="container sec-btn">
-            <a href="#">제품 살펴보기</a>
-          </div>
+        </div>
+        <div class="container sec-btn">
+          <button>자세히 보기</button>
         </div>
       </main>
       <footer id="footer" class="container">
