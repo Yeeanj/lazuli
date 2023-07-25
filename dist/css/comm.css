@@ -287,7 +287,8 @@ legend {
   display: block;
 }
 
-.text-g strong {
+.text-g h2,
+strong {
   display: block;
   font-size: 20px;
   font-family: "Noto Serif KR";
