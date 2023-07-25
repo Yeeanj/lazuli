@@ -114,40 +114,59 @@
       top: 60px;
     }
   }
-  .lst-gnb1 {
-    position: relative;
-    .gnb-maintxt {
-      padding: 10px;
-      display: block;
-      font-size: 20px;
-      font-family: sans-serif;
+
+  .sec-link {
+    .link-depth1 > li {
+      position: relative;
     }
-    .icon-c {
-      position: absolute;
-      top: 50%;
-      right: -100%;
-      transform: translate(0, -50%);
+
+    /* 마우스 오버 후 */
+    .link-depth1:hover .link-depth2 {
+      display: block;
+      padding: 5px 0;
+      max-height: 100%;
+    }
+
+    /* 마우스 오버 전 */
+    .link-depth2 {
+      padding: 5px 0;
+      top: 100px;
+      left: 0;
+      right: 0;
+      max-height: 0px;
+      overflow: hidden;
+      transition: all 0.3s;
+    }
+    .link-depth1 a {
       color: #fff;
     }
-    strong {
-      color: #ffff;
+    .link-main {
+      font-family: Noto Serif KR;
+      font-size: 20px;
+      font-weight: 700;
+      position: relative;
+      .icon-c {
+        position: absolute;
+        top: 50%;
+        right: -200%;
+        transform: translate(0, -40%);
+      }
     }
-  }
-
-  .nav-g {
-    width: 40px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &::before {
-      font-family: "Font Awesome 6 Free";
-      font-size: 18px;
+    .link-sub {
+      font-family: Noto Sans KR;
+      font-size: 16px;
+      font-weight: 600;
+      padding-left: 20px;
     }
-  }
-  .link1 {
-    b {
-      font-size: 22px;
+    .link-depth2 {
+      padding-top: 10px;
+    }
+    .link-depth3 {
+      padding-top: 5px;
+      padding-left: 30px;
+      li {
+        padding-top: 10px;
+      }
     }
   }
 }

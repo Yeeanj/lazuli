@@ -494,38 +494,57 @@ legend {
   position: absolute;
   top: 60px;
 }
-#header .lst-gnb1 {
+#header .sec-link {
+  /* 마우스 오버 후 */
+  /* 마우스 오버 전 */
+}
+#header .sec-link .link-depth1 > li {
   position: relative;
 }
-#header .lst-gnb1 .gnb-maintxt {
-  padding: 10px;
+#header .sec-link .link-depth1:hover .link-depth2 {
   display: block;
-  font-size: 20px;
-  font-family: sans-serif;
+  padding: 5px 0;
+  max-height: 100%;
 }
-#header .lst-gnb1 .icon-c {
-  position: absolute;
-  top: 50%;
-  right: -100%;
-  transform: translate(0, -50%);
+#header .sec-link .link-depth2 {
+  padding: 5px 0;
+  top: 100px;
+  left: 0;
+  right: 0;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+#header .sec-link .link-depth1 a {
   color: #fff;
 }
-#header .lst-gnb1 strong {
-  color: white;
+#header .sec-link .link-main {
+  font-family: Noto Serif KR;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
 }
-#header .nav-g {
-  width: 40px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#header .sec-link .link-main .icon-c {
+  position: absolute;
+  top: 50%;
+  right: -200%;
+  transform: translate(0, -40%);
 }
-#header .nav-g::before {
-  font-family: "Font Awesome 6 Free";
-  font-size: 18px;
+#header .sec-link .link-sub {
+  font-family: Noto Sans KR;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 20px;
 }
-#header .link1 b {
-  font-size: 22px;
+#header .sec-link .link-depth2 {
+  padding-top: 10px;
+}
+#header .sec-link .link-depth3 {
+  padding-top: 5px;
+  padding-left: 30px;
+}
+#header .sec-link .link-depth3 li {
+  padding-top: 10px;
 }
 
 #footer {
