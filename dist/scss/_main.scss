@@ -137,12 +137,33 @@
   .space-btm {
     margin-bottom: 50px;
   }
+  .epr-btm {
+    position: relative;
+    margin-bottom: -50px;
+    font-weight: 500;
+    &::before {
+      position: absolute;
+      content: "\f054";
+      font-family: "Font Awesome 6 Free";
+      top: 19px;
+      right: -30%;
+      font-weight: 900;
+    }
+  }
 }
 
 .video2-sub {
   width: 100%;
-  img {
+  .sub1 {
     margin: 50px 0px;
+    width: 100%;
+  }
+  .sub2 {
+    margin: 50px 0px;
+    width: 100%;
+  }
+  .sub3 {
+    margin: 10px 0px 200px;
     width: 100%;
   }
   .txt-p {
