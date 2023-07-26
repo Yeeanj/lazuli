@@ -434,6 +434,20 @@ legend {
 #header .lst-util {
   display: flex;
 }
+#header .nav-g {
+  width: 40px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header .nav-g::before {
+  font-family: "Font Awesome 6 Free";
+  font-size: 18px;
+}
+#header .link1 b {
+  font-size: 22px;
+}
 #header .gnb-wrap .input-burger {
   position: absolute;
   top: 0;
@@ -446,14 +460,14 @@ legend {
   color: #fff;
 }
 #header .gnb-wrap .input-burger:checked + label .bar:nth-child(2) {
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(4px, 7px);
   background-color: #fff;
 }
 #header .gnb-wrap .input-burger:checked + label .bar:nth-child(3) {
   opacity: 0;
 }
 #header .gnb-wrap .input-burger:checked + label .bar:nth-child(4) {
-  transform: rotate(-45deg) translate(5px, -5px);
+  transform: rotate(-45deg) translate(4px, -7px);
   background-color: #fff;
 }
 #header .gnb-wrap .input-burger:checked ~ #gnb {
@@ -471,7 +485,7 @@ legend {
   z-index: 10000;
   display: flex;
   width: 26px;
-  height: 2px;
+  height: 3px;
   background: rgb(0, 0, 0);
   transition: all 1s;
 }
@@ -494,29 +508,38 @@ legend {
   position: absolute;
   top: 60px;
 }
-#header .sec-link {
-  /* 마우스 오버 후 */
-  /* 마우스 오버 전 */
-}
 #header .sec-link .link-depth1 > li {
   position: relative;
 }
-#header .sec-link .link-depth1:hover .link-depth2 {
-  display: block;
-  padding: 5px 0;
+#header .sec-link .on .link-depth2 {
   max-height: 100%;
+  padding-bottom: 50px;
 }
 #header .sec-link .link-depth2 {
-  padding: 5px 0;
+  padding: 0;
   top: 100px;
   left: 0;
   right: 0;
-  max-height: 0px;
+  max-height: 0;
   overflow: hidden;
   transition: all 0.3s;
 }
 #header .sec-link .link-depth1 a {
   color: #fff;
+  position: relative;
+  display: block;
+}
+#header .sec-link .link-depth1 a::after {
+  content: "";
+  top: 0;
+  right: -60px;
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  background-size: 30px 30px;
+  background-position: 30px 30px;
+  background-image: url(/lazuli/images/contents/nav-arrow-right.png);
 }
 #header .sec-link .link-main {
   font-family: Noto Serif KR;
@@ -548,15 +571,17 @@ legend {
 }
 
 #footer {
-  position: fixed;
+  padding-top: 30px;
+}
+#footer .footer-util {
   z-index: 10000;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   background: #fff;
-}
-#footer .footer-util {
   height: 60px;
+  border-top: 1px solid #000;
 }
 #footer .lst-util {
   display: flex;
@@ -580,33 +605,63 @@ legend {
   left: 0;
   right: 0;
   font-family: "Material Icons Outlined";
-  font-size: 32px;
+  font-size: 28px;
   text-align: center;
 }
 #footer .lst-util .btn-home::before {
-  top: -1px;
-  left: -9px;
+  top: 3px;
+  left: -8px;
   content: "\e88a";
   font-family: "Material Symbols Outlined";
   font-weight: 600;
 }
 #footer .lst-util .btn-wish::before {
-  top: 2px;
+  top: 5px;
   content: "\e87e";
 }
 #footer .lst-util .btn-bell::before {
-  top: 1px;
-  left: -5px;
+  top: 4px;
+  left: -3px;
   content: "\e7f4";
   font-weight: 200;
-  font-size: 34px;
+  font-size: 28px;
 }
 #footer .lst-util .btn-my::before {
-  top: 3px;
+  top: 7px;
   content: "\f007";
   font-family: "Font Awesome 6 Free";
   font-weight: normal;
-  font-size: 27px;
+  font-size: 22px;
+}
+
+.footer-wrap {
+  position: relative;
+}
+.footer-wrap a {
+  height: 375px;
+}
+
+.footer-images img {
+  width: 100%;
+}
+
+.footer-txt {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  text-align: center;
+  font-family: "Noto sans KR";
+}
+.footer-txt .footer-txt-intro {
+  font-size: 18px;
+  font-weight: 400;
+}
+.footer-txt .footertxt-tit {
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 32px;
 }
 
 .jsh {
