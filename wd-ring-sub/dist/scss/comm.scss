@@ -54,7 +54,7 @@
 
 //button
 .sec-btn {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   button {
     position: relative;
     display: block;
@@ -63,7 +63,7 @@
     border: 1px solid #000;
     margin: 0 auto;
     line-height: 52px;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     font-weight: 700;
     &::after {
@@ -72,21 +72,22 @@
       right: 20%;
       content: "\e5e1";
       font-family: "Material Icons Outlined";
+      font-size: 14px;
     }
   }
 }
 
 //footer
 #footer {
-  z-index: 10000;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-top: 1px solid #000;
-  background: #fff;
   .footer-util {
+    z-index: 10000;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
     height: 60px;
+    border-top: 1px solid #000;
   }
   .lst-util {
     display: flex;
@@ -146,5 +147,34 @@
         font-size: 22px;
       }
     }
+  }
+}
+.footer-wrap {
+  position: relative;
+  a {
+    height: 375px;
+  }
+}
+.footer-images {
+  img {
+    width: 100%;
+  }
+}
+.footer-txt {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  text-align: center;
+  font-family: "Noto sans KR";
+  .footer-txt-intro {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .footertxt-tit {
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 32px;
   }
 }
