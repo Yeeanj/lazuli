@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart | Lazuli</title>
+    <title>Royal | Lazuli</title>
     <meta
       name="description"
       content="네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요"
@@ -67,6 +67,11 @@
     <script defer src="./dist/js/comm.js"></script>
   </head>
   <body>
+    <!-- <div id="u-skip">
+      <a href="#gnb"><span>주요메뉴 바로가기</span></a>
+      <a href="#main"><span>컨텐츠 바로가기</span></a>
+      <a href="#footer"><span>풋터 바로가기</span></a>
+    </div> -->
     <div class="wrap">
       <header id="header" class="container">
         <div class="inner">
@@ -98,83 +103,106 @@
           </div>
         </div>
       </header>
-      <main id="main" class="container">
-        <div class="section-g reser_service">
-          <div class="reser_intro">
-            <h2 class="text-g reser_tit">멤버에게 제공되는 무료 상담 서비스</h2>
-            <p class="text-g reser_txt">
-              라줄리 멤버가 되어 무료 상담 서비스를 비롯한 <br />
-              다양한 혜택을 누려보세요.
-            </p>
-            <ul class="reser_togo">
-              <li><a href="#">가입하기</a></li>
-              <li>또는</li>
-              <li><a href="#">로그인</a></li>
-            </ul>
-          </div>
-          <div class="reser_info">
-            <span class="text-g reser_guid"
-              >진행 예정 중인 예약/상담이 없습니다.</span
-            >
-            <ul class="reser_lst">
-              <h2 class="text-g reser_lst_tit">상세 내역</h2>
-              <li class="reser-g reser_promotion">
-                프로모션 코드가 있으신가요?
-              </li>
-              <li class="reser-g reser_pay">상품 금액</li>
-              <li class="reser-g reser_cost">예약/상담비</li>
-              <li class="reser-g reser_total">총 결제 금액</li>
-            </ul>
-          </div>
-          <div class="reser-btn">
-            <button>방문 예약하기</button>
-          </div>
-        </div>
-        <div class="section-g item_recom">
-          <h2 class="item_recom_tit">추천 제품</h2>
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <a href="#">
-                  <img
-                    src="./images/main/ocean_biretrograde_automatic_42mm-18k_white_gold-automatic-oceabi42ww002-pi1.png"
-                    alt="Ocean Date Moon Phase 
-                  Automatic 42mm"
-                  />
-                  <span class="swiper_ocean_txt"
-                    >Ocean Date Moon Phase Automatic 42mm</span
-                  >
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#">
-                  <img
-                    src="./images/main/avenue_classic-18k_white_gold-quartz-aveqhm21ww241-pi1.png"
-                    alt="Avenue Classic"
-                  />
-                  <span class="swiper_avenue_txt">Avenue Classic</span>
-                </a>
-              </div>
+      <main id="main">
+        <div class="event-wrap">
+          <div class="event-sec-g section1">
+            <div class="container text-g">
+              <strong class="tit-mini">Royal <br />Adornment</strong>
             </div>
-            <div class="swipwe-btn-g swiper-button-next"></div>
-            <div class="swipwe-btn-g swiper-button-prev"></div>
-            <!-- <div class="swiper-pagination"></div> -->
+            <ul>
+              <li>
+                <a href="#" class="img-sub1">
+                  <img src="./images/contents/sub1_img.jpg" alt="서브이미지1" />
+                </a>
+              </li>
+              <li>
+                <div class="container text-g">
+                  <h2 class="tit-g">
+                    Royal <br />
+                    Adornment
+                  </h2>
+                  <p>
+                    라줄리는 왕실만의 고귀한 디자인을<br />
+                    최고의 디자이너들이<br />
+                    현대의 방식으로 재해석하여,<br />
+                    새로운 유행을 선도하는 브랜드입니다.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="container jsh">
+                  <a href="#">자세히 보기</a>
+                </div>
+              </li>
+            </ul>
           </div>
-          <script>
-            var swiper = new Swiper(".mySwiper", {
-              slidesPerView: 1,
-              spaceBetween: 30,
-              loop: true,
-              pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-              },
-              navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-              },
-            });
-          </script>
+          <div class="event-sec-g section2">
+            <ul>
+              <li>
+                <a href="#" class="img-sub2">
+                  <img
+                    src="./images/contents/sub1_img2.jpg"
+                    alt="서브이미지2"
+                  />
+                </a>
+              </li>
+              <li>
+                <div class="container text-g">
+                  <h2 class="tit-g">Regal<br />Refinement</h2>
+                  <p>
+                    고귀하며 역사적인,<br />
+                    세계 최고의 반열의 디자인을 두 눈으로<br />
+                    체험하세요.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="event-sec-g section3">
+            <ul>
+              <li>
+                <a href="#" class="img-sub3">
+                  <img
+                    src="./images/contents/sub1_img3.jpg"
+                    alt="서브이미지3"
+                  />
+                </a>
+              </li>
+              <li>
+                <div class="container text-g">
+                  <h2 class="tit-g">The<br />Princess<br />Suite</h2>
+                  <p>
+                    라줄리의 디자인은<br />유서깊은 역사와 상직적인 의미로<br />세계
+                    최고로 여겨지는<br />특별한 제품입니다.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="event-sec-g section4">
+            <ul>
+              <li>
+                <a href="#" class="img-sub4">
+                  <img
+                    src="./images/contents/sub1_img4.jpg"
+                    alt="서브이미지4"
+                  />
+                </a>
+              </li>
+              <li>
+                <div class="container text-g">
+                  <h2 class="tit-g">The<br />Princess<br />Necklace</h2>
+                  <p>
+                    사파이어가 측면에<br />배치된 컬러 스타일의 목걸이는<br />왕실의
+                    정교함을 구현합니다.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="container sec-btn">
+            <button>자세히 보기</button>
+          </div>
         </div>
       </main>
       <footer id="footer" class="container">
