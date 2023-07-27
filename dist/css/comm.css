@@ -279,6 +279,7 @@ legend {
   clear: both;
   content: "";
 }
+
 .text-g {
   padding: 0 4%;
   margin: 10px 0 50px;
@@ -392,7 +393,6 @@ legend {
 .sec-high .cont-item-img1 img {
   width: 100%;
   height: 100%;
-
 }
 
 .contents {
@@ -455,11 +455,134 @@ legend {
   font-family: "Font Awesome 6 Free";
   font-size: 18px;
 }
-
-.sec-btn {
+#header .link1 b {
+  font-size: 22px;
+}
+#header .gnb-wrap .input-burger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+#header .gnb-wrap .input-burger:checked {
+  color: #fff;
+}
+#header .gnb-wrap .input-burger:checked + label .bar:nth-child(2) {
+  transform: rotate(45deg) translate(4px, 7px);
+  background-color: #fff;
+}
+#header .gnb-wrap .input-burger:checked + label .bar:nth-child(3) {
+  opacity: 0;
+}
+#header .gnb-wrap .input-burger:checked + label .bar:nth-child(4) {
+  transform: rotate(-45deg) translate(4px, -7px);
+  background-color: #fff;
+}
+#header .gnb-wrap .input-burger:checked ~ #gnb {
+  left: 0;
+}
+#header .label-burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40px;
+  height: 60px;
+}
+#header .label-burger .bar {
+  z-index: 10000;
+  display: flex;
+  width: 26px;
+  height: 3px;
+  background: rgb(0, 0, 0);
+  transition: all 1s;
+}
+#header .label-burger span:nth-child(3) {
+  margin: 5px 0;
+}
+#header #gnb {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  bottom: 0;
+  width: 100%;
+  max-width: 375px;
+  padding: 0 20px;
+  background: #070322;
+  display: flex;
+  transition: all 0.4s;
+}
+#header #gnb .gnb-main {
+  position: absolute;
+  top: 60px;
+}
+#header .sec-link .link-depth1 > li {
+  position: relative;
+}
+#header .sec-link .on .link-depth2 {
+  max-height: 100%;
+  padding-bottom: 50px;
+}
+#header .sec-link .link-depth2 {
+  padding: 0;
+  top: 100px;
+  left: 0;
+  right: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+#header .sec-link .link-depth1 a {
+  color: #fff;
+  position: relative;
+  display: block;
+}
+#header .sec-link .link-depth1 a::after {
+  content: "";
+  top: 0;
+  right: -60px;
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  background-size: 30px 30px;
+  background-position: 30px 30px;
+  background-image: url(/lazuli/images/contents/nav-arrow-right.png);
+}
+#header .sec-link .link-main {
+  font-family: Noto Serif KR;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+}
+#header .sec-link .link-main .icon-c {
+  position: absolute;
+  top: 50%;
+  right: -200%;
+  transform: translate(0, -40%);
+}
+#header .sec-link .link-sub {
+  font-family: Noto Sans KR;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 20px;
+}
+#header .sec-link .link-depth2 {
+  padding-top: 10px;
+}
+#header .sec-link .link-depth3 {
+  padding-top: 5px;
+  padding-left: 30px;
+}
+#header .sec-link .link-depth3 li {
+  padding-top: 10px;
+}
+#header .sec-btn {
   margin-bottom: 20px;
 }
-.sec-btn button {
+#header .sec-btn button {
   position: relative;
   display: block;
   width: 320px;
@@ -471,15 +594,14 @@ legend {
   text-align: center;
   font-weight: 700;
 }
-.sec-btn button::after {
+#header .sec-btn button::after {
   position: absolute;
   top: -2px;
   right: 20%;
   content: "\e5e1";
   font-family: "Material Icons Outlined";
 }
-
-#footer {
+#header #footer {
   z-index: 10000;
   position: fixed;
   bottom: 0;
@@ -488,28 +610,27 @@ legend {
   border-top: 1px solid #000;
   background: #fff;
 }
-#footer .footer-util {
+#header #footer .footer-util {
   height: 60px;
 }
-#footer .lst-util {
+#header #footer .lst-util {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#footer .lst-util li {
+#header #footer .lst-util li {
   width: 72px;
   height: 60px;
   text-align: center;
 }
-#footer .lst-util .btn-g {
+#header #footer .lst-util .btn-g {
   padding-top: 36px;
   position: relative;
   font-size: 12px;
   font-family: "Noto Sans KR";
-
   font-weight: 400;
 }
-#footer .lst-util .btn-g::before {
+#header #footer .lst-util .btn-g::before {
   position: absolute;
   left: 0;
   right: 0;
@@ -517,27 +638,62 @@ legend {
   font-size: 28px;
   text-align: center;
 }
-#footer .lst-util .btn-home::before {
+#header #footer .lst-util .btn-home::before {
   top: 3px;
   left: -8px;
   content: "\e88a";
   font-family: "Material Symbols Outlined";
   font-weight: 600;
 }
-#footer .lst-util .btn-wish::before {
+#header #footer .lst-util .btn-wish::before {
   top: 5px;
   content: "\e87e";
 }
-#footer .lst-util .btn-bell::before {
+#header #footer .lst-util .btn-bell::before {
   top: 4px;
   left: -3px;
   content: "\e7f4";
   font-weight: 200;
   font-size: 28px;
 }
-#footer .lst-util .btn-my::before {
+#header #footer .lst-util .btn-my::before {
   top: 7px;
   content: "\f007";
   font-family: "Font Awesome 6 Free";
   font-weight: normal;
+  font-size: 22px;
+}
+#header .footer-wrap {
+  position: relative;
+}
+#header .footer-wrap a {
+  height: 375px;
+}
+#header .footer-images img {
+  width: 100%;
+}
+#header .footer-txt {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  text-align: center;
+  font-family: "Noto sans KR";
+}
+#header .footer-txt .footer-txt-intro {
+  font-size: 18px;
+  font-weight: 400;
+}
+#header .footer-txt .footertxt-tit {
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 32px;
+}
+#header .jsh {
+  width: 119px;
+  height: 39px;
+  border-radius: 19.5px;
+  background-color: #070322;
+  color: #fff;
 }/*# sourceMappingURL=comm.css.map */
