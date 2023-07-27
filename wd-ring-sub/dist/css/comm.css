@@ -138,7 +138,7 @@ body {
   background: #fff;
   font-size: 14px;
   line-height: 1.5;
-  font-family: "Noto Sans KR", "Noto Serif KR", "Malgun Gothic", "맑은 고딕", serif, sans-serif;
+  font-family: "Noto Sans KR", "Noto Serif KR", "Malgun Gothic", "맑은 고딕", sans-serif, serif;
   color: #111;
 }
 
@@ -180,7 +180,7 @@ input[type=password] {
 /* skipnavigation */
 #u-skip {
   position: relative;
-  z-index: 30000;
+  z-index: 3000;
 }
 #u-skip a {
   position: absolute;
@@ -279,137 +279,111 @@ legend {
   clear: both;
   content: "";
 }
+
+.section-g a {
+  height: 345px;
+}
+.section-g img {
+  width: 100%;
+  background: #fdfdfd;
+  margin: 30px 0;
+}
+
 .text-g {
-  padding: 0 4%;
-  margin: 10px 0 50px;
-}
-.text-g .tit-bnr {
-  font-size: 50px;
-  line-height: 60px;
   display: block;
-  margin-top: 20px;
+  margin: 0 auto;
+  font-family: "Noto Serif KR";
 }
-.text-g p {
+
+.wdring_intro .tit_mini {
+  width: 220px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.wdring_intro .item_wdring {
+  width: 270px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+.wdring_intro .item_wdring::after {
+  content: "";
   display: block;
+  width: 120px;
+  margin: 0 auto;
+  padding-top: 10px;
+  border-bottom: 4px solid #111;
+}
+.wdring_intro .wdring_intro_txt {
+  width: 300px;
+  word-break: keep-all;
+  text-align: center;
+  font-family: "Noto Sans KR";
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.wdring_intro .sec-btn-raser button {
+  display: block;
+  width: 320px;
+  height: 52px;
+  border: 1px solid #000;
+  margin: 0 auto;
+  line-height: 52px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.lst_wdring::after {
+  content: "";
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  margin: 30px;
+  border-bottom: 1px solid #111;
+}
+.lst_wdring .tit_wdring_lazuli {
+  display: block;
+  width: 250px;
+  text-align: center;
+  font-size: 25px;
+  padding: 30px 0;
+}
+.lst_wdring .image_togo {
   margin-bottom: 30px;
 }
 
-.tit-serif-strong {
-  display: block;
-  font-size: 32px;
-  margin-top: 20px;
-}
-
-.tit-serif-p {
-  font-size: 16px;
-}
-
-.slide-wrap .sec-slide {
-  margin-top: 20px;
-  background-color: #999;
-}
-.slide-wrap .swiper {
-  width: 90%;
-  height: 100%;
-}
-.slide-wrap .swiper-slide {
+.wd-text-g {
+  width: 275px;
   text-align: center;
   font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-weight: 900;
+  padding-bottom: 20px;
 }
-.slide-wrap .swiper-slide img {
+
+.wd_btn_txt button {
+  position: relative;
   display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 50px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
-.slide-wrap .lst-goto {
-  margin-top: 40px;
-}
-.slide-wrap .lst-goto .cont-link {
-  margin-top: 20px;
-}
-.slide-wrap .lst-goto a {
-  display: block;
-  position: relative;
-}
-.slide-wrap .lst-goto .text2 {
-  font-size: 22px;
-  border-bottom: 3px solid #000;
-  padding-bottom: 10px;
-}
-.slide-wrap .lst-goto p {
-  font-size: 16px;
-  padding-top: 20px;
-}
-.slide-wrap .lst-goto .icon-a {
+.wd_btn_txt button::after {
   position: absolute;
-  top: 10px;
-  right: 4%;
-}
-
-.sec-high .cont-item-tit a {
-  position: relative;
-}
-.sec-high .cont-item-tit .icon-b {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translate(0, -50%);
-}
-.sec-high .cont-item {
-  margin-top: 10px;
-}
-.sec-high .cont-item ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.sec-high .cont-item li {
-  width: calc(50% - 3px);
-  margin-bottom: 6px;
-}
-.sec-high .cont-item-img1 {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
-.sec-high .cont-item-img1::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: inherit;
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  background-color: rgba(0, 0, 0, 0.03);
-}
-.sec-high .cont-item-img1 img {
-  width: 100%;
-  height: 100%;
-
-}
-
-.contents {
-  height: 300px;
-}
-
-.wrap {
-  padding: 0 0 60px;
-  padding-top: 60px;
+  top: 3px;
+  left: 100%;
+  content: "\e5e1";
+  font-family: "Material Icons Outlined";
+  font-size: 12px;
 }
 
 .container {
-  padding: 0 20px;
-}
-
-.section-g .widths-g img {
-  width: 100%;
+  padding: 0 4%;
 }
 
 .wrap {
@@ -418,7 +392,7 @@ legend {
 }
 
 #header {
-  z-index: 10005;
+  z-index: 10000;
   position: fixed;
   top: 0;
   left: 0;
@@ -457,7 +431,7 @@ legend {
 }
 
 .sec-btn {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .sec-btn button {
   position: relative;
@@ -467,7 +441,7 @@ legend {
   border: 1px solid #000;
   margin: 0 auto;
   line-height: 52px;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   font-weight: 700;
 }
@@ -477,19 +451,18 @@ legend {
   right: 20%;
   content: "\e5e1";
   font-family: "Material Icons Outlined";
+  font-size: 14px;
 }
 
-#footer {
+#footer .footer-util {
   z-index: 10000;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  border-top: 1px solid #000;
   background: #fff;
-}
-#footer .footer-util {
   height: 60px;
+  border-top: 1px solid #000;
 }
 #footer .lst-util {
   display: flex;
@@ -506,7 +479,6 @@ legend {
   position: relative;
   font-size: 12px;
   font-family: "Noto Sans KR";
-
   font-weight: 400;
 }
 #footer .lst-util .btn-g::before {
@@ -540,4 +512,35 @@ legend {
   content: "\f007";
   font-family: "Font Awesome 6 Free";
   font-weight: normal;
+  font-size: 22px;
+}
+
+.footer-wrap {
+  position: relative;
+}
+.footer-wrap a {
+  height: 375px;
+}
+
+.footer-images img {
+  width: 100%;
+}
+
+.footer-txt {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  text-align: center;
+  font-family: "Noto sans KR";
+}
+.footer-txt .footer-txt-intro {
+  font-size: 18px;
+  font-weight: 400;
+}
+.footer-txt .footertxt-tit {
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 32px;
 }/*# sourceMappingURL=comm.css.map */

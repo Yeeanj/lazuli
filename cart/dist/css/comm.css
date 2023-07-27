@@ -138,7 +138,7 @@ body {
   background: #fff;
   font-size: 14px;
   line-height: 1.5;
-  font-family: "Noto Sans KR", "Noto Serif KR", "Malgun Gothic", "맑은 고딕", serif, sans-serif;
+  font-family: "Noto Sans KR", "Noto Serif KR", "Malgun Gothic", "맑은 고딕", sans-serif, serif;
   color: #111;
 }
 
@@ -180,7 +180,7 @@ input[type=password] {
 /* skipnavigation */
 #u-skip {
   position: relative;
-  z-index: 30000;
+  z-index: 3000;
 }
 #u-skip a {
   position: absolute;
@@ -279,137 +279,109 @@ legend {
   clear: both;
   content: "";
 }
-.text-g {
-  padding: 0 4%;
-  margin: 10px 0 50px;
-}
-.text-g .tit-bnr {
-  font-size: 50px;
-  line-height: 60px;
-  display: block;
-  margin-top: 20px;
-}
-.text-g p {
-  display: block;
-  margin-bottom: 30px;
+
+.section-g img {
+  width: 100%;
+  background: #fdfdfd;
+  margin: 30px 0;
 }
 
-.tit-serif-strong {
+.reser_service .reser_intro {
   display: block;
-  font-size: 32px;
-  margin-top: 20px;
+  border-top: 1px solid #f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
+  padding: 10px 0;
+  margin: 90px 0 30px;
 }
-
-.tit-serif-p {
+.reser_service .reser_intro .reser_tit {
+  display: block;
+  font-size: 20px;
+}
+.reser_service .reser_intro .reser_txt {
+  padding: 5px 0;
   font-size: 16px;
 }
+.reser_service .reser_intro .reser_togo {
+  display: flex;
+}
+.reser_service .reser_intro .reser_togo li {
+  display: block;
+  padding: 0 3px;
+}
+.reser_service .reser_intro .reser_togo li a {
+  display: block;
+}
+.reser_service .reser_intro .reser_togo li a:hover {
+  border-bottom: 1px solid #111;
+}
 
-.slide-wrap .sec-slide {
-  margin-top: 20px;
-  background-color: #999;
+.reser_info {
+  display: block;
+  border-top: 1px solid #f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
+  padding: 10px 0;
 }
-.slide-wrap .swiper {
-  width: 90%;
-  height: 100%;
-}
-.slide-wrap .swiper-slide {
+.reser_info .reser_guid {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
   text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.slide-wrap .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.slide-wrap .lst-goto {
-  margin-top: 40px;
-}
-.slide-wrap .lst-goto .cont-link {
-  margin-top: 20px;
-}
-.slide-wrap .lst-goto a {
-  display: block;
-  position: relative;
-}
-.slide-wrap .lst-goto .text2 {
-  font-size: 22px;
-  border-bottom: 3px solid #000;
-  padding-bottom: 10px;
-}
-.slide-wrap .lst-goto p {
-  font-size: 16px;
-  padding-top: 20px;
-}
-.slide-wrap .lst-goto .icon-a {
-  position: absolute;
-  top: 10px;
-  right: 4%;
+  margin: 25px 0;
 }
 
-.sec-high .cont-item-tit a {
+.reser-g {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.reser_lst {
+  line-height: 2;
+}
+.reser_lst .reser_lst_tit {
+  font-size: 20px;
+  font-weight: 600;
+}
+.reser_lst .reser_cost {
   position: relative;
 }
-.sec-high .cont-item-tit .icon-b {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translate(0, -50%);
-}
-.sec-high .cont-item {
-  margin-top: 10px;
-}
-.sec-high .cont-item ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.sec-high .cont-item li {
-  width: calc(50% - 3px);
-  margin-bottom: 6px;
-}
-.sec-high .cont-item-img1 {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
-.sec-high .cont-item-img1::after {
-  content: "";
+.reser_lst .reser_cost::after {
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
-  bottom: 0;
-  border-radius: inherit;
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  background-color: rgba(0, 0, 0, 0.03);
+  content: "무료";
+  font-size: 16px;
 }
-.sec-high .cont-item-img1 img {
-  width: 100%;
-  height: 100%;
 
+.reser-btn {
+  margin: 30px 0;
+}
+.reser-btn button {
+  display: block;
+  width: 350px;
+  height: 62px;
+  background: #eee;
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.item_recom {
+  margin-bottom: 30px;
+}
+.item_recom .swiper_ocean_txt,
+.item_recom .swiper_avenue_txt {
+  font-size: 16px;
+  font-family: "Noto Serif KR";
+  font-weight: 500;
+  padding-bottom: 15px;
 }
 
 .contents {
   height: 300px;
 }
 
-.wrap {
-  padding: 0 0 60px;
-  padding-top: 60px;
-}
-
 .container {
-  padding: 0 20px;
-}
-
-.section-g .widths-g img {
-  width: 100%;
+  padding: 0 4%;
 }
 
 .wrap {
@@ -418,7 +390,7 @@ legend {
 }
 
 #header {
-  z-index: 10005;
+  z-index: 10000;
   position: fixed;
   top: 0;
   left: 0;
@@ -506,7 +478,6 @@ legend {
   position: relative;
   font-size: 12px;
   font-family: "Noto Sans KR";
-
   font-weight: 400;
 }
 #footer .lst-util .btn-g::before {
@@ -540,4 +511,5 @@ legend {
   content: "\f007";
   font-family: "Font Awesome 6 Free";
   font-weight: normal;
+  font-size: 22px;
 }/*# sourceMappingURL=comm.css.map */

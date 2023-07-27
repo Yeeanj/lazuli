@@ -1,0 +1,108 @@
+// main
+.section-g {
+  a {
+    // display: block;
+    height: 345px;
+  }
+  img {
+    width: 100%;
+    background: #fdfdfd;
+    margin: 30px 0;
+  }
+}
+.text-g {
+  display: block;
+  margin: 0 auto;
+  font-family: "Noto Serif KR";
+}
+.wdring_intro {
+  .tit_mini {
+    width: 220px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  .item_wdring {
+    width: 270px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    &::after {
+      content: "";
+      display: block;
+      width: 120px;
+      margin: 0 auto;
+      padding-top: 10px;
+      border-bottom: 4px solid #111;
+    }
+  }
+  .wdring_intro_txt {
+    width: 300px;
+    word-break: keep-all;
+    text-align: center;
+    font-family: "Noto Sans KR";
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .sec-btn-raser {
+    button {
+      display: block;
+      width: 320px;
+      height: 52px;
+      border: 1px solid #000;
+      margin: 0 auto;
+      line-height: 52px;
+      font-size: 14px;
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+  }
+}
+.lst_wdring {
+  &::after {
+    content: "";
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin: 30px;
+    border-bottom: 1px solid #111;
+  }
+  .tit_wdring_lazuli {
+    display: block;
+    width: 250px;
+    text-align: center;
+    font-size: 25px;
+    padding: 30px 0;
+  }
+  .image_togo {
+    margin-bottom: 30px;
+  }
+}
+.wd-text-g {
+  width: 275px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 900;
+  padding-bottom: 20px;
+}
+.wd_btn_txt {
+  button {
+    position: relative;
+    display: block;
+    width: 50px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    &::after {
+      position: absolute;
+      top: 3px;
+      left: 100%;
+      content: "\e5e1";
+      font-family: "Material Icons Outlined";
+      font-size: 12px;
+    }
+  }
+}
