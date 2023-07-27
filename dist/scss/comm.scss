@@ -1,12 +1,23 @@
-@charset "UFT-8";
-@import "mixin", "variables", "fonts", "reset", "main", "contents";
+@charset "UTF-8";
+@import "fonts", "reset", "main", "contents";
 
-// comm.scss -
+// comm.css -
 // 공통요소 : 헤더, 풋터, 버튼, 아이콘, 박스
 
-// 공통
+//wrap 간격
+.wrap {
+  padding: 0 0 60px;
+  padding-top: 60px;
+}
+// 글넣는곳 좌우간격
 .container {
-  padding: 0 4%;
+  padding: 0 20px;
+}
+// 이미지 가로사이즈
+.section-g {
+  .widths-g img {
+    width: 100%;
+  }
 }
 .wrap {
   padding: 0 0 60px;
@@ -15,7 +26,7 @@
 
 //header
 #header {
-  z-index: 10000;
+  z-index: 10005;
   position: fixed;
   top: 0;
   left: 0;
@@ -50,6 +61,151 @@
       font-size: 18px;
     }
   }
+
+  .link1 {
+    b {
+      font-size: 22px;
+    }
+  }
+
+  .gnb-wrap {
+    .input-burger {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      opacity: 0;
+      // css형식 .input-burger:checked + label .bar {}
+      &:checked {
+        color: #fff;
+        // input이 선택 됐을때
+        & + label {
+          .bar {
+            &:nth-child(2) {
+              transform: rotate(45deg) translate(4px, 7px);
+              background-color: #fff;
+            }
+            &:nth-child(3) {
+              opacity: 0;
+            }
+            &:nth-child(4) {
+              transform: rotate(-45deg) translate(4px, -7px);
+              background-color: #fff;
+            }
+          }
+        }
+        & ~ #gnb {
+          left: 0;
+        }
+      }
+    }
+  }
+  .label-burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40px;
+    height: 60px;
+    .bar {
+      z-index: 10000;
+      display: flex;
+      width: 26px;
+      height: 3px;
+      background: rgb(0, 0, 0);
+      transition: all 1s;
+    }
+    span {
+      &:nth-child(3) {
+        margin: 5px 0;
+      }
+    }
+  }
+
+  #gnb {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    width: 100%;
+    max-width: 375px;
+    padding: 0 20px;
+    background: #070322;
+    display: flex;
+    transition: all 0.4s;
+    .gnb-main {
+      position: absolute;
+      top: 60px;
+    }
+  }
+
+  .sec-link {
+    .link-depth1 > li {
+      position: relative;
+    }
+
+    .on {
+      .link-depth2 {
+        max-height: 100%;
+        padding-bottom: 50px;
+      }
+    }
+
+    .link-depth2 {
+      padding: 0;
+      top: 100px;
+      left: 0;
+      right: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.3s;
+    }
+    .link-depth1 a {
+      color: #fff;
+      position: relative;
+      display: block;
+      &::after {
+        content: "";
+        top: 0;
+        right: -60px;
+        width: 30px;
+        height: 30px;
+        display: block;
+        position: absolute;
+        background-size: 30px 30px;
+        background-position: 30px 30px;
+        background-image: url(/lazuli/images/contents/nav-arrow-right.png);
+      }
+    }
+    .link-main {
+      font-family: Noto Serif KR;
+      font-size: 20px;
+      font-weight: 700;
+      position: relative;
+      .icon-c {
+        position: absolute;
+        top: 50%;
+        right: -200%;
+        transform: translate(0, -40%);
+      }
+    }
+    .link-sub {
+      font-family: Noto Sans KR;
+      font-size: 16px;
+      font-weight: 600;
+      padding-left: 20px;
+    }
+    .link-depth2 {
+      padding-top: 10px;
+    }
+    .link-depth3 {
+      padding-top: 5px;
+      padding-left: 30px;
+      li {
+        padding-top: 10px;
+      }
+
 }
 
 //button
@@ -72,6 +228,7 @@
       right: 20%;
       content: "\e5e1";
       font-family: "Material Icons Outlined";
+
     }
   }
 }
@@ -147,4 +304,41 @@
       }
     }
   }
+}
+.footer-wrap {
+  position: relative;
+  a {
+    height: 375px;
+  }
+}
+.footer-images {
+  img {
+    width: 100%;
+  }
+}
+.footer-txt {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  text-align: center;
+  font-family: "Noto sans KR";
+  .footer-txt-intro {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .footertxt-tit {
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 32px;
+  }
+}
+// 버튼
+.jsh {
+  width: 119px;
+  height: 39px;
+  border-radius: 19.5px;
+  background-color: #070322;
+  color: #fff;
 }
