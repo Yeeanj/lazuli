@@ -870,6 +870,28 @@ strong {
   font-size: 20px;
   font-weight: 600;
 }
+.reser_lst .reser_total {
+  position: relative;
+}
+.reser_lst .reser_total::after {
+  position: absolute;
+  content: "―";
+  top: 1px;
+  right: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+.reser_lst .reser_pay {
+  position: relative;
+}
+.reser_lst .reser_pay::after {
+  position: absolute;
+  content: "―";
+  top: 1px;
+  right: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
 .reser_lst .reser_cost {
   position: relative;
 }

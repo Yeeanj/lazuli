@@ -269,6 +269,28 @@ strong {
     font-size: 20px;
     font-weight: 600;
   }
+  .reser_total {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "―";
+      top: 1px;
+      right: 0;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+  .reser_pay {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "―";
+      top: 1px;
+      right: 0;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
   .reser_cost {
     position: relative;
     &::after {
