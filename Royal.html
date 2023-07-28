@@ -65,6 +65,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script defer src="./dist/js/comm.js"></script>
+    <script defer src="./dist/js/include.js"></script>
   </head>
   <body>
     <!-- <div id="u-skip">
@@ -73,55 +74,31 @@
       <a href="#footer"><span>풋터 바로가기</span></a>
     </div> -->
     <div class="wrap">
-      <header id="header" class="container">
-        <div class="inner">
-          <h1 id="logo" class="logo1">
-            <a href="#">Lazuli</a>
-          </h1>
-          <nav class="gnb-wrap">
-            <!-- 링크연결없이 자바스크립트 연결하는법 -->
-            <a href="javascript:void(0)">
-              <span class="material-icons-outlined"> menu </span>
-            </a>
-          </nav>
-          <div class="util">
-            <ul class="lst-util">
-              <li>
-                <!-- a:링크연결 button:동작처리 -->
-                <button class="nav-g btn-search">
-                  <span class="material-icons-outlined"> search </span>
-                  <span class="blind">검색</span>
-                </button>
-              </li>
-              <li>
-                <a href="#" class="nav-g btn-shopp">
-                  <span class="material-icons-outlined"> shopping_bag </span>
-                  <span class="blind">장바구니</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </header>
+      <header data-include-path="./outline/header.html"></header>
       <main id="main">
-        <div class="event-wrap">
-          <div class="event-sec-g section1">
-            <div class="container text-g">
-              <strong class="tit-mini">Royal <br />Adornment</strong>
-            </div>
+        <div class="event-royal-wrap">
+          <div class="container royal-txt-g">
+            <strong class="royal_tit_mini">Royal <br />Adornment</strong>
+          </div>
+          <div class="event-royalsec-g sec-royal_main">
             <ul>
               <li>
-                <a href="#" class="img-sub1">
-                  <img src="./images/contents/sub1_img.jpg" alt="서브이미지1" />
-                </a>
+                <div class="sub_royal_images">
+                  <a href="#">
+                    <img
+                      src="./images/contents/sub1_img.jpg"
+                      alt="Royal Adornment"
+                    />
+                  </a>
+                </div>
               </li>
               <li>
-                <div class="container text-g">
-                  <h2 class="tit-g">
+                <div class="container royal-txt-g">
+                  <h2 class="royal-tit-g">
                     Royal <br />
                     Adornment
                   </h2>
-                  <p>
+                  <p class="royal-txt-nomal-g">
                     라줄리는 왕실만의 고귀한 디자인을<br />
                     최고의 디자이너들이<br />
                     현대의 방식으로 재해석하여,<br />
@@ -130,26 +107,26 @@
                 </div>
               </li>
               <li>
-                <div class="container jsh">
+                <div class="container royal-sec-btn">
                   <a href="#">자세히 보기</a>
                 </div>
               </li>
             </ul>
           </div>
-          <div class="event-sec-g section2">
-            <ul>
+          <div class="event-royalsec-g sec-royal-contents">
+            <ul class="sec-royal-sub-regal">
               <li>
-                <a href="#" class="img-sub2">
+                <div class="sub_royal_images">
                   <img
                     src="./images/contents/sub1_img2.jpg"
-                    alt="서브이미지2"
+                    alt="Regal Refinement"
                   />
-                </a>
+                </div>
               </li>
               <li>
-                <div class="container text-g">
-                  <h2 class="tit-g">Regal<br />Refinement</h2>
-                  <p>
+                <div class="container royal-txt-g">
+                  <h2 class="royal-tit-g">Regal<br />Refinement</h2>
+                  <p class="royal-txt-nomal-g">
                     고귀하며 역사적인,<br />
                     세계 최고의 반열의 디자인을 두 눈으로<br />
                     체험하세요.
@@ -157,42 +134,36 @@
                 </div>
               </li>
             </ul>
-          </div>
-          <div class="event-sec-g section3">
-            <ul>
+            <ul class="sec-royal-sub-suite">
               <li>
-                <a href="#" class="img-sub3">
+                <div class="sub_royal_images">
                   <img
                     src="./images/contents/sub1_img3.jpg"
-                    alt="서브이미지3"
+                    alt="The Princess Suite"
                   />
-                </a>
+                </div>
               </li>
               <li>
-                <div class="container text-g">
-                  <h2 class="tit-g">The<br />Princess<br />Suite</h2>
-                  <p>
+                <div class="container royal-txt-g">
+                  <h2 class="royal-tit-g">The<br />Princess<br />Suite</h2>
+                  <p class="royal-txt-nomal-g">
                     라줄리의 디자인은<br />유서깊은 역사와 상직적인 의미로<br />세계
                     최고로 여겨지는<br />특별한 제품입니다.
                   </p>
                 </div>
               </li>
             </ul>
-          </div>
-          <div class="event-sec-g section4">
-            <ul>
-              <li>
-                <a href="#" class="img-sub4">
-                  <img
-                    src="./images/contents/sub1_img4.jpg"
-                    alt="서브이미지4"
-                  />
-                </a>
+            <ul class="sec-royal-sub-nec">
+              <li class="sub_royal_images">
+                <img
+                  src="./images/contents/sub1_img4.jpg"
+                  alt="The Princess Necklace"
+                />
               </li>
               <li>
-                <div class="container text-g">
-                  <h2 class="tit-g">The<br />Princess<br />Necklace</h2>
-                  <p>
+                <div class="container royal-txt-g">
+                  <h2 class="royal-tit-g">The<br />Princess<br />Necklace</h2>
+                  <p class="royal-txt-nomal-g">
                     사파이어가 측면에<br />배치된 컬러 스타일의 목걸이는<br />왕실의
                     정교함을 구현합니다.
                   </p>
@@ -205,18 +176,7 @@
           </div>
         </div>
       </main>
-      <footer id="footer" class="container">
-        <div class="footer-util">
-          <ul class="lst-util">
-            <li>
-              <button class="btn-g btn-home">홈</button>
-            </li>
-            <li><button class="btn-g btn-wish">위시리스트</button></li>
-            <li><button class="btn-g btn-bell">알림</button></li>
-            <li><button class="btn-g btn-my">마이페이지</button></li>
-          </ul>
-        </div>
-      </footer>
+      <footer data-include-path="./outline/footer.html"></footer>
     </div>
   </body>
 </html>

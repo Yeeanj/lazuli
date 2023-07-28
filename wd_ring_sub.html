@@ -65,6 +65,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script defer src="./dist/js/comm.js"></script>
+    <script src="./dist/js/include.js"></script>
   </head>
   <body>
     <!-- <div id="u-skip">
@@ -73,47 +74,18 @@
       <a href="#footer"><span>풋터 바로가기</span></a>
     </div> -->
     <div class="wrap">
-      <header id="header" class="container">
-        <div class="inner">
-          <h1 id="logo" class="logo1">
-            <a href="#">Lazuli</a>
-          </h1>
-          <nav class="gnb-wrap">
-            <!-- 링크연결없이 자바스크립트 연결하는법 -->
-            <a href="javascript:void(0)">
-              <span class="material-icons-outlined"> menu </span>
-            </a>
-          </nav>
-          <div class="util">
-            <ul class="lst-util">
-              <li>
-                <!-- a:링크연결 button:동작처리 -->
-                <button class="nav-g btn-search">
-                  <span class="material-icons-outlined"> search </span>
-                  <span class="blind">검색</span>
-                </button>
-              </li>
-              <li>
-                <a href="#" class="nav-g btn-shopp">
-                  <span class="material-icons-outlined"> shopping_bag </span>
-                  <span class="blind">장바구니</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </header>
+      <header data-include-path="./outline/header.html"></header>
       <main id="main" class="container">
         <!-- 아이템 상세 -->
         <div class="wdring-wrap">
-          <div class="event-sec-g wdring_intro">
+          <div class="event-wd-sec-g wdring_intro">
             <img src="./images/contents/wdring_sub_info1.png" alt="wdring" />
-            <p class="text-g tit_mini">Classic Bands by Lazuli</p>
-            <h2 class="text-g item_wdring">
+            <p class="wd-txt-g wdring_tit_mini">Classic Bands by Lazuli</p>
+            <h2 class="wd-txt-g item_wdring_tit">
               Infinite Wedding Band <br />
               by Lazuli
             </h2>
-            <p class="text-g wdring_intro_txt">
+            <p class="wd-txt-g wdring_intro_txt">
               세상에서 가장 견고한 순수 플래티넘으로 만들어진 라줄리의 5.5mm
               웨딩반지는 사랑을 표현할 수 있는 완벽한 방법입니다.<br /><br />
               독특하며 모던한 모양의 웨딩반지는 <br />가장 강력하고 영원한
@@ -133,8 +105,8 @@
             </ul>
           </div>
           <!-- 아이템 리스트 -->
-          <div class="event-sec-g lst_wdring">
-            <h2 class="text-g tit_wdring_lazuli">Lazuli Suggests</h2>
+          <div class="event-wd-sec-g lst_wdring">
+            <h2 class="wd-txt-g tit_wdring_lazuli">Lazuli Suggests</h2>
             <ul class="image_togo">
               <li class="wdring_images_lst">
                 <a href="#">
@@ -142,7 +114,7 @@
                     src="./images/contents/wdring_platinum.png"
                     alt="Platinum Wedding Band"
                   />
-                  <p class="text-g wd-text-g platinum_wdring">
+                  <p class="wd-txt-g wd-text-g platinum_wdring">
                     Platinum Wedding Band
                   </p>
                 </a>
@@ -151,12 +123,13 @@
                 </div>
               </li>
               <li class="wdring_images_lst">
-                <a href="#"
-                  ><img
+                <a href="#">
+                  <img
                     src="./images/contents/wdring_milgrain.png"
                     alt="Milgrain Wedding Band"
-                /></a>
-                <p class="text-g wd-text-g milgrain_wdring">
+                  />
+                </a>
+                <p class="wd-txt-g wd-text-g milgrain_wdring">
                   Milgrain Wedding Band
                 </p>
                 <div class="wd_btn_txt">
@@ -164,13 +137,12 @@
                 </div>
               </li>
               <li class="wdring_images_lst">
-                <a href="#"
-                  ><img
-                    src=""
-                    alt="Princess-Cut Single Diamond
-                    Wedding Band"
+                <a href="#">
+                  <img
+                    src="./images/contents/wdring_princess.png"
+                    alt="Princess-Cut Single Diamond"
                 /></a>
-                <p class="text-g wd-text-g princess_wdring">
+                <p class="wd-txt-g wd-text-g princess_wdring">
                   Princess-Cut Single Diamond Wedding Band
                 </p>
                 <div class="wd_btn_txt">
@@ -181,32 +153,21 @@
           </div>
         </div>
       </main>
-      <footer id="footer">
-        <div class="footer-wrap">
-          <a href="#" class="footer-images">
-            <img src="./images/comm/footer-image.jpg" alt="매장사진" />
-          </a>
-          <div class="text-g footer-txt">
-            <h2 class="footertxt-tit">오시는 길</h2>
-            <p class="footer-txt-intro">
-              늘 여러분 곁에 있습니다. 라줄리만의 특별한 세계로 초대합니다.
-            </p>
-          </div>
-          <div class="container sec-btn">
-            <button>자세히 보기</button>
-          </div>
+      <div class="footer-info">
+        <a href="#" class="footer-images">
+          <img src="./images/comm/footer-image.jpg" alt="매장사진" />
+        </a>
+        <div class="footer-info-txt">
+          <h2 class="footertxt-tit">오시는 길</h2>
+          <p class="footer-txt-intro">
+            늘 여러분 곁에 있습니다. 라줄리만의 특별한 세계로 초대합니다.
+          </p>
         </div>
-        <div class="footer-util container">
-          <ul class="lst-util">
-            <li>
-              <button class="btn-g btn-home">홈</button>
-            </li>
-            <li><button class="btn-g btn-wish">위시리스트</button></li>
-            <li><button class="btn-g btn-bell">알림</button></li>
-            <li><button class="btn-g btn-my">마이페이지</button></li>
-          </ul>
+        <div class="sec-btn-footer">
+          <button>매장찾기</button>
         </div>
-      </footer>
+      </div>
+      <footer data-include-path="./outline/footer.html"></footer>
     </div>
   </body>
 </html>
