@@ -1,6 +1,8 @@
 @charset "UTF-8";
 @import "fonts", "reset", "main", "contents";
 
+// comm.scss로 작업한 영역=ocean
+
 // comm.css -
 // 공통요소 : 헤더, 풋터, 버튼, 아이콘, 박스
 
@@ -56,6 +58,185 @@ header {
     .btn-burger::before {
       content: "\f0c9";
       font-weight: 900;
+    }
+  }
+}
+// header2
+#header {
+  z-index: 10005;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #000;
+  background-color: #fff;
+  .inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Libre Bodoni", serif;
+    font-weight: 700;
+    font-size: 32px;
+  }
+  .lst-util {
+    display: flex;
+  }
+  .nav-g {
+    width: 40px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::before {
+      font-family: "Font Awesome 6 Free";
+      font-size: 18px;
+    }
+  }
+
+  .link1 {
+    b {
+      font-size: 22px;
+    }
+  }
+
+  .gnb-wrap {
+    .input-burger {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      opacity: 0;
+      // css형식 .input-burger:checked + label .bar {}
+      &:checked {
+        color: #fff;
+        // input이 선택 됐을때
+        & + label {
+          .bar {
+            &:nth-child(2) {
+              transform: rotate(45deg) translate(4px, 7px);
+              background-color: #fff;
+            }
+            &:nth-child(3) {
+              opacity: 0;
+            }
+            &:nth-child(4) {
+              transform: rotate(-45deg) translate(4px, -7px);
+              background-color: #fff;
+            }
+          }
+        }
+        & ~ #gnb {
+          left: 0;
+        }
+      }
+    }
+  }
+  .label-burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40px;
+    height: 60px;
+    .bar {
+      z-index: 10000;
+      display: flex;
+      width: 26px;
+      height: 3px;
+      background: rgb(0, 0, 0);
+      transition: all 1s;
+    }
+    span {
+      &:nth-child(3) {
+        margin: 5px 0;
+      }
+    }
+  }
+
+  #gnb {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    width: 100%;
+    max-width: 375px;
+    padding: 0 20px;
+    background: #070322;
+    display: flex;
+    transition: all 0.4s;
+    .gnb-main {
+      position: absolute;
+      top: 60px;
+    }
+  }
+
+  .sec-link {
+    .on {
+      .link-depth2 {
+        max-height: 100%;
+        padding-bottom: 50px;
+      }
+    }
+
+    .link-depth2 {
+      padding: 0;
+      top: 100px;
+      left: 0;
+      right: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.3s;
+    }
+    .link-depth1 a {
+      color: #fff;
+      position: relative;
+      display: flex;
+      &::after {
+        content: "";
+        top: 0;
+        right: -75px;
+        width: 30px;
+        height: 30px;
+        display: block;
+        position: absolute;
+        background-size: 30px 30px;
+        background-position: 30px 30px;
+        background-image: url(/images/contents/nav-arrow-right.png);
+      }
+    }
+    .link-main {
+      font-family: Noto Serif KR;
+      font-size: 20px;
+      font-weight: 700;
+      position: relative;
+      .icon-c {
+        position: absolute;
+        top: 50%;
+        right: -200%;
+        transform: translate(0, -40%);
+      }
+    }
+    .link-sub {
+      font-family: Noto Sans KR;
+      font-size: 16px;
+      font-weight: 600;
+      padding-left: 20px;
+    }
+    .link-depth2 {
+      padding-top: 10px;
+    }
+    .link-depth3 {
+      padding-top: 5px;
+      padding-left: 30px;
+      li {
+        padding-top: 10px;
+      }
     }
   }
 }
@@ -278,6 +459,42 @@ header {
         font-family: "Font Awesome 6 Free";
         font-weight: normal;
         font-size: 27px;
+      }
+    }
+  }
+}
+
+// footer2
+#footer {
+  .inner-footer {
+    .footer-wrap {
+      display: flex;
+
+      .footer-util {
+        z-index: 10005;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+        width: 100%;
+        border-top: 1px solid #000;
+        background-color: #fff;
+      }
+      .footer-lst {
+        display: flex;
+        justify-content: space-evenly;
+        .footer-nav-g {
+          width: 40px;
+          height: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &::before {
+            font-family: "Font Awesome 6 Free";
+            font-size: 18px;
+          }
+        }
       }
     }
   }

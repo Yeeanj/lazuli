@@ -1,3 +1,5 @@
+// main.scss로 작업한 영역=egm-ring, egm-ring2, product
+
 @charset "UTF-8";
 
 .eg-ring,
@@ -170,5 +172,40 @@
     text-align: center;
     margin: 50px 0px 50px;
     font-size: 16px;
+  }
+}
+
+// product.html
+.list-ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  .list-a {
+    padding: 20px;
+    transition: all 0.1s linear;
+    &:hover {
+      border-bottom: 3px solid #000;
+    }
+  }
+}
+
+.product-ul {
+  display: flex;
+  flex-wrap: wrap;
+  .product-li {
+    width: 50%;
+    padding: 80px;
+    text-align: center;
+  }
+  .product-img {
+    width: 100%;
+    transition: all 0.2s linear;
+    &:hover {
+      transform: scale(1.5);
+      overflow: hidden;
+    }
+  }
+  .product-p {
+    padding-top: 50px;
   }
 }
