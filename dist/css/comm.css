@@ -470,10 +470,9 @@ legend {
 .list-ul {
   display: flex;
   justify-content: space-between;
-  padding: 30px;
+  padding: 4%;
 }
 .list-ul .list-a {
-  padding: 20px;
   transition: all 0.1s linear;
 }
 .list-ul .list-a:hover {
@@ -486,7 +485,7 @@ legend {
 }
 .product-ul .product-li {
   width: 50%;
-  padding: 80px;
+  padding: 4%;
   text-align: center;
 }
 .product-ul .product-img {
@@ -494,7 +493,7 @@ legend {
   transition: all 0.2s linear;
 }
 .product-ul .product-img:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
   overflow: hidden;
 }
 .product-ul .product-p {
@@ -818,29 +817,27 @@ header .lst-util .btn-burger::before {
   font-size: 15px;
 }
 
-.section-contents .lst-shopping {
+.thumb-ul {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  text-align: center;
+  margin: 50px 0px;
 }
-.section-contents .lst-shopping li {
-  width: calc(50% - 10px);
-  margin-bottom: 20px;
-  position: relative;
+.thumb-ul .thumb-li {
+  width: 50%;
+  padding: 4%;
+}
+.thumb-ul .thumb-li .thumb-img {
+  width: 100%;
+  width: 100%;
+  transition: all 0.2s linear;
+}
+.thumb-ul .thumb-li .thumb-img:hover {
+  transform: scale(1.1);
   overflow: hidden;
 }
-.section-contents .lst-shopping .thumb-shopping {
-  width: 100%;
-  height: 200px;
-}
-.section-contents .lst-shopping img {
-  width: 100%;
-  height: 100%;
-}
-.section-contents .txt-shopping {
-  margin-bottom: 10px;
-  font-size: 16px;
-  text-align: center;
+.thumb-ul .thumb-li .thumb-img .thumb-txt {
+  font-size: 20px;
 }
 
 .bottom {
