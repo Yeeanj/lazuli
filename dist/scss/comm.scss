@@ -111,7 +111,7 @@
       z-index: 10000;
       display: flex;
       width: 26px;
-      height: 2px;
+      height: 2.5px;
       background: rgb(0, 0, 0);
       transition: all 1s;
     }
@@ -173,7 +173,7 @@
         position: absolute;
         background-size: 30px 30px;
         background-position: 30px 30px;
-        background-image: url(/lazuli/images/contents/nav-arrow-right.png);
+        background-image: url(/images/contents/nav-arrow-right.png);
       }
     }
     .link-main {
