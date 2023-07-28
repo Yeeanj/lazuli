@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import "fonts", "reset", "main", "contents";
+@import "fonts", "reset", "main", "contents", "visit";
 
 // comm.css -
 // 공통요소 : 헤더, 풋터, 버튼, 아이콘, 박스
@@ -82,14 +82,14 @@
         & + label {
           .bar {
             &:nth-child(2) {
-              transform: rotate(45deg) translate(4px, 7px);
+              transform: rotate(45deg) translate(5px, 5px);
               background-color: #fff;
             }
             &:nth-child(3) {
               opacity: 0;
             }
             &:nth-child(4) {
-              transform: rotate(-45deg) translate(4px, -7px);
+              transform: rotate(-45deg) translate(5px, -5px);
               background-color: #fff;
             }
           }
@@ -111,7 +111,7 @@
       z-index: 10000;
       display: flex;
       width: 26px;
-      height: 3px;
+      height: 2px;
       background: rgb(0, 0, 0);
       transition: all 1s;
     }
@@ -156,6 +156,9 @@
       overflow: hidden;
       transition: all 0.3s;
     }
+    .link-depth1 li {
+    }
+
     .link-depth1 a {
       color: #fff;
       position: relative;
@@ -170,7 +173,7 @@
         position: absolute;
         background-size: 30px 30px;
         background-position: 30px 30px;
-        background-image: url(/images/contents/nav-arrow-right.png);
+        background-image: url(/lazuli/images/contents/nav-arrow-right.png);
       }
     }
     .link-main {

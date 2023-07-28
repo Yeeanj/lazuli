@@ -133,7 +133,8 @@ body {
   background: #fff;
   font-size: 14px;
   line-height: 1.5;
-  font-family: "Noto Sans KR", "Noto Serif KR", "Malgun Gothic", "맑은 고딕", serif, sans-serif;
+  font-family: "Noto Sans KR", "Noto Serif KR", "Malgun Gothic", "맑은 고딕",
+    serif, sans-serif;
   color: #111;
 }
 /* desktop */
@@ -195,7 +196,7 @@ input[type="password"] {
     opacity: 0;
 
     &:focus {
-      top: 0;
+      top: -60px;
       opacity: 1;
       z-index: 1000;
     }

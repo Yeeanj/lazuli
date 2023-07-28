@@ -196,7 +196,7 @@ input[type=password] {
   opacity: 0;
 }
 #u-skip a:focus {
-  top: 0;
+  top: -60px;
   opacity: 1;
   z-index: 1000;
 }
@@ -399,6 +399,64 @@ legend {
   height: 300px;
 }
 
+.sec-visit .visit-txt {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.sec-visit .visit-txt .visit-st {
+  font-family: Noto Sans KR;
+  font-size: 30px;
+  font-weight: 400;
+}
+.sec-visit .visit-txt p {
+  font-size: 16px;
+}
+
+.sec-reser .dogu {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.sec-reser .dogu .dogu-container {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.sec-reser .dogu .dogu-container a {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.lst-inquiry {
+  margin-top: 30px;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  resize: none;
+  margin-top: 10px;
+}
+
+textarea {
+  margin-top: 10px;
+}
+
+.col-75 {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.row1 {
+  margin-bottom: 300px;
+}
+
 .wrap {
   padding: 0 0 60px;
   padding-top: 60px;
@@ -468,14 +526,14 @@ legend {
   color: #fff;
 }
 #header .gnb-wrap .input-burger:checked + label .bar:nth-child(2) {
-  transform: rotate(45deg) translate(4px, 7px);
+  transform: rotate(45deg) translate(5px, 5px);
   background-color: #fff;
 }
 #header .gnb-wrap .input-burger:checked + label .bar:nth-child(3) {
   opacity: 0;
 }
 #header .gnb-wrap .input-burger:checked + label .bar:nth-child(4) {
-  transform: rotate(-45deg) translate(4px, -7px);
+  transform: rotate(-45deg) translate(5px, -5px);
   background-color: #fff;
 }
 #header .gnb-wrap .input-burger:checked ~ #gnb {
@@ -493,7 +551,7 @@ legend {
   z-index: 10000;
   display: flex;
   width: 26px;
-  height: 3px;
+  height: 2px;
   background: rgb(0, 0, 0);
   transition: all 1s;
 }
@@ -544,7 +602,7 @@ legend {
   position: absolute;
   background-size: 30px 30px;
   background-position: 30px 30px;
-  background-image: url(/images/contents/nav-arrow-right.png);
+  background-image: url(/lazuli/images/contents/nav-arrow-right.png);
 }
 #header .sec-link .link-main {
   font-family: Noto Serif KR;
