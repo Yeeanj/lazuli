@@ -674,6 +674,9 @@ strong {
   font-weight: 400;
 }
 
+.sec-btn-royal {
+  margin-bottom: 30px;
+}
 .sec-btn-royal button {
   position: relative;
   display: block;
