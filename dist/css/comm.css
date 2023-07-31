@@ -196,7 +196,7 @@ input[type=password] {
   opacity: 0;
 }
 #u-skip a:focus {
-  top: 0;
+  top: -60px;
   opacity: 1;
   z-index: 1000;
 }
@@ -522,14 +522,14 @@ header .sec-link .btn-burger::before {
   color: #fff;
 }
 #header .gnb-wrap .input-burger:checked + label .bar:nth-child(2) {
-  transform: rotate(45deg) translate(4px, 7px);
+  transform: rotate(45deg) translate(5px, 5px);
   background-color: #fff;
 }
 #header .gnb-wrap .input-burger:checked + label .bar:nth-child(3) {
   opacity: 0;
 }
 #header .gnb-wrap .input-burger:checked + label .bar:nth-child(4) {
-  transform: rotate(-45deg) translate(4px, -7px);
+  transform: rotate(-45deg) translate(5px, -5px);
   background-color: #fff;
 }
 #header .gnb-wrap .input-burger:checked ~ #gnb {
@@ -547,7 +547,7 @@ header .sec-link .btn-burger::before {
   z-index: 10000;
   display: flex;
   width: 26px;
-  height: 3px;
+  height: 2.5px;
   background: rgb(0, 0, 0);
   transition: all 1s;
 }
@@ -627,6 +627,29 @@ header .sec-link .btn-burger::before {
 }
 #header .sec-link .link-depth3 li {
   padding-top: 10px;
+}
+
+.sec-btn {
+  margin-bottom: 20px;
+}
+.sec-btn button {
+  position: relative;
+  display: block;
+  width: 320px;
+  height: 52px;
+  border: 1px solid #000;
+  margin: 0 auto;
+  line-height: 52px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+}
+.sec-btn button::after {
+  position: absolute;
+  top: -2px;
+  right: 20%;
+  content: "\e5e1";
+  font-family: "Material Icons Outlined";
 }
 
 .top {
@@ -1368,4 +1391,62 @@ strong {
 .swiper {
   margin-left: auto;
   margin-right: auto;
+}
+
+.sec-visit .visit-txt {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.sec-visit .visit-txt .visit-st {
+  font-family: Noto Sans KR;
+  font-size: 30px;
+  font-weight: 400;
+}
+.sec-visit .visit-txt p {
+  font-size: 16px;
+}
+
+.sec-reser .dogu {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.sec-reser .dogu .dogu-container {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.sec-reser .dogu .dogu-container a {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.lst-inquiry {
+  margin-top: 30px;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  resize: none;
+  margin-top: 10px;
+}
+
+textarea {
+  margin-top: 10px;
+}
+
+.col-75 {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.row1 {
+  margin-bottom: 300px;
 }/*# sourceMappingURL=comm.css.map */

@@ -134,7 +134,7 @@ body {
   font-size: 14px;
   line-height: 1.5;
   font-family: "Noto Sans KR", "Noto Serif KR", "Malgun Gothic", "맑은 고딕",
-    serif, sans-serif;
+    sans-serif, serif;
   color: #111;
 }
 /* desktop */
@@ -180,7 +180,7 @@ input[type="password"] {
 
 #u-skip {
   position: relative;
-  z-index: 30000;
+  z-index: 3000;
 
   a {
     position: absolute;
@@ -196,7 +196,7 @@ input[type="password"] {
     opacity: 0;
 
     &:focus {
-      top: -60px;
+      top: 0;
       opacity: 1;
       z-index: 1000;
     }
