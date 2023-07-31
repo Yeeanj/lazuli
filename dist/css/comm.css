@@ -281,7 +281,6 @@ legend {
 }
 
 .wrap {
-  padding: 0 0 60px;
   padding-top: 60px;
 }
 
@@ -291,16 +290,6 @@ legend {
 
 .section-g .widths-g img {
   width: 100%;
-}
-
-.wrap {
-  padding: 0 0 60px;
-  margin-top: 60px;
-}
-
-.wrap {
-  padding: 0 0 60px;
-  margin-top: 60px;
 }
 
 header {
@@ -1391,6 +1380,229 @@ strong {
 .swiper {
   margin-left: auto;
   margin-right: auto;
+}
+
+.eg-ring,
+.wd-ring {
+  text-align: center;
+}
+.eg-ring img,
+.wd-ring img {
+  width: 50%;
+}
+.eg-ring .txt-strong,
+.wd-ring .txt-strong {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+.eg-ring .txt-p,
+.wd-ring .txt-p {
+  text-align: center;
+  margin: 50px 0px 50px;
+  font-size: 16px;
+}
+
+.icon-g ul {
+  margin: 30px 40px 30px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon-g li {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(235, 235, 235, 0.5);
+  border-radius: 100px;
+}
+.icon-g li .icon1 {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+}
+.icon-g li .icon2 {
+  position: absolute;
+  width: 50%;
+  top: 25px;
+  left: 28px;
+}
+.icon-g li .icon3 {
+  position: absolute;
+  width: 50%;
+  top: 27px;
+  left: 25px;
+}
+.icon-g li .icon4 {
+  position: absolute;
+  width: 40%;
+  top: 20px;
+  left: 32px;
+}
+.icon-g li p {
+  text-align: center;
+  margin-top: 100px;
+}
+.icon-g li:hover ::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: -15%;
+  width: 130px;
+  height: 130px;
+  border-radius: 100px;
+  border: 1px solid rgba(141, 141, 141, 0.5);
+}
+
+.ring-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 100px 2%;
+}
+.ring-list li {
+  width: calc(50% - 10px);
+  margin-bottom: 40px;
+  position: relative;
+  padding: 0 2%;
+}
+.ring-list img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.ring-list img:hover {
+  margin: 10px;
+  background: rgba(248, 246, 246, 0.5);
+}
+
+.haro,
+.diamond,
+.winston,
+.find,
+.eg-ring-sub {
+  text-align: center;
+}
+.haro img,
+.diamond img,
+.winston img,
+.find img,
+.eg-ring-sub img {
+  margin: 100px 0;
+  width: 100%;
+}
+.haro .txt-strong,
+.diamond .txt-strong,
+.winston .txt-strong,
+.find .txt-strong,
+.eg-ring-sub .txt-strong {
+  font-size: 30px;
+  margin: 300px 0px;
+}
+.haro .txt-p,
+.diamond .txt-p,
+.winston .txt-p,
+.find .txt-p,
+.eg-ring-sub .txt-p {
+  text-align: center;
+  margin: 50px 0px 50px;
+  font-size: 16px;
+}
+
+.button-wrap {
+  display: flex;
+  justify-content: center;
+}
+.button-wrap .button {
+  position: relative;
+  text-align: center;
+  line-height: 45px;
+  font-size: large;
+  font-weight: bold;
+  width: 50%;
+  height: 50px;
+  border: 1px solid #000;
+}
+.button-wrap .button::before {
+  position: absolute;
+  content: "\f054";
+  font-family: "Font Awesome 6 Free";
+  top: 0;
+  right: 10%;
+  font-weight: 900;
+}
+.button-wrap .space-btm {
+  margin-bottom: 50px;
+}
+.button-wrap .epr-btm {
+  position: relative;
+  margin-bottom: -50px;
+  font-weight: 500;
+}
+.button-wrap .epr-btm::before {
+  position: absolute;
+  content: "\f054";
+  font-family: "Font Awesome 6 Free";
+  top: 19px;
+  right: -30%;
+  font-weight: 900;
+}
+
+.video2-sub {
+  width: 100%;
+}
+.video2-sub .sub1 {
+  margin: 50px 0px;
+  width: 100%;
+}
+.video2-sub .sub2 {
+  margin: 50px 0px;
+  width: 100%;
+}
+.video2-sub .sub3 {
+  margin: 10px 0px 200px;
+  width: 100%;
+}
+.video2-sub .txt-p {
+  text-align: center;
+  margin: 50px 0px 50px;
+  font-size: 16px;
+}
+
+.list-ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 4%;
+}
+.list-ul .list-a {
+  transition: all 0.1s linear;
+}
+.list-ul .list-a:hover {
+  border-bottom: 3px solid #000;
+}
+
+.product-ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-ul .product-li {
+  width: 50%;
+  padding: 4%;
+  text-align: center;
+}
+.product-ul .product-img {
+  width: 100%;
+  transition: all 0.2s linear;
+}
+.product-ul .product-img:hover {
+  transform: scale(1.1);
+  overflow: hidden;
+}
+.product-ul .product-p {
+  padding-top: 50px;
 }
 
 .sec-visit .visit-txt {
