@@ -5,7 +5,6 @@
 
 //wrap 간격
 .wrap {
-  padding: 0 0 60px;
   padding-top: 60px;
 }
 // 글넣는곳 좌우간격
@@ -17,14 +16,6 @@
   .widths-g img {
     width: 100%;
   }
-}
-.wrap {
-  padding: 0 0 60px;
-  margin-top: 60px;
-}
-.wrap {
-  padding: 0 0 60px;
-  margin-top: 60px;
 }
 
 //header
@@ -763,7 +754,6 @@ header {
     text-align: center;
     font-weight: 700;
     margin-bottom: 10px;
-    
   }
 }
 @import "main", "contents", "yeeanjj", "0nejean", "belluna";
