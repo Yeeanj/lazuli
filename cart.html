@@ -65,44 +65,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script defer src="./dist/js/comm.js"></script>
+    <script src="./dist/js/include.js"></script>
   </head>
   <body>
     <div class="wrap">
-      <header id="header" class="container">
-        <div class="inner">
-          <h1 id="logo" class="logo1">
-            <a href="#">Lazuli</a>
-          </h1>
-          <nav class="gnb-wrap">
-            <!-- 링크연결없이 자바스크립트 연결하는법 -->
-            <a href="javascript:void(0)">
-              <span class="material-icons-outlined"> menu </span>
-            </a>
-          </nav>
-          <div class="util">
-            <ul class="lst-util">
-              <li>
-                <!-- a:링크연결 button:동작처리 -->
-                <button class="nav-g btn-search">
-                  <span class="material-icons-outlined"> search </span>
-                  <span class="blind">검색</span>
-                </button>
-              </li>
-              <li>
-                <a href="#" class="nav-g btn-shopp">
-                  <span class="material-icons-outlined"> shopping_bag </span>
-                  <span class="blind">장바구니</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </header>
+      <header data-include-path="./outline/header.html"></header>
       <main id="main" class="container">
-        <div class="section-g reser_service">
+        <div class="event-cart-sec-g reser_service">
           <div class="reser_intro">
-            <h2 class="text-g reser_tit">멤버에게 제공되는 무료 상담 서비스</h2>
-            <p class="text-g reser_txt">
+            <h2 class="reser-txt-g reser_tit">
+              멤버에게 제공되는 무료 상담 서비스
+            </h2>
+            <p class="reser-txt-g reser_txt">
               라줄리 멤버가 되어 무료 상담 서비스를 비롯한 <br />
               다양한 혜택을 누려보세요.
             </p>
@@ -113,11 +87,11 @@
             </ul>
           </div>
           <div class="reser_info">
-            <span class="text-g reser_guid"
+            <span class="reser-txt-g reser_guid"
               >진행 예정 중인 예약/상담이 없습니다.</span
             >
             <ul class="reser_lst">
-              <h2 class="text-g reser_lst_tit">상세 내역</h2>
+              <h2 class="reser-txt-g reser_lst_tit">상세 내역</h2>
               <li class="reser-g reser_promotion">
                 프로모션 코드가 있으신가요?
               </li>
@@ -130,14 +104,14 @@
             <button>방문 예약하기</button>
           </div>
         </div>
-        <div class="section-g item_recom">
+        <div class="event-cart-sec-g item_recom">
           <h2 class="item_recom_tit">추천 제품</h2>
-          <div class="swiper mySwiper">
+          <div class="swiper myCartSwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <a href="#">
                   <img
-                    src="./images/main/ocean_biretrograde_automatic_42mm-18k_white_gold-automatic-oceabi42ww002-pi1.png"
+                    src="./images/contents/cart_ocean.png"
                     alt="Ocean Date Moon Phase 
                   Automatic 42mm"
                   />
@@ -149,19 +123,19 @@
               <div class="swiper-slide">
                 <a href="#">
                   <img
-                    src="./images/main/avenue_classic-18k_white_gold-quartz-aveqhm21ww241-pi1.png"
+                    src="./images/contents/cart_avenue.png"
                     alt="Avenue Classic"
                   />
                   <span class="swiper_avenue_txt">Avenue Classic</span>
                 </a>
               </div>
             </div>
-            <div class="swipwe-btn-g swiper-button-next"></div>
+            <!-- <div class="swipwe-btn-g swiper-button-next"></div>
             <div class="swipwe-btn-g swiper-button-prev"></div>
-            <!-- <div class="swiper-pagination"></div> -->
+            <div class="swiper-pagination"></div> -->
           </div>
           <script>
-            var swiper = new Swiper(".mySwiper", {
+            var swiper = new Swiper(".myCartSwiper", {
               slidesPerView: 1,
               spaceBetween: 30,
               loop: true,
@@ -177,18 +151,7 @@
           </script>
         </div>
       </main>
-      <footer id="footer" class="container">
-        <div class="footer-util">
-          <ul class="lst-util">
-            <li>
-              <button class="btn-g btn-home">홈</button>
-            </li>
-            <li><button class="btn-g btn-wish">위시리스트</button></li>
-            <li><button class="btn-g btn-bell">알림</button></li>
-            <li><button class="btn-g btn-my">마이페이지</button></li>
-          </ul>
-        </div>
-      </footer>
+      <footer data-include-path="./outline/footer.html"></footer>
     </div>
   </body>
 </html>

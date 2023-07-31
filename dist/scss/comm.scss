@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import "fonts", "reset", "main", "contents";
+@import "variables", "mixin", "fonts", "reset";
 
 // comm.css -
 // 공통요소 : 헤더, 풋터, 버튼, 아이콘, 박스
@@ -49,8 +49,7 @@
   .lst-util {
     display: flex;
   }
-  .nav-g,
-  .gnb-wrap a {
+  .nav-g {
     width: 40px;
     height: 60px;
     display: flex;
@@ -83,14 +82,14 @@
         & + label {
           .bar {
             &:nth-child(2) {
-              transform: rotate(45deg) translate(4px, 7px);
+              transform: rotate(45deg) translate(5px, 5px);
               background-color: #fff;
             }
             &:nth-child(3) {
               opacity: 0;
             }
             &:nth-child(4) {
-              transform: rotate(-45deg) translate(4px, -7px);
+              transform: rotate(-45deg) translate(5px, -5px);
               background-color: #fff;
             }
           }
@@ -112,7 +111,7 @@
       z-index: 10000;
       display: flex;
       width: 26px;
-      height: 3px;
+      height: 2px;
       background: rgb(0, 0, 0);
       transition: all 1s;
     }
@@ -141,10 +140,6 @@
   }
 
   .sec-link {
-    .link-depth1 > li {
-      position: relative;
-    }
-
     .on {
       .link-depth2 {
         max-height: 100%;
@@ -161,14 +156,17 @@
       overflow: hidden;
       transition: all 0.3s;
     }
+    .link-depth1 li {
+    }
+
     .link-depth1 a {
       color: #fff;
       position: relative;
-      display: block;
+      display: flex;
       &::after {
         content: "";
         top: 0;
-        right: -60px;
+        right: -75px;
         width: 30px;
         height: 30px;
         display: block;
@@ -205,135 +203,46 @@
       li {
         padding-top: 10px;
       }
-
-}
-
-//button
-.sec-btn {
-  margin-bottom: 20px;
-  button {
-    position: relative;
-    display: block;
-    width: 320px;
-    height: 52px;
-    border: 1px solid #000;
-    margin: 0 auto;
-    line-height: 52px;
-    font-size: 18px;
-    text-align: center;
-    font-weight: 700;
-    &::after {
-      position: absolute;
-      top: -2px;
-      right: 20%;
-      content: "\e5e1";
-      font-family: "Material Icons Outlined";
-
     }
   }
 }
 
 //footer
 #footer {
-  z-index: 10000;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-top: 1px solid #000;
-  background: #fff;
-  .footer-util {
-    height: 60px;
-  }
-  .lst-util {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    li {
-      width: 72px;
-      height: 60px;
-      text-align: center;
-    }
-    .btn-g {
-      padding-top: 36px;
-      position: relative;
-      font-size: 12px;
-      font-family: "Noto Sans KR";
-      font-weight: 400;
-      &::before {
-        position: absolute;
+  .inner-footer {
+    .footer-wrap {
+      display: flex;
+
+      .footer-util {
+        z-index: 10005;
+        position: fixed;
+        bottom: 0;
         left: 0;
         right: 0;
-        font-family: "Material Icons Outlined";
-        // font-weight: 500;
-        font-size: 28px;
-        text-align: center;
+        height: 60px;
+        width: 100%;
+        border-top: 1px solid #000;
+        background-color: #fff;
       }
-    }
-    .btn-home {
-      &::before {
-        top: 3px;
-        left: -8px;
-        content: "\e88a";
-        font-family: "Material Symbols Outlined";
-        font-weight: 600;
-      }
-    }
-    .btn-wish {
-      &::before {
-        top: 5px;
-        content: "\e87e";
-      }
-    }
-    .btn-bell {
-      &::before {
-        top: 4px;
-        left: -3px;
-        content: "\e7f4";
-        font-weight: 200;
-        font-size: 28px;
-      }
-    }
-    .btn-my {
-      &::before {
-        top: 7px;
-        content: "\f007";
-        font-family: "Font Awesome 6 Free";
-        font-weight: normal;
-        font-size: 22px;
+      .footer-lst {
+        display: flex;
+        justify-content: space-evenly;
+        .footer-nav-g {
+          width: 40px;
+          height: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &::before {
+            font-family: "Font Awesome 6 Free";
+            font-size: 18px;
+          }
+        }
       }
     }
   }
 }
-.footer-wrap {
-  position: relative;
-  a {
-    height: 375px;
-  }
-}
-.footer-images {
-  img {
-    width: 100%;
-  }
-}
-.footer-txt {
-  display: block;
-  width: 200px;
-  margin: 0 auto;
-  margin-top: 35px;
-  margin-bottom: 35px;
-  text-align: center;
-  font-family: "Noto sans KR";
-  .footer-txt-intro {
-    font-size: 18px;
-    font-weight: 400;
-  }
-  .footertxt-tit {
-    font-weight: 600;
-    font-size: 30px;
-    margin-bottom: 32px;
-  }
-}
+
 // 버튼
 .jsh {
   width: 119px;
@@ -342,3 +251,5 @@
   background-color: #070322;
   color: #fff;
 }
+
+@import "main", "contents", "yeeanjj", "belluna", "0nejean";
