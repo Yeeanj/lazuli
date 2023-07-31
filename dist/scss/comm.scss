@@ -166,8 +166,6 @@ header {
       overflow: hidden;
       transition: all 0.3s;
     }
-    .link-depth1 li {
-    }
 
     .link-depth1 a {
       color: #fff;
@@ -351,8 +349,6 @@ header {
       max-height: 0;
       overflow: hidden;
       transition: all 0.3s;
-    }
-    .link-depth1 li {
     }
 
     .link-depth1 a {
@@ -754,4 +750,20 @@ header {
   color: #fff;
 }
 
-@import "main", "contents", "yeeanjj", "0nejean", "visit";
+// 큰버튼
+.sec-btn-raser {
+  button {
+    display: block;
+    width: 320px;
+    height: 52px;
+    border: 1px solid #000;
+    margin: 0 auto;
+    line-height: 52px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 10px;
+    
+  }
+}
+@import "main", "contents", "yeeanjj", "0nejean", "belluna";
