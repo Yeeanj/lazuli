@@ -1,8 +1,28 @@
 // ocean - comm에서 가져오면 됨
+.thumb-ul {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 50px 0px;
+  .thumb-li {
+    width: 50%;
+    padding: 4%;
+    .thumb-img {
+      width: 100%;
+      width: 100%;
+      transition: all 0.2s linear;
+      &:hover {
+        transform: scale(1.1);
+        overflow: hidden;
+      }
+      .thumb-txt {
+        font-size: 20px;
+      }
+    }
+  }
+}
 
 // egm-ring, egm-ring-sub
-@charset "UTF-8";
-
 .eg-ring,
 .wd-ring {
   text-align: center;
@@ -22,81 +42,119 @@
 }
 
 .icon-g {
-  ul {
-    margin: 30px 40px 30px 10px;
+  .icon-ul {
+    margin: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   li {
-    position: relative;
-    text-align: center;
-    padding: 20px;
-    width: 50px;
-    height: 50px;
-    background-color: rgba(235, 235, 235, 0.5);
-    border-radius: 100px;
+    a {
+      position: relative;
+      display: block;
+      width: 50px;
+      height: 50px;
+      background-color: rgba(235, 235, 235, 0.5);
+      border-radius: 50%;
+      &:hover::before {
+        content: "";
+        display: block;
+        height: 100%;
+        border-radius: 50%;
+        border: 1px solid #000;
+      }
+    }
     .icon1 {
       position: absolute;
       width: 50%;
       top: 50%;
       left: 50%;
+      transform: translate(-50%, -50%);
     }
     .icon2 {
       position: absolute;
       width: 50%;
-      top: 25px;
-      left: 28px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
     .icon3 {
       position: absolute;
       width: 50%;
-      top: 27px;
-      left: 25px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
     .icon4 {
       position: absolute;
       width: 40%;
-      top: 20px;
-      left: 32px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
 
-    p {
-      text-align: center;
-      margin-top: 100px;
-    }
-    &:hover ::before {
-      content: "";
+    .p-icon1 {
       position: absolute;
-      top: -20%;
-      left: -15%;
-      width: 130px;
-      height: 130px;
-      border-radius: 100px;
-      border: 1px solid rgba(141, 141, 141, 0.5);
+      top: 600px;
+      left: 10px;
+      text-align: center;
     }
+
+    .p-icon2 {
+      position: absolute;
+      top: 600px;
+      left: 100px;
+      text-align: center;
+    }
+
+    .p-icon3 {
+      position: absolute;
+      top: 600px;
+      left: 213px;
+      text-align: center;
+    }
+
+    .p-icon4 {
+      position: absolute;
+      top: 600px;
+      left: 290px;
+      text-align: center;
+    }
+    // &:hover ::before {
+    //   content: "";
+    //   position: absolute;
+    //   top: -20%;
+    //   left: -15%;
+    //   width: 130px;
+    //   height: 130px;
+    //   border-radius: 100px;
+    //   border: 1px solid rgba(141, 141, 141, 0.5);
+    // }
   }
 }
 
 .ring-list {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  padding: 100px 2%;
-  li {
-    width: calc(50% - 20px / 2);
+  justify-content: center;
+  margin: 50px, 0px;
+  // padding: 0px 2%;
+  .ring-list-g {
+    width: 50%;
+    // width: calc(50% - 20px / 2);
     margin-bottom: 40px;
     position: relative;
     padding: 0 2%;
+    transition: 0.3s linear;
   }
-  img {
-    width: 100%;
-    height: 100%;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    &:hover {
-      margin: 10px;
-      background: rgba(248, 246, 246, 0.5);
-    }
+}
+.ring-list-img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  &:hover {
+    margin: 10px;
+    background: rgba(248, 246, 246, 0.5);
   }
 }
 
@@ -107,16 +165,33 @@
 .eg-ring-sub {
   text-align: center;
   img {
-    margin: 100px 0;
+    margin: 30px 0;
     width: 100%;
   }
   .txt-strong {
     font-size: 30px;
-    margin: 300px 0px;
+    margin: 40px 0px;
   }
   .txt-p {
     text-align: center;
-    margin: 50px 0px 50px;
+    margin: 30px 0px 50px;
+    font-size: 16px;
+  }
+}
+
+.find {
+  text-align: center;
+  img {
+    margin: 100px 0 0 0;
+    width: 100%;
+  }
+  .txt-strong {
+    font-size: 30px;
+    margin: 40px 0px;
+  }
+  .txt-p {
+    text-align: center;
+    margin: 30px 0px 50px;
     font-size: 16px;
   }
 }
@@ -142,8 +217,9 @@
       font-weight: 900;
     }
   }
+
   .space-btm {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
   .epr-btm {
     position: relative;
@@ -171,7 +247,7 @@
     width: 100%;
   }
   .sub3 {
-    margin: 10px 0px 200px;
+    margin: 10px 0px 100px;
     width: 100%;
   }
   .txt-p {
@@ -211,6 +287,10 @@
     }
   }
   .product-p {
-    padding-top: 50px;
+    padding-top: 10px;
+  }
+
+  .product-p-btm {
+    padding-bottom: 80px;
   }
 }
