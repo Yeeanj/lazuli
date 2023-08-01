@@ -5,222 +5,18 @@
 
 //wrap 간격
 .wrap {
-  padding: 0 0 60px;
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 // 글넣는곳 좌우간격
 .container {
   padding: 0 20px;
 }
 // 이미지 가로사이즈
-.section-g {
-  .widths-g img {
-    width: 100%;
-  }
+.widths-g img {
+  width: 100%;
 }
-.wrap {
-  padding: 0 0 60px;
-  margin-top: 60px;
-}
-.wrap {
-  padding: 0 0 60px;
-  margin-top: 60px;
-}
-
-//header
-header {
-  position: fixed;
-  z-index: 10005;
-  top: 0;
-  left: 0;
-  right: 0;
-  border-bottom: 1px solid #000;
-  background-color: #fff;
-  .logo1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .inner {
-    display: flex;
-    justify-content: space-between;
-  }
-  .logo1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: "Libre Bodoni", serif;
-    font-weight: 700;
-    font-size: 32px;
-  }
-  .lst-util {
-    display: flex;
-  }
-  .nav-g {
-    width: 40px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &::before {
-      font-family: "Font Awesome 6 Free";
-      font-size: 18px;
-    }
-  }
-
-  .link1 {
-    b {
-      font-size: 22px;
-    }
-  }
-
-  .gnb-wrap {
-    .input-burger {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 0;
-      height: 0;
-      opacity: 0;
-      // css형식 .input-burger:checked + label .bar {}
-      &:checked {
-        color: #fff;
-        // input이 선택 됐을때
-        & + label {
-          .bar {
-            &:nth-child(2) {
-              transform: rotate(45deg) translate(5px, 5px);
-              background-color: #fff;
-            }
-            &:nth-child(3) {
-              opacity: 0;
-            }
-            &:nth-child(4) {
-              transform: rotate(-45deg) translate(5px, -5px);
-              background-color: #fff;
-            }
-          }
-        }
-        & ~ #gnb {
-          left: 0;
-        }
-      }
-    }
-  }
-  .label-burger {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 40px;
-    height: 60px;
-    .bar {
-      z-index: 10000;
-      display: flex;
-      width: 26px;
-      height: 2px;
-      background: rgb(0, 0, 0);
-      transition: all 1s;
-    }
-    span {
-      &:nth-child(3) {
-        margin: 5px 0;
-      }
-    }
-  }
-
-  #gnb {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    bottom: 0;
-    width: 100%;
-    max-width: 375px;
-    padding: 0 20px;
-    background: #070322;
-    display: flex;
-    transition: all 0.4s;
-    .gnb-main {
-      position: absolute;
-      top: 60px;
-    }
-  }
-
-  .sec-link {
-    .on {
-      .link-depth2 {
-        max-height: 100%;
-        padding-bottom: 50px;
-      }
-    }
-
-    .link-depth2 {
-      padding: 0;
-      top: 100px;
-      left: 0;
-      right: 0;
-      max-height: 0;
-      overflow: hidden;
-      transition: all 0.3s;
-    }
-    .link-depth1 li {
-    }
-
-    .link-depth1 a {
-      color: #fff;
-      position: relative;
-      display: flex;
-      &::after {
-        content: "";
-        top: 0;
-        right: -75px;
-        width: 30px;
-        height: 30px;
-        display: block;
-        position: absolute;
-        background-size: 30px 30px;
-        background-position: 30px 30px;
-        background-image: url(/lazuli/images/contents/nav-arrow-right.png);
-      }
-    }
-    .link-main {
-      font-family: Noto Serif KR;
-      font-size: 20px;
-      font-weight: 700;
-      position: relative;
-      .icon-c {
-        position: absolute;
-        top: 50%;
-        right: -200%;
-        transform: translate(0, -40%);
-      }
-    }
-    .link-sub {
-      font-family: Noto Sans KR;
-      font-size: 16px;
-      font-weight: 600;
-      padding-left: 20px;
-    }
-    .link-depth2 {
-      padding-top: 10px;
-    }
-    .link-depth3 {
-      padding-top: 5px;
-      padding-left: 30px;
-      li {
-        padding-top: 10px;
-      }
-    }
-    .btn-burger::before {
-      content: "\f0c9";
-      font-weight: 900;
-    }
-  }
-}
-// header2
+// header
 #header {
   z-index: 10005;
   position: fixed;
@@ -351,8 +147,6 @@ header {
       max-height: 0;
       overflow: hidden;
       transition: all 0.3s;
-    }
-    .link-depth1 li {
     }
 
     .link-depth1 a {
@@ -565,150 +359,6 @@ header {
   }
 }
 
-// .section-contents {
-//   .lst-shopping {
-//     display: flex;
-//     justify-content: space-between;
-//     flex-wrap: wrap;
-//     li {
-//       width: calc(50% - 20px / 2);
-//       margin-bottom: 20px;
-//       position: relative;
-//       overflow: hidden;
-//     }
-//     .thumb-shopping {
-//       width: 100%;
-//       height: 200px;
-//     }
-//     img {
-//       width: 100%;
-//       height: 100%;
-//     }
-//   }
-//   .txt-shopping {
-//     margin-bottom: 10px;
-//     font-size: 16px;
-//     text-align: center;
-//   }
-// }
-
-.bottom {
-  font-size: 30px;
-  line-height: 50px;
-  display: block;
-  padding: 0 20px;
-}
-
-// footer
-#footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  // border-top: 1px solid #000;
-  background: #fff;
-  .footer-util {
-    height: 60px;
-  }
-  .lst-util {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    li {
-      width: 72px;
-      height: 60px;
-      text-align: center;
-      // border: 1px solid #000;
-    }
-    .btn-g {
-      padding-top: 36px;
-      position: relative;
-      font-size: 12px;
-      font-family: "Noto Sans KR";
-      font-weight: 400;
-      &::before {
-        position: absolute;
-        left: 0;
-        right: 0;
-        font-family: "Material Icons Outlined";
-        // font-weight: 500;
-        font-size: 32px;
-        text-align: center;
-      }
-    }
-    .btn-home {
-      &::before {
-        top: -1px;
-        left: -9px;
-        content: "\e88a";
-        font-family: "Material Symbols Outlined";
-        font-weight: 600;
-      }
-    }
-    .btn-wish {
-      &::before {
-        top: 2px;
-        content: "\e87e";
-      }
-    }
-    .btn-bell {
-      &::before {
-        top: 1px;
-        left: -5px;
-        content: "\e7f4";
-
-        font-weight: 200;
-        font-size: 34px;
-      }
-    }
-    .btn-my {
-      &::before {
-        top: 3px;
-        content: "\f007";
-        font-family: "Font Awesome 6 Free";
-        font-weight: normal;
-        font-size: 27px;
-      }
-    }
-  }
-}
-
-// footer2
-#footer {
-  .inner-footer {
-    .footer-wrap {
-      display: flex;
-
-      .footer-util {
-        z-index: 10005;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 60px;
-        width: 100%;
-        border-top: 1px solid #000;
-        background-color: #fff;
-      }
-      .footer-lst {
-        display: flex;
-        justify-content: space-evenly;
-        .footer-nav-g {
-          width: 40px;
-          height: 60px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          &::before {
-            font-family: "Font Awesome 6 Free";
-            font-size: 18px;
-          }
-        }
-      }
-    }
-  }
-}
-
 //footer
 #footer {
   .inner-footer {
@@ -716,8 +366,8 @@ header {
       display: flex;
 
       .footer-util {
-        z-index: 10005;
         position: fixed;
+        z-index: 10005;
         bottom: 0;
         left: 0;
         right: 0;
@@ -746,6 +396,14 @@ header {
 }
 
 // 버튼
+
+.bottom {
+  font-size: 30px;
+  line-height: 50px;
+  display: block;
+  padding: 0 20px;
+}
+
 .jsh {
   width: 119px;
   height: 39px;
@@ -754,4 +412,19 @@ header {
   color: #fff;
 }
 
-@import "main", "contents", "yeeanjj", "0nejean", "visit";
+// 큰버튼
+.sec-btn-raser {
+  button {
+    display: block;
+    width: 320px;
+    height: 52px;
+    border: 1px solid #000;
+    margin: 0 auto;
+    line-height: 52px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+}
+@import "main", "contents", "yeeanjj", "0nejean", "belluna";
