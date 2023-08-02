@@ -602,10 +602,10 @@ legend {
   font-size: 20px;
 }
 
-#footer .inner-footer .footer-wrap {
+#footer .inner-footer {
   display: flex;
 }
-#footer .inner-footer .footer-wrap .footer-util {
+#footer .inner-footer .footer-util {
   position: fixed;
   z-index: 10005;
   bottom: 0;
@@ -616,18 +616,18 @@ legend {
   border-top: 1px solid #000;
   background-color: #fff;
 }
-#footer .inner-footer .footer-wrap .footer-lst {
+#footer .inner-footer .footer-lst {
   display: flex;
   justify-content: space-evenly;
 }
-#footer .inner-footer .footer-wrap .footer-lst .footer-nav-g {
+#footer .inner-footer .footer-lst .footer-nav-g {
   width: 40px;
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#footer .inner-footer .footer-wrap .footer-lst .footer-nav-g::before {
+#footer .inner-footer .footer-lst .footer-nav-g::before {
   font-family: "Font Awesome 6 Free";
   font-size: 18px;
 }
@@ -793,7 +793,7 @@ strong {
 
 .royal-txt-g .royal_tit_mini {
   display: block;
-  margin: 109px 0 50px;
+  margin: 50px 0;
 }
 .royal-txt-g .royal-tit-g {
   display: block;
@@ -812,6 +812,7 @@ strong {
 .sec-royal_main a,
 .sec-royal-sub-nec a {
   height: 450px;
+  font-size: 16px;
 }
 
 .sec-royal-sub-regal a {
@@ -823,7 +824,6 @@ strong {
   margin-bottom: 43px;
 }
 .royal-sec-btn a {
-  position: relative;
   display: block;
   width: 119px;
   height: 39px;
@@ -833,30 +833,25 @@ strong {
   color: #fff;
   text-align: center;
   font-size: 16px;
-  font-weight: 400;
 }
 
 .sec-btn-royal {
   margin-bottom: 30px;
 }
-.sec-btn-royal button {
+.sec-btn-royal a {
   position: relative;
   display: block;
-  width: 320px;
-  height: 52px;
   border: 1px solid #000;
-  margin: 0 auto;
   line-height: 52px;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
-  font-weight: 700;
-  margin-bottom: 10px;
+  font-weight: 500;
 }
-.sec-btn-royal button .material-icons-outlined {
+.sec-btn-royal a .material-icons-outlined {
   display: block;
   position: absolute;
   top: 50%;
-  right: 25%;
+  right: 30%;
   transform: translateY(-50%);
 }
 
@@ -867,7 +862,7 @@ strong {
   display: block;
   width: 100%;
   background: #fdfdfd;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 .wd-txt-g {
@@ -907,9 +902,9 @@ strong {
   font-size: 16px;
   margin-bottom: 30px;
 }
-.wdring_intro .sec-btn-raser button {
+.wdring_intro .sec-btn-raser a {
   display: block;
-  width: 320px;
+  width: 100%;
   height: 52px;
   border: 1px solid #000;
   margin: 0 auto;
@@ -920,13 +915,8 @@ strong {
   margin-bottom: 10px;
 }
 
-.lst_wdring::after {
-  content: "";
-  display: block;
-  width: 80%;
-  margin: 0 auto;
-  margin: 30px;
-  border-bottom: 1px solid #111;
+.lst_wdring {
+  margin-bottom: 80px;
 }
 .lst_wdring .tit_wdring_lazuli {
   text-align: center;
@@ -941,168 +931,182 @@ strong {
   text-align: center;
   font-size: 18px;
   font-weight: 900;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 
-.wd_btn_txt button {
+.wd_btn_txt {
   position: relative;
   display: block;
-  width: 50px;
-  margin: 0 auto;
+  text-align: center;
 }
-.wd_btn_txt button::after {
+.wd_btn_txt::after {
   position: absolute;
-  top: 3px;
-  left: 100%;
+  top: 2px;
+  left: 50%;
+  transform: translateX(200%);
   content: "\e5e1";
   font-family: "Material Icons Outlined";
   font-size: 12px;
 }
 
-.footer-info a {
+.location-info a {
   display: block;
   height: 375px;
 }
 
-.footer-images img {
+.location-images img {
   width: 100%;
 }
 
-.footer-info-txt {
+.location-info-txt {
   display: block;
-  width: 200px;
-  margin: 0 auto;
-  margin-top: 35px;
-  margin-bottom: 35px;
+  margin: 35px 0;
   text-align: center;
   font-family: "Noto sans KR";
 }
-.footer-info-txt .footertxt-tit {
+.location-info-txt .locationtxt-tit {
   font-weight: 600;
-  font-size: 30px;
-  margin-bottom: 32px;
+  font-size: 32px;
 }
-.footer-info-txt .footer-txt-intro {
+.location-info-txt .location-txt-intro {
   font-size: 18px;
   font-weight: 400;
+  margin-top: 30px;
 }
 
-.sec-btn-footer button {
+.sec-btn-location a {
   display: block;
-  width: 320px;
+  width: 100%;
   height: 52px;
   border: 1px solid #000;
-  margin: 0 auto;
   line-height: 52px;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
-.event-cart-sec-g img {
+.event-cart-sec-g .swiper-slide img {
   width: 100%;
   background: #fdfdfd;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 .reser_service .reser_intro {
   display: block;
-  border-top: 1px solid #f5f5f5;
-  border-bottom: 1px solid #f5f5f5;
   padding: 10px 0;
-  margin: 30px 0;
+  margin: 30px 0 50px;
 }
 .reser_service .reser_intro .reser_tit {
-  font-size: 20px;
+  font-size: 28px;
+  font-weight: 700;
 }
 .reser_service .reser_intro .reser_txt {
   padding: 5px 0;
   font-size: 16px;
+  font-weight: 400;
+  color: #888;
+  margin-top: 15px;
 }
 .reser_service .reser_intro .reser_togo {
   display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin-top: 15px;
+  width: 165px;
+  height: 35px;
+  border-radius: 100px;
 }
-.reser_service .reser_intro .reser_togo li {
-  padding: 0 3px;
+.reser_service .reser_intro .reser_togo a {
+  padding: 0 5px;
+  font-weight: 500;
+  color: #fff;
+  background: #070322;
 }
-.reser_service .reser_intro .reser_togo li a:hover {
-  border-bottom: 1px solid #111;
+.reser_service .reser_intro .reser_togo em {
+  margin: 0 5px;
+  font-weight: 500;
+  opacity: 0.9;
 }
 
 .reser_info {
   display: block;
-  border-top: 1px solid #f5f5f5;
-  border-bottom: 1px solid #f5f5f5;
   padding: 10px 0;
-}
-.reser_info .reser_guid {
-  display: block;
-  font-size: 16px;
-  font-weight: 500;
-  text-align: center;
-  margin: 15px 0;
 }
 
 .reser-g {
   font-size: 16px;
-  font-weight: 500;
+}
+
+.reser_lst_tit {
+  font-size: 28px;
+  font-weight: 700;
 }
 
 .reser_lst {
-  line-height: 2;
+  line-height: 2.5;
+  margin-top: 20px;
 }
-.reser_lst .reser_lst_tit {
-  font-size: 20px;
-  font-weight: 600;
-}
-.reser_lst .reser_total {
+.reser_lst .reser_promotion {
   position: relative;
-}
-.reser_lst .reser_total::after {
-  position: absolute;
-  content: "―";
-  top: 1px;
-  right: 0;
-  font-size: 16px;
+  display: block;
   font-weight: 500;
+  font-size: 18px;
+  padding-left: 30px;
+}
+.reser_lst .reser_promotion::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-26%);
+  width: 24px;
+  height: 24px;
+  background: url(../../images/contents/Cart_TIP.png) no-repeat 0 0/contain;
 }
 .reser_lst .reser_pay {
-  position: relative;
+  font-weight: 400;
+  opacity: 0.7;
 }
-.reser_lst .reser_pay::after {
-  position: absolute;
-  content: "―";
-  top: 1px;
-  right: 0;
-  font-size: 16px;
-  font-weight: 500;
+.reser_lst .reser_pay .reser_pay_won {
+  float: right;
 }
 .reser_lst .reser_cost {
-  position: relative;
+  font-weight: 400;
+  opacity: 0.7;
 }
-.reser_lst .reser_cost::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  content: "무료";
-  font-size: 16px;
+.reser_lst .reser_cost .reser_cost_won {
+  float: right;
+}
+.reser_lst .reser_total {
+  font-weight: 500;
+  font-size: 18px;
+}
+.reser_lst .reser_total .reser_total_won {
+  float: right;
 }
 
-.reser-btn {
-  margin: 30px 0;
+.reser_come_visit {
+  margin: 20px 0 80px;
 }
-.reser-btn button {
-  width: 335px;
+.reser_come_visit a {
+  display: block;
+  width: 100%;
   height: 62px;
-  background: #eee;
+  background: #070322;
   border-radius: 100px;
+  color: #fff;
+  text-align: center;
+  line-height: 62px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .item_recom {
   margin-bottom: 30px;
+}
+.item_recom .item_recom_tit {
+  font-size: 28px;
 }
 .item_recom .swiper_ocean_txt,
 .item_recom .swiper_avenue_txt {

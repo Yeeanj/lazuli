@@ -362,33 +362,30 @@
 //footer
 #footer {
   .inner-footer {
-    .footer-wrap {
+    display: flex;
+    .footer-util {
+      position: fixed;
+      z-index: 10005;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      width: 100%;
+      border-top: 1px solid #000;
+      background-color: #fff;
+    }
+    .footer-lst {
       display: flex;
-
-      .footer-util {
-        position: fixed;
-        z-index: 10005;
-        bottom: 0;
-        left: 0;
-        right: 0;
+      justify-content: space-evenly;
+      .footer-nav-g {
+        width: 40px;
         height: 60px;
-        width: 100%;
-        border-top: 1px solid #000;
-        background-color: #fff;
-      }
-      .footer-lst {
         display: flex;
-        justify-content: space-evenly;
-        .footer-nav-g {
-          width: 40px;
-          height: 60px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          &::before {
-            font-family: "Font Awesome 6 Free";
-            font-size: 18px;
-          }
+        align-items: center;
+        justify-content: center;
+        &::before {
+          font-family: "Font Awesome 6 Free";
+          font-size: 18px;
         }
       }
     }
