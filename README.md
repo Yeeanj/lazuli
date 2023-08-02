@@ -14,12 +14,13 @@ https://eehd80.github.io/lazuli/
 
 (수요일)
 
-- ocean 페이지 onejean.scss로 옮기기
-- 유튜브 동영상 살리기
-- 전체 그리기 맞추기
+- ocean 페이지 onejean.scss로 옮기기 v
+- 유튜브 동영상 살리기 v
+- 리드미 내용 수정 = 피그마/슬랙 참조
 
 (목요일)
 
+- 전체 그리기 맞추기
 - 클래스 이름 수정 및 통일
 
 (금요일)
