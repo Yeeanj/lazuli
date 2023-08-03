@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var swiper = new Swiper(".mySwiper", {
   navigation: {
     nextEl: ".swiper-button-next",
@@ -6,8 +5,6 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-
-=======
 // Youtube IFrame API를 비동기로 로드합니다.
 var tag = document.createElement("script");
 tag.src = "https://www.youtube.com/iframe_api";
@@ -35,4 +32,3 @@ function onYouTubePlayerAPIReady() {
     },
   });
 }
->>>>>>> 0nejean/main
