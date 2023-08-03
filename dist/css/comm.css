@@ -75,12 +75,14 @@ q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after {
+blockquote:before,
+blockquote:after {
   content: "";
   content: none;
 }
 
-q:before, q:after {
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -110,11 +112,14 @@ body {
 }
 
 /* 뷰표트 변환시 폰트크기 자동확대 방지 */
-input[type=text], input[type=password], input[type=submit], input[type=search] {
+input[type="text"],
+input[type="password"],
+input[type="submit"],
+input[type="search"] {
   -webkit-appearance: none;
   border-radius: 0;
 }
-input:checked[type=checkbox] {
+input:checked[type="checkbox"] {
   background-color: #666;
   -webkit-appearance: checkbox;
 }
@@ -124,11 +129,14 @@ button {
   border-radius: 0;
 }
 
-input[type=button], input[type=submit], input[type=reset], input[type=file] {
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="file"] {
   -webkit-appearance: button;
   border-radius: 0;
 }
-input[type=search]::-webkit-search-cancel-button {
+input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 
@@ -138,7 +146,8 @@ body {
   background: #fff;
   font-size: 14px;
   line-height: 1.5;
-  font-family: "Noto Sans KR", "Noto Serif KR", "Malgun Gothic", "맑은 고딕", serif, sans-serif;
+  font-family: "Noto Sans KR", "Noto Serif KR", "Malgun Gothic", "맑은 고딕",
+    serif, sans-serif;
   color: #111;
 }
 
@@ -153,7 +162,8 @@ a {
   color: #333;
   text-decoration: none;
 }
-a:active, a:hover {
+a:active,
+a:hover {
   text-decoration: none;
 }
 
@@ -172,7 +182,7 @@ hr {
   display: none;
 }
 
-input[type=password] {
+input[type="password"] {
   font-family: "Malgun Gothic";
 }
 
@@ -607,10 +617,10 @@ legend {
   font-size: 20px;
 }
 
-#footer .inner-footer .footer-wrap {
+#footer .inner-footer {
   display: flex;
 }
-#footer .inner-footer .footer-wrap .footer-util {
+#footer .inner-footer .footer-util {
   position: fixed;
   z-index: 10005;
   bottom: 0;
@@ -621,18 +631,18 @@ legend {
   border-top: 1px solid #000;
   background-color: #fff;
 }
-#footer .inner-footer .footer-wrap .footer-lst {
+#footer .inner-footer .footer-lst {
   display: flex;
   justify-content: space-evenly;
 }
-#footer .inner-footer .footer-wrap .footer-lst .footer-nav-g {
+#footer .inner-footer .footer-lst .footer-nav-g {
   width: 40px;
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#footer .inner-footer .footer-wrap .footer-lst .footer-nav-g::before {
+#footer .inner-footer .footer-lst .footer-nav-g::before {
   font-family: "Font Awesome 6 Free";
   font-size: 18px;
 }
@@ -663,61 +673,6 @@ legend {
   text-align: center;
   font-weight: 700;
   margin-bottom: 10px;
-}
-
-.IamASplash .Splash-img {
-  z-index: 100000000;
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 100vh;
-  width: 100vw;
-  animation-name: splash;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  animation-duration: 1.5s;
-  animation-delay: 1s;
-  animation-iteration-count: 1;
-}
-@keyframes splash {
-  0% {
-    opacity: 100%;
-  }
-  5% {
-    opacity: 95%;
-  }
-  15% {
-    opacity: 85%;
-  }
-  25% {
-    opacity: 75%;
-  }
-  35% {
-    opacity: 65%;
-  }
-  45% {
-    opacity: 55%;
-  }
-  50% {
-    opacity: 50%;
-  }
-  65% {
-    opacity: 35%;
-  }
-  75% {
-    opacity: 15%;
-  }
-  85% {
-    opacity: 15%;
-  }
-  100% {
-    opacity: 0%;
-    display: none;
-    visibility: hidden;
-  }
 }
 
 .text-g {
@@ -766,7 +721,7 @@ legend {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .slide-wrap .lst-goto {
   margin-top: 40px;
@@ -853,7 +808,7 @@ strong {
 
 .royal-txt-g .royal_tit_mini {
   display: block;
-  margin: 109px 0 50px;
+  margin: 50px 0;
 }
 .royal-txt-g .royal-tit-g {
   display: block;
@@ -866,12 +821,13 @@ strong {
   display: block;
   font-size: 18px;
   font-weight: 400;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .sec-royal_main a,
 .sec-royal-sub-nec a {
   height: 450px;
+  font-size: 16px;
 }
 
 .sec-royal-sub-regal a {
@@ -883,7 +839,6 @@ strong {
   margin-bottom: 43px;
 }
 .royal-sec-btn a {
-  position: relative;
   display: block;
   width: 119px;
   height: 39px;
@@ -893,30 +848,25 @@ strong {
   color: #fff;
   text-align: center;
   font-size: 16px;
-  font-weight: 400;
 }
 
 .sec-btn-royal {
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
-.sec-btn-royal button {
+.sec-btn-royal a {
   position: relative;
   display: block;
-  width: 320px;
-  height: 52px;
   border: 1px solid #000;
-  margin: 0 auto;
   line-height: 52px;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
-  font-weight: 700;
-  margin-bottom: 10px;
+  font-weight: 500;
 }
-.sec-btn-royal button .material-icons-outlined {
+.sec-btn-royal a .material-icons-outlined {
   display: block;
   position: absolute;
   top: 50%;
-  right: 25%;
+  right: 30%;
   transform: translateY(-50%);
 }
 
@@ -927,7 +877,7 @@ strong {
   display: block;
   width: 100%;
   background: #fdfdfd;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 .wd-txt-g {
@@ -967,9 +917,9 @@ strong {
   font-size: 16px;
   margin-bottom: 30px;
 }
-.wdring_intro .sec-btn-raser button {
+.wdring_intro .sec-btn-raser a {
   display: block;
-  width: 320px;
+  width: 100%;
   height: 52px;
   border: 1px solid #000;
   margin: 0 auto;
@@ -980,13 +930,8 @@ strong {
   margin-bottom: 10px;
 }
 
-.lst_wdring::after {
-  content: "";
-  display: block;
-  width: 80%;
-  margin: 0 auto;
-  margin: 30px;
-  border-bottom: 1px solid #111;
+.lst_wdring {
+  margin-bottom: 80px;
 }
 .lst_wdring .tit_wdring_lazuli {
   text-align: center;
@@ -1001,168 +946,182 @@ strong {
   text-align: center;
   font-size: 18px;
   font-weight: 900;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 
-.wd_btn_txt button {
+.wd_btn_txt {
   position: relative;
   display: block;
-  width: 50px;
-  margin: 0 auto;
+  text-align: center;
 }
-.wd_btn_txt button::after {
+.wd_btn_txt::after {
   position: absolute;
-  top: 3px;
-  left: 100%;
+  top: 2px;
+  left: 50%;
+  transform: translateX(200%);
   content: "\e5e1";
   font-family: "Material Icons Outlined";
   font-size: 12px;
 }
 
-.footer-info a {
+.location-info a {
   display: block;
   height: 375px;
 }
 
-.footer-images img {
+.location-images img {
   width: 100%;
 }
 
-.footer-info-txt {
+.location-info-txt {
   display: block;
-  width: 200px;
-  margin: 0 auto;
-  margin-top: 35px;
-  margin-bottom: 35px;
+  margin: 35px 0;
   text-align: center;
   font-family: "Noto sans KR";
 }
-.footer-info-txt .footertxt-tit {
+.location-info-txt .locationtxt-tit {
   font-weight: 600;
-  font-size: 30px;
-  margin-bottom: 32px;
+  font-size: 32px;
 }
-.footer-info-txt .footer-txt-intro {
+.location-info-txt .location-txt-intro {
   font-size: 18px;
   font-weight: 400;
+  margin-top: 30px;
 }
 
-.sec-btn-footer button {
+.sec-btn-location a {
   display: block;
-  width: 320px;
+  width: 100%;
   height: 52px;
   border: 1px solid #000;
-  margin: 0 auto;
   line-height: 52px;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
-.event-cart-sec-g img {
+.event-cart-sec-g .swiper-slide img {
   width: 100%;
   background: #fdfdfd;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 .reser_service .reser_intro {
   display: block;
-  border-top: 1px solid #f5f5f5;
-  border-bottom: 1px solid #f5f5f5;
   padding: 10px 0;
-  margin: 90px 0 30px;
+  margin: 30px 0 50px;
 }
 .reser_service .reser_intro .reser_tit {
-  font-size: 20px;
+  font-size: 28px;
+  font-weight: 700;
 }
 .reser_service .reser_intro .reser_txt {
   padding: 5px 0;
   font-size: 16px;
+  font-weight: 400;
+  color: #888;
+  margin-top: 15px;
 }
 .reser_service .reser_intro .reser_togo {
   display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin-top: 15px;
+  width: 165px;
+  height: 35px;
+  border-radius: 100px;
 }
-.reser_service .reser_intro .reser_togo li {
-  padding: 0 3px;
+.reser_service .reser_intro .reser_togo a {
+  padding: 0 5px;
+  font-weight: 500;
+  color: #fff;
+  background: #070322;
 }
-.reser_service .reser_intro .reser_togo li a:hover {
-  border-bottom: 1px solid #111;
+.reser_service .reser_intro .reser_togo em {
+  margin: 0 5px;
+  font-weight: 500;
+  opacity: 0.9;
 }
 
 .reser_info {
   display: block;
-  border-top: 1px solid #f5f5f5;
-  border-bottom: 1px solid #f5f5f5;
   padding: 10px 0;
-}
-.reser_info .reser_guid {
-  display: block;
-  font-size: 16px;
-  font-weight: 500;
-  text-align: center;
-  margin: 15px 0;
 }
 
 .reser-g {
   font-size: 16px;
-  font-weight: 500;
+}
+
+.reser_lst_tit {
+  font-size: 28px;
+  font-weight: 700;
 }
 
 .reser_lst {
-  line-height: 2;
+  line-height: 2.5;
+  margin-top: 20px;
 }
-.reser_lst .reser_lst_tit {
-  font-size: 20px;
-  font-weight: 600;
-}
-.reser_lst .reser_total {
+.reser_lst .reser_promotion {
   position: relative;
-}
-.reser_lst .reser_total::after {
-  position: absolute;
-  content: "―";
-  top: 1px;
-  right: 0;
-  font-size: 16px;
+  display: block;
   font-weight: 500;
+  font-size: 18px;
+  padding-left: 30px;
+}
+.reser_lst .reser_promotion::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-26%);
+  width: 24px;
+  height: 24px;
+  background: url(../../images/contents/Cart_TIP.png) no-repeat 0 0 / contain;
 }
 .reser_lst .reser_pay {
-  position: relative;
+  font-weight: 400;
+  opacity: 0.7;
 }
-.reser_lst .reser_pay::after {
-  position: absolute;
-  content: "―";
-  top: 1px;
-  right: 0;
-  font-size: 16px;
-  font-weight: 500;
+.reser_lst .reser_pay .reser_pay_won {
+  float: right;
 }
 .reser_lst .reser_cost {
-  position: relative;
+  font-weight: 400;
+  opacity: 0.7;
 }
-.reser_lst .reser_cost::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  content: "무료";
-  font-size: 16px;
+.reser_lst .reser_cost .reser_cost_won {
+  float: right;
+}
+.reser_lst .reser_total {
+  font-weight: 500;
+  font-size: 18px;
+}
+.reser_lst .reser_total .reser_total_won {
+  float: right;
 }
 
-.reser-btn {
-  margin: 30px 0;
+.reser_come_visit {
+  margin: 20px 0 80px;
 }
-.reser-btn button {
-  width: 335px;
+.reser_come_visit a {
+  display: block;
+  width: 100%;
   height: 62px;
-  background: #eee;
+  background: #070322;
   border-radius: 100px;
+  color: #fff;
+  text-align: center;
+  line-height: 62px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .item_recom {
   margin-bottom: 30px;
+}
+.item_recom .item_recom_tit {
+  font-size: 28px;
 }
 .item_recom .swiper_ocean_txt,
 .item_recom .swiper_avenue_txt {
@@ -1189,213 +1148,10 @@ strong {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .swiper {
   margin-left: auto;
   margin-right: auto;
-}
-
-.sec-reservation .reservation-txt-first {
-  padding-top: 30px;
-  padding-bottom: 50px;
-  text-align: center;
-}
-.sec-reservation .reservation-txt-first p {
-  font-size: 16px;
-}
-
-.reservation-st {
-  font-family: Noto Sans KR;
-  font-size: 30px;
-  font-weight: 400;
-}
-
-.sec-reser .dogu {
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
-}
-.sec-reser .dogu .dogu-container {
-  padding: 20px 0;
-  display: flex;
-  justify-content: space-evenly;
-}
-.sec-reser .dogu .dogu-container a {
-  font-weight: 400;
-  font-size: 16px;
-}
-
-.lst-inquiry {
-  margin-top: 30px;
-}
-
-input[type=text],
-input[type=email],
-input[type=tel],
-select,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #000;
-  border-radius: 4px;
-  resize: none;
-  margin-top: 10px;
-}
-
-textarea {
-  margin-top: 10px;
-}
-
-.col-75 {
-  width: 100%;
-  margin-top: 10px;
-}
-
-.row1 {
-  margin-bottom: 100px;
-}
-
-.reservation-txt-last {
-  text-align: center;
-}
-.reservation-txt-last p {
-  font-size: 16px;
-  margin-top: 10px;
-}
-
-.sec-btn-reservation button {
-  display: block;
-  width: 320px;
-  height: 52px;
-  border: 1px solid #000;
-  margin: 0 auto;
-  line-height: 52px;
-  font-size: 14px;
-  text-align: center;
-  font-weight: 700;
-  margin-bottom: 10px;
-  background-color: #000000;
-  color: #fff;
-}
-
-.sec-goods-g .bnr-wd-txt {
-  padding-top: 30px;
-  padding-bottom: 50px;
-  text-align: center;
-}
-.sec-goods-g .bnr-wd-txt strong {
-  font-size: 30px;
-}
-.sec-goods-g .bnr-wd-txt p {
-  margin-top: 15px;
-}
-
-.goods-wd-depth1 {
-  margin-top: 50px;
-}
-.goods-wd-depth1 img {
-  display: block;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-.goods-wd-depth1 p {
-  text-align: center;
-  line-height: 50px;
-  font-weight: 400;
-  font-size: 16px;
-}
-
-.goods-wd-depth2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.goods-wd-depth2 li {
-  width: calc(50% - 1.5px);
-  margin-bottom: 3px;
-}
-
-.goods-btn {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.winston,
-.find {
-  text-align: center;
-}
-.winston img,
-.find img {
-  margin: 30px 0;
-  width: 100%;
-}
-.winston .txt-strong,
-.find .txt-strong {
-  font-size: 30px;
-  margin: 40px 0px;
-}
-.winston .txt-p,
-.find .txt-p {
-  text-align: center;
-  margin: 30px 0px 50px;
-  font-size: 16px;
-}
-
-.find {
-  text-align: center;
-}
-.find img {
-  margin: 100px 0 0 0;
-  width: 100%;
-}
-.find .txt-strong {
-  font-size: 30px;
-  margin: 40px 0px;
-}
-.find .txt-p {
-  text-align: center;
-  margin: 30px 0px 50px;
-  font-size: 16px;
-}
-
-.button-wrap {
-  display: flex;
-  justify-content: center;
-}
-.button-wrap .button {
-  position: relative;
-  text-align: center;
-  line-height: 45px;
-  font-size: large;
-  font-weight: bold;
-  width: 50%;
-  height: 50px;
-  border: 1px solid #000;
-}
-.button-wrap .button::before {
-  position: absolute;
-  content: "\f054";
-  font-family: "Font Awesome 6 Free";
-  top: 0;
-  right: 10%;
-  font-weight: 900;
-}
-.button-wrap .space-btm {
-  margin-bottom: 30px;
-}
-.button-wrap .space-btm-last {
-  margin-bottom: 100px;
-}
-.button-wrap .epr-btm {
-  position: relative;
-  margin-bottom: -50px;
-  font-weight: 500;
-}
-.button-wrap .epr-btm::before {
-  position: absolute;
-  content: "\f054";
-  font-family: "Font Awesome 6 Free";
-  top: 19px;
-  right: -30%;
-  font-weight: 900;
-}/*# sourceMappingURL=comm.css.map */
+} /*# sourceMappingURL=comm.css.map */
