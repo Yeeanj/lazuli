@@ -32,7 +32,3 @@ function onYouTubePlayerAPIReady() {
     },
   });
 }
-
-$(".link-depth1").click(function () {
-  $(".link-depth2 li").addClass("active");
-});
