@@ -1,29 +1,36 @@
-# list
+# **💎Lazuli**
 
-https://eehd80.github.io/lazuli/!list.html
+하이엔드 주얼리 브랜드  
+_'해리윈스턴'_ 웹사이트를 참조하여,  
+가상의 브랜드 _'Lazuli'_ 를 대표하는 웹사이트로  
+재구성한 포트폴리오를 소개하고자 합니다😀
 
-## main
+<hr/>
 
-https://eehd80.github.io/lazuli/
+### 1️⃣ Web page
 
-### notice
+> **[Main Page](https://eehd80.github.io/lazuli/)**
 
-1. html은 페이지 별로 별도 분리하고, SCSS는 comm, main 사용하여 작업 중 > 진짜 공통만 comm, maim 나머지는 각자 깃허브 아이디 scss 이용
+<p></p>
 
-2. 8월 첫째주 할당량
+### 2️⃣Design Reference
 
-(수요일)
+> **[Figma Team page](https://www.figma.com/file/tdaHQSw8ZFN3Eq60Mle5nk/PORTFOLIO-1?type=design&node-id=94-1549&mode=design&t=ZmHW8NHQb6POGILP-0)**
 
-- ocean 페이지 onejean.scss로 옮기기 v
-- 유튜브 동영상 살리기 v
-- 스플래시 페이지 제작 v
+### 3️⃣Workflow
 
-(목요일)
+> **[List Page](https://eehd80.github.io/lazuli/!list.html)**
 
-- 전체 그리기 맞추기
-- 클래스 이름 수정 및 통일
-- 리드미 내용 수정 = 피그마/슬랙 참조
+###### \*스티커(초록/노랑/빨강) = 해당페이지 작성을 의미
 
-(금요일)
+![페이지 구성](./images/main/WORKFLOW.jpg)
 
-- 마무리
+<hr/>  
+< 포트폴리오 팀 구성 >
+
+`Main Designer - 서연주`  
+`Lead Developer - 이성재`  
+`Rroject Reader - 박원진`
+
+< Skills & Tools >  
+![SNT](./images/main/skillntools.png)

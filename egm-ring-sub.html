@@ -51,6 +51,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./dist/css/comm.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
@@ -66,25 +70,378 @@
 
     <div class="wrap">
       <header id="header" class="container">
-        <h1 id="logo" class="logo1">
-          <a href="#">Lazuli</a>
-        </h1>
         <div class="inner">
-          <nav>
-            <i class="fa-solid fa-bars"></i>
+          <h1 id="logo" class="logo1">
+            <a href="#">Lazuli</a>
+          </h1>
+
+          <nav class="gnb-wrap">
+            <input
+              type="checkbox"
+              name="gnbNav"
+              id="gnbNav"
+              class="input-burger"
+              checked
+            />
+            <label for="gnbNav" class="label-burger">
+              <span class="blind">전체 메뉴 보기</span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </label>
+            <div id="gnb">
+              <div class="gnb-main">
+                <div class="sec-link">
+                  <h2 class="blind">네비게이션</h2>
+
+                  <ul class="lst-gnb-main link-depth1">
+                    <li>
+                      <a href="javascript:void(0)" class="link-main">
+                        The House
+                      </a>
+                      <ul class="link-depth2">
+                        <li>
+                          <a href="#" class="link-sub">By collection</a>
+                          <ul class="link-depth3">
+                            <li>
+                              <a href="#">Royal Adornments Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">New York Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">The Incredibles Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Majestic Escapes Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Marvelous Creations Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Lazuli Icons Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Lazuli With Love Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Legacy Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Secret Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Hope Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">View All High Jewelry Collections</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)" class="link-main"
+                        >High Jewelry</a
+                      >
+                      <ul class="link-depth2">
+                        <li>
+                          <a href="" class="link-sub">By collection</a>
+                          <ul class="link-depth3">
+                            <li>
+                              <a href="#">Royal Adornments Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">New York Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">The Incredibles Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Majestic Escapes Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Marvelous Creations Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Lazuli Icons Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Lazuli With Love Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Legacy Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Secret Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Hope Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">View All High Jewelry Collections</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)" class="link-main"
+                        >Fine Jewelry</a
+                      >
+                      <ul class="link-depth2">
+                        <li>
+                          <a href="#" class="link-sub">By collection</a>
+                          <ul class="link-depth3">
+                            <li>
+                              <a href="#">Royal Adornments Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">New York Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">The Incredibles Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Majestic Escapes Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Marvelous Creations Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Lazuli Icons Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Lazuli With Love Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Legacy Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Secret Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Hope Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">View All High Jewelry Collections</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)" class="link-main"
+                        >Engagement and Bridal</a
+                      >
+                      <ul class="link-depth2">
+                        <li>
+                          <a href="#" class="link-sub">By collection</a>
+                          <ul class="link-depth3">
+                            <li>
+                              <a href="#">Royal Adornments Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">New York Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">The Incredibles Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Majestic Escapes Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Marvelous Creations Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Lazuli Icons Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Lazuli With Love Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Legacy Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Secret Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Hope Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">View All High Jewelry Collections</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)" class="link-main">Watches</a>
+                      <ul class="link-depth2">
+                        <li>
+                          <a href="#" class="link-sub">By collection</a>
+                          <ul class="link-depth3">
+                            <li>
+                              <a href="#">Royal Adornments Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">New York Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">The Incredibles Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Majestic Escapes Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Marvelous Creations Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Lazuli Icons Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Lazuli With Love Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Legacy Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Secret Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Hope Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">View All High Jewelry Collections</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)" class="link-main"
+                        >Services</a
+                      >
+                      <ul class="link-depth2">
+                        <li>
+                          <a href="#" class="link-sub">By collection</a>
+                          <ul class="link-depth3">
+                            <li>
+                              <a href="#">Royal Adornments Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">New York Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">The Incredibles Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Majestic Escapes Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Marvelous Creations Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Lazuli Icons Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Lazuli With Love Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Legacy Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Secret Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Hope Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">View All High Jewelry Collections</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </nav>
+
           <div class="util">
             <ul class="lst-util">
               <li>
-                <!-- a:링크연결button:동작처리 -->
-                <button class="btn-g btn-search">
+                <button class="nav-g btn-search">
+                  <span class="material-icons-outlined"> search </span>
                   <span class="blind">검색</span>
                 </button>
               </li>
               <li>
-                <button class="btn-g btn-shopp">
+                <a href="./visit.html" class="nav-g btn-shopp">
+                  <span class="material-icons-outlined"> shopping_bag </span>
                   <span class="blind">장바구니</span>
-                </button>
+                </a>
               </li>
             </ul>
           </div>
@@ -100,7 +457,7 @@
               src="https://www.harrywinston.com/-/media/project/harry-winston/corporate/harry-winston-int/fine-jewelry/others-by-harry-winston/the-one-round-brilliant-diamond-micropave-engagement-ring/the_one_engagement_ring_diamond_rgdprd010mic_e-1.png?rev=7c2af7b42e7c4ebf9a53d77dc13e9ed5f"
               alt="engagement ring image"
             />
-            <p class="txt-p">The One by Lazuli</p>
+            <p class="txt-head-top">The One by Lazuli</p>
             <strong class="txt-strong">
               The One Round Brilliant<br />
               Diamond Micropavé<br />
@@ -112,10 +469,11 @@
               우아한 아름다움을 강조하기 위해<br />
               세심하게 수작업으로 제작됐습니다.
             </p>
-            <div class="button-wrap">
-              <button class="button space-btm"><span>예약신청</span></button>
-            </div>
-            <div class="button-wrap">
+            <div class="container button-wrap">
+              <button class="button space-btm-last">
+                <span>예약신청</span>
+              </button>
+
               <button class="button space-btm"><span>고객문의</span></button>
             </div>
           </div>
@@ -160,7 +518,7 @@
         <!-- section3 -->
         <div class="section3">
           <div class="eg-ring-sub">
-            <strong class="txt-strong">lazuli의 추천상품</strong>
+            <div class="txt-strong-kr">lazuli의 추천상품</div>
             <img
               src="https://www.harrywinston.com/-/media/project/harry-winston/corporate/harry-winston-int/fine-jewelry/others-by-harry-winston/brilliant-love-diamond-engagement-ring/brilliant_love_by_harry_winston_engagement_ring__diamond__rgdprd030brl_e-1.png?rev=21317b4eb5014a798f08c2f0d495f102"
               alt="engagement ring image"
@@ -170,8 +528,12 @@
               Engagement <br />
               Diamond Ring</strong
             >
-            <div class="button-wrap">
-              <button class="epr-btm">EXPLORE</button>
+
+            <div class="container sec-btn-explore">
+              <a href="#">
+                <span>Explore</span>
+                <span class="material-icons-outlined">chevron_right </span>
+              </a>
             </div>
 
             <div class="eg-ring-sub">
@@ -183,59 +545,93 @@
                 Micropavé Diamond Narrow<br />
                 Wedding Band</strong
               >
-              <div class="button-wrap">
-                <button class="epr-btm">EXPLORE</button>
+
+              <div class="container sec-btn-explore">
+                <a href="#">
+                  <span>Explore</span>
+                  <span class="material-icons-outlined">chevron_right </span>
+                </a>
+              </div>
+
+              <div class="eg-ring-sub">
+                <img
+                  src="https://www.harrywinston.com/-/media/project/harry-winston/corporate/harry-winston-int/fine-jewelry/others-by-harry-winston/the-one-double-halo-micropave-diamond-engagement-ring/the_one_double_halo_round_brilliant_engagement_ring_diamond_rgdprd010dh_e-1.png?rev=ca3a44f1b85c4bfe8a37271da84f2197"
+                  alt="engagement ring image"
+                />
+                <strong class="txt-strong">
+                  The One Double Halo<br />
+                  Micropavé Diamond<br />
+                  Engagement Ring</strong
+                >
+
+                <div class="container sec-btn-explore">
+                  <a href="#">
+                    <span>Explore</span>
+                    <span class="material-icons-outlined">chevron_right </span>
+                  </a>
+                </div>
               </div>
             </div>
 
-            <div class="eg-ring-sub">
+            <!-- have to add on footer -->
+            <div class="find">
               <img
-                src="https://www.harrywinston.com/-/media/project/harry-winston/corporate/harry-winston-int/fine-jewelry/others-by-harry-winston/the-one-double-halo-micropave-diamond-engagement-ring/the_one_double_halo_round_brilliant_engagement_ring_diamond_rgdprd010dh_e-1.png?rev=ca3a44f1b85c4bfe8a37271da84f2197"
-                alt="engagement ring image"
+                src="https://www.harrywinston.com/-/media/project/harry-winston/corporate/harry-winston-int/global/hero/hero-side-by-side/find-my-harry-winston/find-my-harry-winston.jpg?rev=4dea995cda14401cadec208474337bec"
+                alt="find my harry winston image"
               />
-              <strong class="txt-strong">
-                The One Double Halo<br />
-                Micropavé Diamond<br />
-                Engagement Ring</strong
-              >
-              <div class="button-wrap">
-                <button class="epr-btm">EXPLORE</button>
+              <div class="txt-strong-kr">오시는 길</div>
+              <p class="txt-p">
+                늘 여러분 곁에 있습니다.<br />
+                라줄리만의 특별한 세계로 <br />
+                초대합니다.
+              </p>
+              <div class="container button-wrap">
+                <button class="button space-btm-last">
+                  <span>둘러보기</span>
+                </button>
               </div>
-            </div>
-          </div>
-
-          <!-- have to add on footer -->
-          <div class="find">
-            <img
-              src="https://www.harrywinston.com/-/media/project/harry-winston/corporate/harry-winston-int/global/hero/hero-side-by-side/find-my-harry-winston/find-my-harry-winston.jpg?rev=4dea995cda14401cadec208474337bec"
-              alt="find my harry winston image"
-            />
-            <strong class="txt-strong">오시는 길</strong>
-            <p class="txt-p">
-              늘 여러분 곁에 있습니다.<br />
-              라줄리만의 특별한 세계로 <br />
-              초대합니다.
-            </p>
-            <div class="button-wrap">
-              <button class="button space-btm-last">
-                <span>자세히 보기</span>
-              </button>
             </div>
           </div>
         </div>
       </main>
 
       <!-- footer -->
-      <footer id="footer" class="container">
-        <div class="footer-util">
-          <ul class="lst-util">
-            <li>
-              <button class="btn-g btn-home">홈</button>
-            </li>
-            <li><button class="btn-g btn-wish">위시리스트</button></li>
-            <li><button class="btn-g btn-bell">알림</button></li>
-            <li><button class="btn-g btn-my">마이페이지</button></li>
-          </ul>
+      <footer id="footer">
+        <div class="inner-footer">
+          <div class="footer-wrap">
+            <div class="footer-util">
+              <ul class="footer-lst">
+                <li>
+                  <button class="footer-nav-g btn-home">
+                    <span class="material-symbols-outlined"> home </span>
+                    <span class="blind">홈</span>
+                  </button>
+                </li>
+                <li>
+                  <a href="#" class="footer-nav-g btn-list">
+                    <span class="material-symbols-outlined"> favorite </span>
+                    <span class="blind">리스트</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="footer-nav-g btn-bell">
+                    <span class="material-symbols-outlined">
+                      notifications
+                    </span>
+                    <span class="blind">알림</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="footer-nav-g btn-my">
+                    <span class="material-symbols-outlined">
+                      account_circle
+                    </span>
+                    <span class="blind">마이페이지</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
