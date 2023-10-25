@@ -1,15 +1,29 @@
-// var swiper = new Swiper(".mySwiper", {
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// });
-
-
 $(function () {
-  const deplink1 = $(".link-depth1");
-  const linkBtn = $(".link-main");
-  linkBtn.on("click", function () {
-    deplink1.addClass("active");
+  $(".link-main").on("click", function () {
+    if ($(this).parent().hasClass("active")) {
+      $(this).parent().removeClass("active");
+    } else {
+      $(".link-depth1 > li").removeClass("active");
+      $(this).parent().addClass("active");
+    }
   });
+});
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });

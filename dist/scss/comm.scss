@@ -24,7 +24,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  border-bottom: 1px solid #000;
+  box-shadow: 1px 1px 1px #3333337a;
   background-color: #fff;
   .logo1 {
     position: absolute;
@@ -143,7 +143,8 @@ header {
     .active {
       .link-depth2 {
         max-height: 100%;
-        padding-bottom: 50px;
+        padding-bottom: 20px;
+        opacity: 1;
       }
     }
 
@@ -154,7 +155,11 @@ header {
       right: 0;
       max-height: 0;
       overflow: hidden;
-      transition: all 0.3s;
+      transition: all 0.1s;
+      opacity: 0;
+      transition-timing-function: ease-in;
+      // transition-timing-function: step-start;
+      // transition-timing-function: step-end;
     }
 
     .link-depth1 a {
@@ -235,74 +240,35 @@ header {
 
 // footer
 #footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  // border-top: 1px solid #000;
-  background: #fff;
+  .inner-footer {
+    .footer-wrap {
+      display: flex;
 
-  .footer-util {
-    height: 60px;
-  }
-  .footer-lst {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    li {
-      width: 72px;
-      height: 60px;
-      text-align: center;
-      // border: 1px solid #000;
-    }
-    .btn-g {
-      padding-top: 36px;
-      position: relative;
-      font-size: 12px;
-      font-family: "Noto Sans KR";
-      font-weight: 400;
-      &::before {
-        position: absolute;
+      .footer-util {
+        position: fixed;
+        z-index: 10005;
+        bottom: 0;
         left: 0;
         right: 0;
-        font-family: "Material Icons Outlined";
-        // font-weight: 500;
-        font-size: 32px;
-        text-align: center;
+        height: 60px;
+        width: 100%;
+        box-shadow: inset 1px 1px 1px #3333337a;
+        background-color: #fff;
       }
-    }
-    .btn-home {
-      &::before {
-        top: -1px;
-        left: -9px;
-        content: "\e88a";
-        font-family: "Material Symbols Outlined";
-        font-weight: 600;
-      }
-    }
-    .btn-wish {
-      &::before {
-        top: 2px;
-        content: "\e87e";
-      }
-    }
-    .btn-bell {
-      &::before {
-        top: 1px;
-        left: -5px;
-        content: "\e7f4";
-
-        font-weight: 200;
-        font-size: 34px;
-      }
-    }
-    .btn-my {
-      &::before {
-        top: 3px;
-        content: "\f007";
-        font-family: "Font Awesome 6 Free";
-        font-weight: normal;
-        font-size: 27px;
+      .footer-lst {
+        display: flex;
+        justify-content: space-evenly;
+        .footer-nav-g {
+          width: 40px;
+          height: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &::before {
+            font-family: "Font Awesome 6 Free";
+            font-size: 18px;
+          }
+        }
       }
     }
   }
@@ -323,6 +289,9 @@ header {
   border-radius: 19.5px;
   background-color: #070322;
   color: #fff;
+  display: block;
+  line-height: 39px;
+  text-align: center;
 }
 
 // 큰버튼

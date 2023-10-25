@@ -57,13 +57,13 @@
       rel="stylesheet"
       href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"
     />
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    /> -->
+    />
     <link rel="stylesheet" href="./dist/css/comm.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./dist/js/include.js"></script>
     <script defer src="./dist/js/comm.js"></script>
   </head>
@@ -75,7 +75,387 @@
     </div>
 
     <div class="wrap">
-      <header data-include-path="./outline/header.html"></header>
+      <!-- <header data-include-path="./outline/header.html"></header> -->
+
+      <header id="header" class="container">
+        <div class="inner">
+          <h1 id="logo" class="logo1">
+            <a href="#">Lazuli</a>
+          </h1>
+
+          <nav class="gnb-wrap">
+            <input
+              type="checkbox"
+              name="gnbNav"
+              id="gnbNav"
+              class="input-burger"
+              checked
+            />
+            <label for="gnbNav" class="label-burger">
+              <span class="blind">전체 메뉴 보기</span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </label>
+            <div id="gnb">
+              <div class="gnb-main">
+                <div class="sec-link">
+                  <h2 class="blind">네비게이션</h2>
+
+                  <ul class="lst-gnb-main link-depth1">
+                    <li>
+                      <a href="javascript:void(0)" class="link-main">
+                        The House
+                      </a>
+                      <ul class="link-depth2">
+                        <li>
+                          <a href="#" class="link-sub">By collection</a>
+                          <ul class="link-depth3">
+                            <li>
+                              <a href="#">Royal Adornments Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">New York Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">The Incredibles Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Majestic Escapes Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Marvelous Creations Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Lazuli Icons Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Lazuli With Love Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Legacy Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Secret Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Hope Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">View All High Jewelry Collections</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)" class="link-main"
+                        >High Jewelry</a
+                      >
+                      <ul class="link-depth2">
+                        <li>
+                          <a href="" class="link-sub">By collection</a>
+                          <ul class="link-depth3">
+                            <li>
+                              <a href="#">Royal Adornments Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">New York Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">The Incredibles Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Majestic Escapes Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Marvelous Creations Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Lazuli Icons Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Lazuli With Love Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Legacy Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Secret Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Hope Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">View All High Jewelry Collections</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)" class="link-main"
+                        >Fine Jewelry</a
+                      >
+                      <ul class="link-depth2">
+                        <li>
+                          <a href="#" class="link-sub">By collection</a>
+                          <ul class="link-depth3">
+                            <li>
+                              <a href="#">Royal Adornments Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">New York Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">The Incredibles Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Majestic Escapes Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Marvelous Creations Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Lazuli Icons Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Lazuli With Love Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Legacy Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Secret Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Hope Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">View All High Jewelry Collections</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)" class="link-main"
+                        >Engagement and Bridal</a
+                      >
+                      <ul class="link-depth2">
+                        <li>
+                          <a href="#" class="link-sub">By collection</a>
+                          <ul class="link-depth3">
+                            <li>
+                              <a href="#">Royal Adornments Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">New York Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">The Incredibles Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Majestic Escapes Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Marvelous Creations Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Lazuli Icons Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Lazuli With Love Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Legacy Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Secret Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Hope Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">View All High Jewelry Collections</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)" class="link-main">Watches</a>
+                      <ul class="link-depth2">
+                        <li>
+                          <a href="#" class="link-sub">By collection</a>
+                          <ul class="link-depth3">
+                            <li>
+                              <a href="#">Royal Adornments Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">New York Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">The Incredibles Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Majestic Escapes Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Marvelous Creations Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Lazuli Icons Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Lazuli With Love Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Legacy Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Secret Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Hope Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">View All High Jewelry Collections</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)" class="link-main"
+                        >Services</a
+                      >
+                      <ul class="link-depth2">
+                        <li>
+                          <a href="#" class="link-sub">By collection</a>
+                          <ul class="link-depth3">
+                            <li>
+                              <a href="#">Royal Adornments Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">New York Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">The Incredibles Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Majestic Escapes Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Marvelous Creations Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Lazuli Icons Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Lazuli With Love Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Legacy Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Secret Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">Hope Collection</a>
+                            </li>
+
+                            <li>
+                              <a href="#">View All High Jewelry Collections</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <div class="util">
+            <ul class="lst-util">
+              <li>
+                <button class="nav-g btn-search">
+                  <span class="material-icons-outlined"> search </span>
+                  <span class="blind">검색</span>
+                </button>
+              </li>
+              <li>
+                <a href="./visit.html" class="nav-g btn-shopp">
+                  <span class="material-icons-outlined"> shopping_bag </span>
+                  <span class="blind">장바구니</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
       <main id="main">
         <section class="section-g sec-bnr">
           <h2 class="blind">메인배너</h2>
@@ -95,7 +475,7 @@
                   왕실 유산에서 영감을 얻은 독특한 하이 주얼리 스위트. <br />
                   새로운 컬렉션을 선보입니다.
                 </p>
-                <button class="jsh"><span>자세히 보기</span></button>
+                <a href="./Royal.html" class="jsh"><span>자세히 보기</span></a>
               </div>
             </li>
             <li>
@@ -109,7 +489,7 @@
                   대담하고 눈부신 타임피스로 여러분을 <br />
                   여름 속으로 초대합니다.
                 </p>
-                <button class="jsh"><span>자세히 보기</span></button>
+                <a href="./ocean.html" class="jsh"><span>자세히 보기</span></a>
               </div>
             </li>
 
@@ -123,14 +503,13 @@
                   보석으로 장식된 꽃과 찬란한 놀라움으로 가득 찬 <br />
                   Lazuli Maze에서 봄철 티 파티를 참여하세요.
                 </p>
+                <!-- 미구현 -->
                 <button class="jsh"><span>자세히 보기</span></button>
               </div>
             </li>
           </ul>
         </section>
 
-        <!-- Swiper -->
-        <!-- sec-ring -->
         <section class="slide-wrap sec-ring">
           <h2 class="container tit-serif-strong">Lazuli Bridal</h2>
           <div class="sec-slide">
@@ -153,7 +532,7 @@
           <!-- lst-goto -->
           <ul class="lst-goto container">
             <li class="cont-slide">
-              <a href="#">
+              <a href="./egm-ring.html">
                 <div class="cont-link">
                   <strong class="text2">Engagement Rings</strong>
                   <p>
@@ -168,7 +547,7 @@
             </li>
 
             <li class="cont-slide">
-              <a href="#">
+              <a href="./wd_ring.html">
                 <div class="cont-link">
                   <strong class="text2">Wedding Rings</strong>
                   <p>
@@ -183,238 +562,280 @@
             </li>
           </ul>
         </section>
-
         <!-- sec-high -->
-        <div class="sec-high">
-          <h2 class="blind">High Jewelry</h2>
+        <section class="sec-special">
+          <div class="high-wrap">
+            <h2 class="blind">High Jewelry</h2>
 
-          <div class="container cont-item-tit">
-            <a href="#">
-              <strong class="tit-serif-strong">High Jewelry</strong>
-              <span class="material-icons-outlined icon-b">
-                arrow_forward_ios
-              </span>
-            </a>
-          </div>
-
-          <div class="cont-item">
-            <div class="area-item">
-              <strong class="container tit-serif-p">Royal Collection</strong>
-              <ul>
-                <li>
-                  <div class="cont-item-img1">
-                    <a href="#">
-                      <img src="./images/main/item1.webp" alt="item1" />
-                    </a>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="cont-item-img1">
-                    <a href="#">
-                      <img src="./images/main/item2.png" alt="item2" />
-                    </a>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="cont-item-img1">
-                    <a href="#">
-                      <img src="./images/main/item3.png" alt="item3" />
-                    </a>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="cont-item-img1">
-                    <a href="#">
-                      <img src="./images/main/item4.png" alt="item4" />
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            <div class="area-item">
-              <strong class="container tit-serif-p">New York Collection</strong>
-              <ul>
-                <li>
-                  <div class="cont-item-img1">
-                    <a href="#">
-                      <img src="./images/main/nc4.png" alt="item1" />
-                    </a>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="cont-item-img1">
-                    <a href="#">
-                      <img src="./images/main/nc3.png" alt="item2" />
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            <div class="area-item">
-              <strong class="container tit-serif-p"
-                >Majestic Escapes Collection</strong
-              >
-              <ul>
-                <li>
-                  <div class="cont-item-img1">
-                    <a href="#">
-                      <img src="./images/main/nc2.png" alt="item1" />
-                    </a>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="cont-item-img1">
-                    <a href="#">
-                      <img src="./images/main/nc1.png" alt="item2" />
-                    </a>
-                  </div>
-                </li>
-              </ul>
-
-              <div class="cont-item-tit">
-                <a href="#">
-                  <strong class="container tit-serif-strong"
-                    >Fine Jewelry</strong
-                  >
-                  <span class="material-icons-outlined icon-b">
-                    arrow_forward_ios
-                  </span>
-                </a>
-              </div>
-            </div>
-
-            <div class="area-item">
-              <strong class="container tit-serif-p"
-                >Lazuli Gates Collection</strong
-              >
-              <ul>
-                <li>
-                  <div class="cont-item-img1">
-                    <a href="#">
-                      <img src="./images/main/db2-2.png" alt="item1" />
-                    </a>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="cont-item-img1">
-                    <a href="#">
-                      <img src="./images/main/db2.png" alt="item2" />
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            <div class="area-item">
-              <strong class="container tit-serif-p"
-                >Diamond Links Collection</strong
-              >
-              <ul>
-                <li>
-                  <div class="cont-item-img1">
-                    <a href="#">
-                      <img src="./images/main/db1-1.png" alt="item1" />
-                    </a>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="cont-item-img1">
-                    <a href="#">
-                      <img src="./images/main/db1.png" alt="item2" />
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            <div class="cont-item-tit">
+            <div class="container cont-item-tit">
               <a href="#">
-                <strong class="container tit-serif-strong">Watches</strong>
+                <strong class="tit-serif-strong">High Jewelry</strong>
                 <span class="material-icons-outlined icon-b">
                   arrow_forward_ios
                 </span>
               </a>
             </div>
 
-            <div class="area-item">
-              <strong class="container tit-serif-p"
-                >Summer Style by Lazuli</strong
-              >
-              <ul>
-                <li>
-                  <div class="cont-item-img1">
-                    <a href="#">
-                      <img src="./images/main/wc1.png" alt="item1" />
-                    </a>
-                  </div>
-                </li>
+            <div class="cont-item">
+              <div class="area-item area-item-first">
+                <strong class="container tit-serif-p">Royal Collection</strong>
+                <ul>
+                  <li>
+                    <div class="cont-item-img1">
+                      <a href="#">
+                        <img src="./images/main/item1.webp" alt="item1" />
+                      </a>
+                    </div>
+                  </li>
 
-                <li>
-                  <div class="cont-item-img1">
-                    <a href="#">
-                      <img src="./images/main/wc6.png" alt="item2" />
-                    </a>
-                  </div>
-                </li>
-              </ul>
+                  <li>
+                    <div class="cont-item-img1">
+                      <a href="#">
+                        <img src="./images/main/item2.png" alt="item2" />
+                      </a>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="cont-item-img1">
+                      <a href="#">
+                        <img src="./images/main/item3.png" alt="item3" />
+                      </a>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="cont-item-img1">
+                      <a href="#">
+                        <img src="./images/main/item4.png" alt="item4" />
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="area-item">
+                <strong class="container tit-serif-p"
+                  >New York Collection</strong
+                >
+                <ul>
+                  <li>
+                    <div class="cont-item-img1">
+                      <a href="#">
+                        <img src="./images/main/nc4.png" alt="item1" />
+                      </a>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="cont-item-img1">
+                      <a href="#">
+                        <img src="./images/main/nc3.png" alt="item2" />
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="area-item">
+                <strong class="container tit-serif-p"
+                  >Majestic Escapes Collection</strong
+                >
+                <ul>
+                  <li>
+                    <div class="cont-item-img1">
+                      <a href="#">
+                        <img src="./images/main/nc2.png" alt="item1" />
+                      </a>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="cont-item-img1">
+                      <a href="#">
+                        <img src="./images/main/nc1.png" alt="item2" />
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+
+                <div class="cont-item-tit">
+                  <a href="#">
+                    <strong class="container tit-serif-strong"
+                      >Fine Jewelry</strong
+                    >
+                    <span class="material-icons-outlined icon-b">
+                      arrow_forward_ios
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="area-item">
+                <strong class="container tit-serif-p"
+                  >Lazuli Gates Collection</strong
+                >
+                <ul>
+                  <li>
+                    <div class="cont-item-img1">
+                      <a href="#">
+                        <img src="./images/main/db2-2.png" alt="item1" />
+                      </a>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="cont-item-img1">
+                      <a href="#">
+                        <img src="./images/main/db2.png" alt="item2" />
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="area-item">
+                <strong class="container tit-serif-p"
+                  >Diamond Links Collection</strong
+                >
+                <ul>
+                  <li>
+                    <div class="cont-item-img1">
+                      <a href="#">
+                        <img src="./images/main/db1-1.png" alt="item1" />
+                      </a>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="cont-item-img1">
+                      <a href="#">
+                        <img src="./images/main/db1.png" alt="item2" />
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="cont-item-tit">
+                <a href="#">
+                  <strong class="container tit-serif-strong">Watches</strong>
+                  <span class="material-icons-outlined icon-b">
+                    arrow_forward_ios
+                  </span>
+                </a>
+              </div>
+
+              <div class="area-item">
+                <strong class="container tit-serif-p"
+                  >Summer Style by Lazuli</strong
+                >
+                <ul>
+                  <li>
+                    <div class="cont-item-img1">
+                      <a href="#">
+                        <img src="./images/main/wc1.png" alt="item1" />
+                      </a>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="cont-item-img1">
+                      <a href="#">
+                        <img src="./images/main/wc6.png" alt="item2" />
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="area-item">
+                <strong class="container tit-serif-p"
+                  >High Jewelry Timepieces</strong
+                >
+                <ul>
+                  <li>
+                    <div class="cont-item-img1">
+                      <a href="#">
+                        <img src="./images/main/wc2.png" alt="item1" />
+                      </a>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="cont-item-img1">
+                      <a href="#">
+                        <img src="./images/main/wc5.png" alt="item2" />
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="area-item">
+                <strong class="container tit-serif-p"
+                  >Midnight Collection</strong
+                >
+                <ul>
+                  <li>
+                    <div class="cont-item-img1">
+                      <a href="#">
+                        <img src="./images/main/wc3.png" alt="item1" />
+                      </a>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="cont-item-img1">
+                      <a href="#">
+                        <img src="./images/main/wc4.png" alt="item2" />
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
-
-            <div class="area-item">
-              <strong class="container tit-serif-p"
-                >High Jewelry Timepieces</strong
-              >
-              <ul>
+          </div>
+        </section>
+      </main>
+      <footer id="footer">
+        <div class="inner-footer">
+          <div class="footer-wrap">
+            <div class="footer-util">
+              <ul class="footer-lst">
                 <li>
-                  <div class="cont-item-img1">
-                    <a href="#">
-                      <img src="./images/main/wc2.png" alt="item1" />
-                    </a>
-                  </div>
+                  <button class="footer-nav-g btn-home">
+                    <span class="material-symbols-outlined"> home </span>
+                    <span class="blind">홈</span>
+                  </button>
                 </li>
-
                 <li>
-                  <div class="cont-item-img1">
-                    <a href="#">
-                      <img src="./images/main/wc5.png" alt="item2" />
-                    </a>
-                  </div>
+                  <a href="#" class="footer-nav-g btn-list">
+                    <span class="material-symbols-outlined"> favorite </span>
+                    <span class="blind">리스트</span>
+                  </a>
                 </li>
-              </ul>
-            </div>
-
-            <div class="area-item">
-              <strong class="container tit-serif-p">Midnight Collection</strong>
-              <ul>
                 <li>
-                  <div class="cont-item-img1">
-                    <a href="#">
-                      <img src="./images/main/wc3.png" alt="item1" />
-                    </a>
-                  </div>
+                  <a href="#" class="footer-nav-g btn-bell">
+                    <span class="material-symbols-outlined">
+                      notifications
+                    </span>
+                    <span class="blind">알림</span>
+                  </a>
                 </li>
-
                 <li>
-                  <div class="cont-item-img1">
-                    <a href="#">
-                      <img src="./images/main/wc4.png" alt="item2" />
-                    </a>
-                  </div>
+                  <a href="#" class="footer-nav-g btn-my">
+                    <span class="material-symbols-outlined">
+                      account_circle
+                    </span>
+                    <span class="blind">마이페이지</span>
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-      </main>
-      <footer data-include-path="./outline/footer.html"></footer>
+      </footer>
     </div>
   </body>
   <div class="IamASplash">
