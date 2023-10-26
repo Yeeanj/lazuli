@@ -281,7 +281,6 @@ legend {
 }
 
 .wrap {
-  padding-top: 60px;
   padding-bottom: 60px;
 }
 
@@ -492,7 +491,7 @@ header .sec-link .btn-burger::before {
 }
 #footer .inner-footer .footer-wrap .footer-util {
   position: fixed;
-  z-index: 10005;
+  z-index: 1000;
   bottom: 0;
   left: 0;
   right: 0;
@@ -603,6 +602,47 @@ header .sec-link .btn-burger::before {
   }
 }
 
+@media screen and (min-width: 428px) and (max-width: 1980px) {
+  #header,
+  .wrap {
+    max-width: 428px;
+    margin: 0 auto;
+  }
+  #main {
+    padding-top: 60px;
+  }
+  #header .gnb-wrap .input-burger:checked ~ #gnb {
+    left: 0;
+  }
+  #header #gnb {
+    z-index: 2000;
+    position: absolute;
+    top: 0;
+    left: -500%;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    max-width: 375px;
+    padding: 0 20px;
+    background: #070322;
+    display: flex;
+    transition: all linear 0s;
+  }
+  .Splash-img {
+    max-width: 428px;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .container {
+    padding: 0;
+  }
+  #header,
+  #footer .inner-footer .footer-wrap .footer-util {
+    box-shadow: 0 0 1px rgba(51, 51, 51, 0.47843137);
+    max-width: 428px;
+    margin: 0 auto;
+  }
+}
 .text-g {
   padding: 0 4%;
   margin: 10px 0 50px;
