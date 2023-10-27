@@ -298,7 +298,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  box-shadow: 1px 1px 1px rgba(51, 51, 51, 0.4784313725);
+  box-shadow: 0 0 1px rgba(51, 51, 51, 0.47843137);
   background-color: #fff;
 }
 header .logo1 {
@@ -497,7 +497,7 @@ header .sec-link .btn-burger::before {
   right: 0;
   height: 60px;
   width: 100%;
-  box-shadow: inset 1px 1px 1px rgba(51, 51, 51, 0.4784313725);
+  box-shadow: inset 0 0 1px rgba(51, 51, 51, 0.4784313725);
   background-color: #fff;
 }
 #footer .inner-footer .footer-wrap .footer-lst {
@@ -636,9 +636,23 @@ header .sec-link .btn-burger::before {
   .container {
     padding: 0;
   }
+  .high-wrap .cont-item-img1 {
+    width: 210px;
+    height: 210px;
+  }
+  .high-wrap .cont-item-img1 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .high-wrap .cont-item-img1 a img {
+    width: 65%;
+    height: 65%;
+  }
   #header,
   #footer .inner-footer .footer-wrap .footer-util {
-    box-shadow: 0 0 1px rgba(51, 51, 51, 0.47843137);
     max-width: 428px;
     margin: 0 auto;
   }
@@ -670,7 +684,6 @@ header .sec-link .btn-burger::before {
 
 .slide-wrap .sec-slide {
   margin-top: 20px;
-  background-color: #999;
 }
 .slide-wrap .swiper {
   width: 90%;

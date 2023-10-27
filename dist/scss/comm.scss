@@ -23,7 +23,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  box-shadow: 1px 1px 1px #3333337a;
+  box-shadow: 0 0 1px rgba(51, 51, 51, 0.47843137);
   background-color: #fff;
   .logo1 {
     position: absolute;
@@ -251,7 +251,7 @@ header {
         right: 0;
         height: 60px;
         width: 100%;
-        box-shadow: inset 1px 1px 1px #3333337a;
+        box-shadow: inset 0 0 1px #3333337a;
         background-color: #fff;
       }
       .footer-lst {
@@ -404,9 +404,25 @@ header {
   .container {
     padding: 0;
   }
+  // sec-special
+  .high-wrap .cont-item-img1 {
+    width: 210px;
+    height: 210px;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      img {
+        width: 65%;
+        height: 65%;
+      }
+    }
+  }
+
   #header,
   #footer .inner-footer .footer-wrap .footer-util {
-    box-shadow: 0 0 1px rgba(51, 51, 51, 0.47843137);
     max-width: 428px;
     margin: 0 auto;
   }
