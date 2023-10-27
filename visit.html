@@ -87,7 +87,6 @@
               name="gnbNav"
               id="gnbNav"
               class="input-burger"
-      
             />
             <label for="gnbNav" class="label-burger">
               <span class="blind">전체 메뉴 보기</span>
@@ -528,10 +527,12 @@
           <div class="select-wrap">
             <div class="container lst-select">
               <h2>개인정보</h2>
-              <input type="radio" name="gender" id="man" />
-              <label for="check1">남자</label>
-              <input type="radio" name="gender" id="woman" />
-              <label for="check2">여자</label>
+              <div class="sex">
+                <input type="radio" name="gender" id="man" />
+                <label for="check1">남자</label>
+                <input type="radio" name="gender" id="woman" />
+                <label for="check2">여자</label>
+              </div>
               <form action="/action_page.php">
                 <input type="text" id="fname" name="fname" placeholder="이름" />
                 <input
@@ -547,7 +548,7 @@
                   placeholder="전화번호"
                 />
               </form>
-              <p>어떻게 연락을 받으시겠 습니까? (선택사항)</p>
+              <p class="select-qa">어떻게 연락을 받으시겠습니까? <span>(선택사항)</span></p>
               <input type="checkbox" name="mail" id="mail" />
               <label for="mail">문자</label>
               <input type="checkbox" name="mail" id="email" />
@@ -562,8 +563,12 @@
                     <option value="ering">귀걸이</option>
                   </select>
                 </div>
-                <input type="checkbox" name="agree" id="agree" />
-                <label for="agree">개인정보 보호 정책을 읽고 동의합니다.</label>
+                <div class="agree-box">
+                  <input type="checkbox" name="agree" id="agree" />
+                  <label for="agree"
+                    >개인정보 보호 정책을 읽고 동의합니다.</label
+                  >
+                </div>
 
                 <div class="sec-btn-reservation">
                   <button>제출하기</button>
@@ -587,7 +592,7 @@
             src="https://www.harrywinston.com/-/media/project/harry-winston/corporate/harry-winston-int/global/hero/hero-side-by-side/find-my-harry-winston/find-my-harry-winston.jpg?rev=4dea995cda14401cadec208474337bec"
             alt="find my harry winston image"
           />
-          <strong class="txt-strong">Find <br />My Harry Winston</strong>
+          <strong class="txt-strong">Find <br />My Lazuli</strong>
           <p class="txt-p">
             늘 여러분 곁에 있습니다.<br />
             라줄리만의 특별한 세계로 <br />
