@@ -309,67 +309,11 @@ header {
   }
 }
 
-// 스플래시
-.IamASplash {
-  .Splash-img {
-    z-index: 100000000;
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100vh;
-    width: 100vw;
-    animation-name: splash;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-duration: 1.5s;
-    animation-delay: 1s;
-    animation-iteration-count: 1;
-  }
-  @keyframes splash {
-    0% {
-      opacity: 100%;
-    }
-    5% {
-      opacity: 95%;
-    }
-    15% {
-      opacity: 85%;
-    }
-    25% {
-      opacity: 75%;
-    }
-    35% {
-      opacity: 65%;
-    }
-    45% {
-      opacity: 55%;
-    }
-    50% {
-      opacity: 50%;
-    }
-    65% {
-      opacity: 35%;
-    }
-    75% {
-      opacity: 15%;
-    }
-    85% {
-      opacity: 15%;
-    }
-    100% {
-      opacity: 0%;
-      display: none;
-      visibility: hidden;
-    }
-  }
-}
 // 미디어쿼리
 @media screen and (min-width: 428px) and (max-width: 1980px) {
   #header,
-  .wrap {
+  .wrap,
+  #footer .inner-footer .footer-wrap .footer-util {
     max-width: 428px;
     margin: 0 auto;
   }
@@ -419,12 +363,6 @@ header {
         height: 65%;
       }
     }
-  }
-
-  #header,
-  #footer .inner-footer .footer-wrap .footer-util {
-    max-width: 428px;
-    margin: 0 auto;
   }
 }
 
