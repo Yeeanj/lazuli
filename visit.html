@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>서브타이틀 | 프로젝트 이름</title>
+    <title>Visit | Lazuli</title>
+    <link rel="icon" href="./images/comm/favicon.png" />
     <meta
       name="description"
       content="네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요"
@@ -27,7 +28,7 @@
       content="http://www.mysite.com/article/article1.html"
     />
     <meta name="twitter:domain" content="사이트 명" />
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
@@ -87,7 +88,6 @@
               name="gnbNav"
               id="gnbNav"
               class="input-burger"
-      
             />
             <label for="gnbNav" class="label-burger">
               <span class="blind">전체 메뉴 보기</span>
@@ -424,6 +424,7 @@
 
                             <li>
                               <a href="#">View All High Jewelry Collections</a>
+                              장바구니
                             </li>
                           </ul>
                         </li>
@@ -444,7 +445,7 @@
                 </button>
               </li>
               <li>
-                <a href="./visit.html" class="nav-g btn-shopp">
+                <a href="./cart.html" class="nav-g btn-shopp">
                   <span class="material-icons-outlined"> shopping_bag </span>
                   <span class="blind">장바구니</span>
                 </a>
@@ -528,10 +529,12 @@
           <div class="select-wrap">
             <div class="container lst-select">
               <h2>개인정보</h2>
-              <input type="radio" name="gender" id="man" />
-              <label for="check1">남자</label>
-              <input type="radio" name="gender" id="woman" />
-              <label for="check2">여자</label>
+              <div class="sex">
+                <input type="radio" name="gender" id="man" />
+                <label for="check1">남자</label>
+                <input type="radio" name="gender" id="woman" />
+                <label for="check2">여자</label>
+              </div>
               <form action="/action_page.php">
                 <input type="text" id="fname" name="fname" placeholder="이름" />
                 <input
@@ -547,7 +550,9 @@
                   placeholder="전화번호"
                 />
               </form>
-              <p>어떻게 연락을 받으시겠 습니까? (선택사항)</p>
+              <p class="select-qa">
+                어떻게 연락을 받으시겠습니까? <span>(선택사항)</span>
+              </p>
               <input type="checkbox" name="mail" id="mail" />
               <label for="mail">문자</label>
               <input type="checkbox" name="mail" id="email" />
@@ -562,8 +567,12 @@
                     <option value="ering">귀걸이</option>
                   </select>
                 </div>
-                <input type="checkbox" name="agree" id="agree" />
-                <label for="agree">개인정보 보호 정책을 읽고 동의합니다.</label>
+                <div class="agree-box">
+                  <input type="checkbox" name="agree" id="agree" />
+                  <label for="agree"
+                    >개인정보 보호 정책을 읽고 동의합니다.</label
+                  >
+                </div>
 
                 <div class="sec-btn-reservation">
                   <button>제출하기</button>
@@ -587,7 +596,7 @@
             src="https://www.harrywinston.com/-/media/project/harry-winston/corporate/harry-winston-int/global/hero/hero-side-by-side/find-my-harry-winston/find-my-harry-winston.jpg?rev=4dea995cda14401cadec208474337bec"
             alt="find my harry winston image"
           />
-          <strong class="txt-strong">Find <br />My Harry Winston</strong>
+          <strong class="txt-strong">Find <br />My Lazuli</strong>
           <p class="txt-p">
             늘 여러분 곁에 있습니다.<br />
             라줄리만의 특별한 세계로 <br />
