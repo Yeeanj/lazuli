@@ -292,6 +292,10 @@ legend {
   width: 100%;
 }
 
+.txt-po-g {
+  text-align: center;
+}
+
 header {
   position: fixed;
   z-index: 10005;
